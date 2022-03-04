@@ -8,6 +8,12 @@ html {
   box-sizing: border-box;
 }
 
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
 body,
 #root {
   margin: 0;
