@@ -40,7 +40,7 @@ const App = () => {
           styles={(theme) => ({
             body: {
               backgroundColor:
-                theme.colorScheme === "dark" ? theme.colors.dark[9] : "white",
+                theme.colorScheme === "dark" ? "#101113" : "white",
               color: theme.colorScheme === "dark" ? "white" : "black",
             },
           })}

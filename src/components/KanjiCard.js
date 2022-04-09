@@ -4,22 +4,17 @@ import noKanji from "../assets/noKanji";
 import { useClipboard } from "@mantine/hooks";
 // Components
 import { ActionIcon, Card, Badge, Tooltip } from "@mantine/core";
-import { useMantineColorScheme, useMantineTheme } from "@mantine/core";
+import { useMantineColorScheme } from "@mantine/core";
 // Icons
 import { BiCopy } from "react-icons/bi";
 
 const KanjiCard = ({ data }) => {
   const clipboard = useClipboard({ timeout: 1500 });
   const { colorScheme } = useMantineColorScheme();
-  const theme = useMantineTheme();
   const dark = colorScheme === "dark";
 
   return (
-    <Card
-      className={`h-full border-2 shadow-md ${
-        dark && `border-[${theme.colors.dark[4]}]`
-      }`}
-    >
+    <Card className={`h-full border-2 shadow-md ${dark && `border-[#373A40]`}`}>
       <div className="flex items-center justify-between">
         <Badge color="indigo" size="lg" variant="filled">
           {data.heisig_number || "Primitive"}
@@ -28,7 +23,7 @@ const KanjiCard = ({ data }) => {
           <Tooltip
             gutter={10}
             label={clipboard.copied ? "Copied" : "Copy Kanji"}
-            color={clipboard.copied ? "violet" : "cyan"}
+            color={clipboard.copied ? "indigo" : "cyan"}
             position="left"
             withArrow
           >
