@@ -1,25 +1,64 @@
-import ClipboardCopy from "./ClipboardCopy";
+// Data
+import noKanji from "../assets/noKanji";
+// Hooks
+import { useClipboard } from "@mantine/hooks";
+// Components
+import { ActionIcon, Card, Badge, Tooltip } from "@mantine/core";
+import { useMantineColorScheme, useMantineTheme } from "@mantine/core";
+// Icons
+import { BiCopy } from "react-icons/bi";
 
-const KanjiCard = ({ kanji }) => {
+const KanjiCard = ({ data }) => {
+  const clipboard = useClipboard({ timeout: 1500 });
+  const { colorScheme } = useMantineColorScheme();
+  const theme = useMantineTheme();
+  const dark = colorScheme === "dark";
+
   return (
-    <div className="flex flex-col p-4 border-2 border-dashed hover:border-transparent hover:bg-slate-200 group">
-      <div className="flex justify-between">
-        <h2 className="font-bold">
-          RTK: {`${kanji.rtkNumber ? kanji.rtkNumber : "Primitive Element"}`}
-        </h2>
-        {kanji.kanjiDesign && <ClipboardCopy value={kanji.kanjiDesign} />}
+    <Card
+      className={`h-full border-2 shadow-md ${
+        dark && `border-[${theme.colors.dark[4]}]`
+      }`}
+    >
+      <div className="flex items-center justify-between">
+        <Badge color="indigo" size="lg" variant="filled">
+          {data.heisig_number || "Primitive"}
+        </Badge>
+        {data.kanji && (
+          <Tooltip
+            gutter={10}
+            label={clipboard.copied ? "Copied" : "Copy Kanji"}
+            color={clipboard.copied ? "violet" : "cyan"}
+            position="left"
+            withArrow
+          >
+            <ActionIcon
+              onClick={() => clipboard.copy(data.kanji)}
+              radius="sm"
+              variant="hover"
+              color="cyan"
+              size="lg"
+            >
+              <BiCopy size="1.5rem" />
+            </ActionIcon>
+          </Tooltip>
+        )}
       </div>
-      {kanji.kanjiDesign && (
-        <h3 className="text-6xl my-8 text-center">{kanji.kanjiDesign}</h3>
-      )}
-      <h3 className="capitalize font-semibold my-4">
-        {kanji.keywords.primary}
-        {kanji.keywords.secondary.length > 0
-          ? `; ${kanji.keywords.secondary.join(", ")}`
-          : null}
-      </h3>
-      {kanji.primitiveDesc && <p className="italic">{kanji.primitiveDesc}</p>}
-    </div>
+      <div className="flex items-center justify-center py-4">
+        <h2 className="text-5xl font-semibold py-5">
+          {data.kanji ? (
+            data.kanji
+          ) : (
+            <img
+              className="h-12"
+              src={`/primitives/${noKanji[data.keywords.primary]}`}
+              alt={data.keywords.primary}
+            />
+          )}
+        </h2>
+      </div>
+      <h3 className="text-lg">{data.keywords.primary}</h3>
+    </Card>
   );
 };
 

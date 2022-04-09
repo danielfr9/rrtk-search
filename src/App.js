@@ -1,110 +1,71 @@
-import { useState } from "react/cjs/react.development";
-import { rrtk } from "./rrtk-2";
-import { useEffect, useRef } from "react";
-import { HashLoader } from "react-spinners";
-
+// Data
+import { rrtk } from "./assets/data";
+import { filterValues } from "./assets/filterValues";
+// Hooks
+import useFilter from "./hooks/useFilter";
+import useSearch from "./hooks/useSearch";
 // Components
+import { VirtuosoGrid } from "react-virtuoso";
+import MainHeader from "./components/MainHeader";
 import KanjiCard from "./components/KanjiCard";
-import SearchFilter from "./components/SearchFilter";
-import NotFound from "./components/NotFound";
-
-const optionRange = 400;
-const filterValues = [
-  {
-    title: "All",
-    min: 1,
-    max: null,
-  },
-  {
-    title: "Primitives",
-    min: null,
-    max: null,
-  },
-  ...[...new Array(Math.floor(2000 / 400 + 1))].map((item, index) => {
-    return {
-      title: `${index * optionRange + 1}${
-        Math.floor(2000 / optionRange + 1) === index + 1
-          ? "+"
-          : `-${(index + 1) * optionRange}`
-      }`,
-      min: index * optionRange + 1,
-      max:
-        Math.floor(2000 / optionRange + 1) === index + 1
-          ? null
-          : (index + 1) * optionRange,
-    };
-  }),
-];
-
-// const fOpts = [...new Array(Math.floor(2000 / 400 + 1))].map((item, index) => {
-//   return {
-//     title: `${index * optionRange + 1}${
-//       Math.floor(2000 / optionRange + 1) === index + 1
-//         ? "+"
-//         : `-${(index + 1) * optionRange}`
-//     }`,
-//     min: index * optionRange + 1,
-//     max:
-//       Math.floor(2000 / optionRange + 1) === index + 1
-//         ? null
-//         : (index + 1) * optionRange,
-//   };
-// });
-
-let count = 0;
+// Dark Mode
+import { Global, MantineProvider, ColorSchemeProvider } from "@mantine/core";
+import { useLocalStorage, useColorScheme } from "@mantine/hooks";
+import { useMantineTheme } from "@mantine/core";
 
 const App = () => {
-  // Display Items
-  const [isLoading, setLoading] = useState(false);
+  const preferredColorScheme = useColorScheme();
+  const [colorScheme, setColorScheme] = useLocalStorage(preferredColorScheme);
+  const theme = useMantineTheme();
+  const dark = colorScheme === "dark";
 
-  // App States
-  const [displayData, setDisplayData] = useState(rrtk);
+  const toggleColorScheme = (value) =>
+    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
 
-  // Values
-  const containerRef = useRef();
-
-  console.log("Render #", ++count);
-
-  useEffect(() => {
-    setLoading(false);
-    containerRef.current.scrollTop = 0;
-  }, [displayData]);
+  const { query, setQuery, searchResult, setKanjiList } = useSearch(rrtk);
+  const { selected, handleFilter } = useFilter(
+    rrtk,
+    filterValues,
+    setKanjiList,
+    setQuery
+  );
 
   return (
-    <div className="relative flex flex-col h-screen">
-      <header className="flex flex-col sticky top-0 left-0 right-0">
-        <div className="text-center bg-teal-600">
-          <h1 className="font-bold text-white text-2xl p-2">Recognition RTK</h1>
-        </div>
-        <SearchFilter
-          rrtk={rrtk}
-          setLoading={setLoading}
-          setDisplayData={setDisplayData}
-          filterValues={filterValues}
+    <ColorSchemeProvider
+      colorScheme={colorScheme}
+      toggleColorScheme={toggleColorScheme}
+    >
+      <MantineProvider theme={{ colorScheme }}>
+        <Global
+          styles={(theme) => ({
+            body: {
+              backgroundColor:
+                theme.colorScheme === "dark" ? theme.colors.dark[9] : "white",
+              color: theme.colorScheme === "dark" ? "white" : "black",
+            },
+          })}
         />
-      </header>
-      <div
-        className="flex flex-col grow bg-slate-50 p-4 overflow-auto"
-        ref={containerRef}
-      >
-        {isLoading ? (
-          <div className="flex grow justify-center items-center">
-            <HashLoader color="black" loading={isLoading} size={150} />
-          </div>
-        ) : displayData.length > 0 ? (
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-rows-1 gap-4">
-            {displayData.map((kanji) => (
-              <KanjiCard
-                key={`${kanji.keywords.primary}${kanji.rtkNumber}`}
-                kanji={kanji}
-              />
-            ))}
-          </div>
-        ) : (
-          <NotFound />
-        )}
-      </div>
-    </div>
+        <div className="flex flex-col min-h-screen">
+          <MainHeader
+            filters={filterValues}
+            menuSelected={selected}
+            changeFilter={handleFilter}
+            query={query}
+            handleQuery={setQuery}
+          />
+          <VirtuosoGrid
+            style={{ flexGrow: 1 }}
+            totalCount={searchResult.length}
+            itemContent={(index) => <KanjiCard data={searchResult[index]} />}
+            useWindowScroll
+            overscan={{ main: 200, reverse: 200 }}
+            listClassName={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3 px-3 ${
+              dark && `bg-[${theme.colors.dark[9]}]`
+            }`}
+          />
+        </div>
+      </MantineProvider>
+    </ColorSchemeProvider>
   );
 };
 
