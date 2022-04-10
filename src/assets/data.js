@@ -1359,10 +1359,10 @@ export const rrtk = [
     heisig_number: null,
     kanji: "冓",
     keywords: {
-      primary: "funnel Celery . . . again.",
+      primary: "funnel",
       secondary: [],
     },
-    description: null,
+    description: "Celery . . . again.",
   },
   {
     heisig_number: null,
@@ -3231,11 +3231,11 @@ export const rrtk = [
     heisig_number: "304",
     kanji: "車",
     keywords: {
-      primary:
-        "car Car, cart, wagon, and vehicle may all be used as primitive meanings.",
+      primary: "car",
       secondary: [],
     },
-    description: null,
+    description:
+      "Car, cart, wagon, and vehicle may all be used as primitive meanings.",
   },
   {
     heisig_number: "305",
