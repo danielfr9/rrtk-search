@@ -1,9 +1,13 @@
 import { useState, useEffect } from "react";
+import { useDebouncedValue } from "@mantine/hooks";
 
 const useSearch = (data, virtuoso) => {
+  // List used to search for elements (changes based on the filter)
   const [kanjiList, setKanjiList] = useState(data);
+  // Result based on the query
   const [searchResult, setSearchResult] = useState(data);
   const [query, setQuery] = useState("");
+  const [debouncedQuery] = useDebouncedValue(query, 350);
 
   useEffect(() => {
     let ignore = false;
@@ -30,7 +34,7 @@ const useSearch = (data, virtuoso) => {
       return searchList;
     };
 
-    const result = handleSearch(query);
+    const result = handleSearch(debouncedQuery);
     if (!ignore) {
       setSearchResult(result);
       virtuoso.current.scrollToIndex({
@@ -39,7 +43,7 @@ const useSearch = (data, virtuoso) => {
     }
 
     return () => (ignore = true);
-  }, [query, kanjiList, virtuoso]);
+  }, [debouncedQuery, kanjiList, virtuoso]);
 
   return { query, setQuery, searchResult, setKanjiList };
 };

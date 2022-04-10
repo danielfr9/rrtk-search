@@ -3,6 +3,7 @@ import { Modal, Badge } from "@mantine/core";
 const InfoModal = ({ content, opened, handleCloseModal }) => {
   return (
     <Modal
+      overflow="inside"
       opened={opened}
       onClose={() => handleCloseModal()}
       title={

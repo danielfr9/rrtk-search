@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-const useFilter = (data, filterValues, setKanjiList, setQuery) => {
+const useFilter = (data, filterValues, setKanjiList) => {
   const [filters] = useState(filterValues);
   const [selected, setSelected] = useState(filterValues[0]);
   const [kanjiData] = useState(data);
 
-  const handleFilter = async (index) => {
+  const handleFilter = (index) => {
     if (filters[index] === selected) return;
 
     setSelected(filters[index]);
@@ -28,8 +28,7 @@ const useFilter = (data, filterValues, setKanjiList, setQuery) => {
         return parseInt(kanji.heisig_number) >= parseInt(filters[index].min);
       });
 
-    await setKanjiList(result);
-    await setQuery("");
+    setKanjiList(result);
   };
 
   return { selected, handleFilter };

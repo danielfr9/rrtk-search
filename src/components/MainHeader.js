@@ -11,7 +11,7 @@ const MainHeader = ({
   menuSelected,
   changeFilter,
   query,
-  handleQuery,
+  setQuery,
 }) => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const dark = colorScheme === "dark";
@@ -38,7 +38,7 @@ const MainHeader = ({
         <div className="flex items-center py-3">
           <TextInput
             value={query}
-            onChange={(e) => handleQuery(e.currentTarget.value)}
+            onChange={(e) => setQuery(e.currentTarget.value)}
             className="grow mr-1"
             placeholder="Search with a keyword, kanji or number"
             variant="filled"

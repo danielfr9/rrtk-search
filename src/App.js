@@ -15,15 +15,14 @@ import { Global, MantineProvider, ColorSchemeProvider } from "@mantine/core";
 import { useLocalStorage, useColorScheme } from "@mantine/hooks";
 import useModal from "./hooks/useModal";
 
-// FIX: TextInput lag because of list rendering
-
 const App = () => {
   const preferredColorScheme = useColorScheme();
   const [colorScheme, setColorScheme] = useLocalStorage(preferredColorScheme);
   const dark = colorScheme === "dark";
-  const virtuoso = useRef(null);
+
   const { opened, handleCloseModal, content, handleOpenModal } = useModal();
 
+  const virtuoso = useRef(null);
   const { query, setQuery, searchResult, setKanjiList } = useSearch(
     rrtk,
     virtuoso
@@ -31,8 +30,7 @@ const App = () => {
   const { selected, handleFilter } = useFilter(
     rrtk,
     filterValues,
-    setKanjiList,
-    setQuery
+    setKanjiList
   );
 
   const toggleColorScheme = (value) =>
@@ -59,7 +57,7 @@ const App = () => {
             menuSelected={selected}
             changeFilter={handleFilter}
             query={query}
-            handleQuery={setQuery}
+            setQuery={setQuery}
           />
           <VirtuosoGrid
             ref={virtuoso}
