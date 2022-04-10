@@ -1,4 +1,5 @@
 import { Modal, Badge } from "@mantine/core";
+import noKanji from "../assets/noKanji";
 
 const InfoModal = ({ content, opened, handleCloseModal }) => {
   return (
@@ -15,7 +16,17 @@ const InfoModal = ({ content, opened, handleCloseModal }) => {
       }
     >
       <div className="flex items-center justify-center py-4">
-        <h2 className="text-5xl font-semibold py-5">{content.kanji}</h2>
+        {content.kanji ? (
+          <h2 className="text-5xl font-semibold py-5">{content.kanji}</h2>
+        ) : (
+          <div className="py-5">
+            <img
+              className="h-12"
+              src={`/primitives/${noKanji[content.keywords.primary]}`}
+              alt={content.keywords.primary}
+            />
+          </div>
+        )}
       </div>
       <div>
         <span className="text-lg font-semibold">

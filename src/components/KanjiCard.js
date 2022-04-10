@@ -55,19 +55,17 @@ const KanjiCard = ({ data, handleOpenModal }) => {
           )}
         </div>
         <h3 className="text-lg">{data.keywords.primary}</h3>
-        {data.kanji && (
-          <div className="flex justify-end">
-            <ActionIcon
-              onClick={() => handleOpenModal(data)}
-              radius="sm"
-              variant="hover"
-              color="cyan"
-              size="lg"
-            >
-              <VscPreview size="1.5rem" />
-            </ActionIcon>
-          </div>
-        )}
+        <div className="flex justify-end">
+          <ActionIcon
+            onClick={() => handleOpenModal(data)}
+            radius="sm"
+            variant="hover"
+            color="cyan"
+            size="lg"
+          >
+            <VscPreview size="1.5rem" />
+          </ActionIcon>
+        </div>
       </Card>
     </>
   );
