@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useSearch = (data) => {
+const useSearch = (data, virtuoso) => {
   const [kanjiList, setKanjiList] = useState(data);
   const [searchResult, setSearchResult] = useState(data);
   const [query, setQuery] = useState("");
@@ -33,10 +33,13 @@ const useSearch = (data) => {
     const result = handleSearch(query);
     if (!ignore) {
       setSearchResult(result);
+      virtuoso.current.scrollToIndex({
+        index: 0,
+      });
     }
 
     return () => (ignore = true);
-  }, [query, kanjiList]);
+  }, [query, kanjiList, virtuoso]);
 
   return { query, setQuery, searchResult, setKanjiList };
 };

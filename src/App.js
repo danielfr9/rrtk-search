@@ -2,6 +2,7 @@
 import { rrtk } from "./assets/data";
 import { filterValues } from "./assets/filterValues";
 // Hooks
+import { useRef } from "react";
 import useFilter from "./hooks/useFilter";
 import useSearch from "./hooks/useSearch";
 // Components
@@ -11,18 +12,20 @@ import KanjiCard from "./components/KanjiCard";
 // Dark Mode
 import { Global, MantineProvider, ColorSchemeProvider } from "@mantine/core";
 import { useLocalStorage, useColorScheme } from "@mantine/hooks";
-import { useMantineTheme } from "@mantine/core";
 
 const App = () => {
   const preferredColorScheme = useColorScheme();
   const [colorScheme, setColorScheme] = useLocalStorage(preferredColorScheme);
-  const theme = useMantineTheme();
   const dark = colorScheme === "dark";
+  const virtuoso = useRef(null);
 
   const toggleColorScheme = (value) =>
     setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
 
-  const { query, setQuery, searchResult, setKanjiList } = useSearch(rrtk);
+  const { query, setQuery, searchResult, setKanjiList } = useSearch(
+    rrtk,
+    virtuoso
+  );
   const { selected, handleFilter } = useFilter(
     rrtk,
     filterValues,
@@ -54,13 +57,13 @@ const App = () => {
             handleQuery={setQuery}
           />
           <VirtuosoGrid
+            ref={virtuoso}
             style={{ flexGrow: 1 }}
             totalCount={searchResult.length}
             itemContent={(index) => <KanjiCard data={searchResult[index]} />}
-            useWindowScroll
             overscan={{ main: 200, reverse: 200 }}
             listClassName={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3 px-3 ${
-              dark && `bg-[${theme.colors.dark[9]}]`
+              dark && `bg-[#101113]`
             }`}
           />
         </div>

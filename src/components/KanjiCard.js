@@ -14,9 +14,9 @@ const KanjiCard = ({ data }) => {
   const dark = colorScheme === "dark";
 
   return (
-    <Card className={`h-full border-2 shadow-md ${dark && `border-[#373A40]`}`}>
+    <Card className={`h-64 border-2 shadow-md ${dark && `border-[#373A40]`}`}>
       <div className="flex items-center justify-between">
-        <Badge color="indigo" size="lg" variant="filled">
+        <Badge className="my-1" color="indigo" size="lg" variant="filled">
           {data.heisig_number || "Primitive"}
         </Badge>
         {data.kanji && (

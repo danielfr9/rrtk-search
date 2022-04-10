@@ -17,7 +17,7 @@ const MainHeader = ({
   const dark = colorScheme === "dark";
 
   return (
-    <div className="sticky top-0 z-50">
+    <div>
       <Header className="border-0 flex flex-col shadow-md" height={110} p="xs">
         <div className="flex items-center">
           <h1

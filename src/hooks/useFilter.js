@@ -1,11 +1,9 @@
-import { useWindowScroll } from "@mantine/hooks";
 import { useState } from "react";
 
 const useFilter = (data, filterValues, setKanjiList, setQuery) => {
   const [filters] = useState(filterValues);
   const [selected, setSelected] = useState(filterValues[0]);
   const [kanjiData] = useState(data);
-  const [, scrollTo] = useWindowScroll();
 
   const handleFilter = async (index) => {
     if (filters[index] === selected) return;
@@ -32,7 +30,6 @@ const useFilter = (data, filterValues, setKanjiList, setQuery) => {
 
     await setKanjiList(result);
     await setQuery("");
-    scrollTo({ y: 0 });
   };
 
   return { selected, handleFilter };
