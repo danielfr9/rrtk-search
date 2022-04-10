@@ -9,18 +9,20 @@ import useSearch from "./hooks/useSearch";
 import { VirtuosoGrid } from "react-virtuoso";
 import MainHeader from "./components/MainHeader";
 import KanjiCard from "./components/KanjiCard";
+import InfoModal from "./components/InfoModal";
 // Dark Mode
 import { Global, MantineProvider, ColorSchemeProvider } from "@mantine/core";
 import { useLocalStorage, useColorScheme } from "@mantine/hooks";
+import useModal from "./hooks/useModal";
+
+// FIX: TextInput lag because of list rendering
 
 const App = () => {
   const preferredColorScheme = useColorScheme();
   const [colorScheme, setColorScheme] = useLocalStorage(preferredColorScheme);
   const dark = colorScheme === "dark";
   const virtuoso = useRef(null);
-
-  const toggleColorScheme = (value) =>
-    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+  const { opened, handleCloseModal, content, handleOpenModal } = useModal();
 
   const { query, setQuery, searchResult, setKanjiList } = useSearch(
     rrtk,
@@ -32,6 +34,9 @@ const App = () => {
     setKanjiList,
     setQuery
   );
+
+  const toggleColorScheme = (value) =>
+    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
 
   return (
     <ColorSchemeProvider
@@ -60,13 +65,25 @@ const App = () => {
             ref={virtuoso}
             style={{ flexGrow: 1 }}
             totalCount={searchResult.length}
-            itemContent={(index) => <KanjiCard data={searchResult[index]} />}
+            itemContent={(index) => (
+              <KanjiCard
+                data={searchResult[index]}
+                handleOpenModal={handleOpenModal}
+              />
+            )}
             overscan={{ main: 200, reverse: 200 }}
             listClassName={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3 px-3 ${
               dark && `bg-[#101113]`
             }`}
           />
         </div>
+        {content && (
+          <InfoModal
+            content={content}
+            opened={opened}
+            handleCloseModal={handleCloseModal}
+          />
+        )}
       </MantineProvider>
     </ColorSchemeProvider>
   );
