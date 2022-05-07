@@ -12,7 +12,8 @@ const InfoModal = ({ content, opened, handleCloseModal }) => {
 
   return (
     <Modal
-      classNames={{ title: "grow" }}
+      size="lg"
+      classNames={{ title: "grow", body: "px-4" }}
       overflow="inside"
       opened={opened}
       onClose={() => handleCloseModal()}
@@ -24,7 +25,7 @@ const InfoModal = ({ content, opened, handleCloseModal }) => {
         </div>
       }
     >
-      <div className="flex items-center justify-center pb-4">
+      <div className="flex items-center justify-center pb-4 pt-2">
         {content.kanji ? (
           <h2 className="text-5xl font-semibold py-5">{content.kanji}</h2>
         ) : (
@@ -66,17 +67,6 @@ const InfoModal = ({ content, opened, handleCloseModal }) => {
           Grade: {content.grade || "N/A"}
         </Badge>
       </div>
-      <div>
-        <span className="text-lg font-semibold">
-          {content.keywords.primary}
-        </span>
-        {content.keywords.secondary.length > 0 && (
-          <span className="text-lg">{`; ${content.keywords.secondary.join(
-            ", "
-          )}`}</span>
-        )}
-      </div>
-      <p className="text-md pt-2 pb-4">{content.description}</p>
       {content.kanji && (
         <>
           <div className="flex pb-4">
@@ -101,6 +91,17 @@ const InfoModal = ({ content, opened, handleCloseModal }) => {
           </div>
         </>
       )}
+      <div>
+        <span className="text-lg font-semibold">
+          {content.keywords.primary}
+        </span>
+        {content.keywords.secondary.length > 0 && (
+          <span className="text-lg">{`; ${content.keywords.secondary.join(
+            ", "
+          )}`}</span>
+        )}
+      </div>
+      <p className="text-md pt-2 pb-4">{content.description}</p>
     </Modal>
   );
 };

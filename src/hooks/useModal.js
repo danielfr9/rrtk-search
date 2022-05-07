@@ -1,8 +1,21 @@
 import { useState } from "react";
 
 const useModal = () => {
+  const [content, setContent] = useState({
+    heisig_number: null,
+    kanji: null,
+    keywords: {
+      primary: null,
+      secondary: [],
+    },
+    description: null,
+    onyomi: [],
+    kunyomi: [],
+    stroke_count: null,
+    jlpt: null,
+    grade: null,
+  });
   const [opened, setOpened] = useState(false);
-  const [content, setContent] = useState(null);
 
   const handleOpenModal = async (data) => {
     if (!data.kanji) {
@@ -33,7 +46,7 @@ const useModal = () => {
     setOpened(false);
   };
 
-  return { opened, handleCloseModal, content, handleOpenModal };
+  return { content, opened, handleCloseModal, handleOpenModal };
 };
 
 export default useModal;

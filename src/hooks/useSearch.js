@@ -3,7 +3,7 @@ import { useDebouncedValue } from "@mantine/hooks";
 
 const useSearch = (data, virtuoso) => {
   // List used to search for elements (changes based on the filter)
-  const [kanjiList, setKanjiList] = useState(data);
+  // const [kanjiList, setKanjiList] = useState(data);
   // Result based on the query
   const [searchResult, setSearchResult] = useState(data);
   const [query, setQuery] = useState("");
@@ -15,9 +15,9 @@ const useSearch = (data, virtuoso) => {
     const handleSearch = (value) => {
       let searchQuery = value.toLowerCase().trim();
 
-      if (searchQuery === "") return kanjiList;
+      if (searchQuery === "") return data;
 
-      const searchList = kanjiList.filter((kanji) => {
+      const searchList = data.filter((kanji) => {
         if (kanji.heisig_number) {
           if (kanji.heisig_number.includes(searchQuery)) return true;
         }
@@ -43,9 +43,9 @@ const useSearch = (data, virtuoso) => {
     }
 
     return () => (ignore = true);
-  }, [debouncedQuery, kanjiList, virtuoso]);
+  }, [debouncedQuery, data, virtuoso]);
 
-  return { query, setQuery, searchResult, setKanjiList };
+  return { query, setQuery, searchResult };
 };
 
 export default useSearch;

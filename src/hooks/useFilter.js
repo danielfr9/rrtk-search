@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-const useFilter = (data, filterValues, setKanjiList) => {
-  const [filters] = useState(filterValues);
-  const [selected, setSelected] = useState(filterValues[0]);
-  const [kanjiData] = useState(data);
+const useFilter = (data, filters) => {
+  const [selected, setSelected] = useState(filters[0]);
+  const [filteredData, setFilteredData] = useState(data);
 
   const handleFilter = (index) => {
     if (filters[index] === selected) return;
@@ -13,25 +12,25 @@ const useFilter = (data, filterValues, setKanjiList) => {
     let result = [];
 
     if (filters[index].title === "All") {
-      result = kanjiData;
+      result = data;
     } else if (!(filters[index].min || filters[index].max))
-      result = kanjiData.filter((kanji) => kanji.heisig_number === null);
+      result = data.filter((kanji) => kanji.heisig_number === null);
     else if (filters[index].min && filters[index].max)
-      result = kanjiData.filter((kanji) => {
+      result = data.filter((kanji) => {
         return (
           parseInt(kanji.heisig_number) >= parseInt(filters[index].min) &&
           parseInt(kanji.heisig_number) <= parseInt(filters[index].max)
         );
       });
     else
-      result = kanjiData.filter((kanji) => {
+      result = data.filter((kanji) => {
         return parseInt(kanji.heisig_number) >= parseInt(filters[index].min);
       });
 
-    setKanjiList(result);
+    setFilteredData(result);
   };
 
-  return { selected, handleFilter };
+  return { selected, handleFilter, filteredData };
 };
 
 export default useFilter;

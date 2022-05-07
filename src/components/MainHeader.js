@@ -1,5 +1,7 @@
 // Components
 import { Header, TextInput, ActionIcon, Menu, Divider } from "@mantine/core";
+// Hooks
+import { useMemo } from "react";
 // Utilities
 import { useMantineColorScheme } from "@mantine/core";
 // Icons
@@ -14,7 +16,7 @@ const MainHeader = ({
   setQuery,
 }) => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-  const dark = colorScheme === "dark";
+  const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
 
   return (
     <div>
