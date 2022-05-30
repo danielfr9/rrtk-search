@@ -6,8 +6,10 @@ export const rrtk = [
       primary: "mist",
       secondary: [],
     },
-    description:
-      "At the bottom is the primitive (also a kanji) for early or sunflower. At the top, a needle. Conveniently, mist falls early in the morning, like little needles of rain, to assure that the sunflower blooms early as we have learned it should.",
+    description: {
+      has_image: false,
+      info: "At the bottom is the primitive (also a kanji) for early or sunflower. At the top, a needle. Conveniently, mist falls early in the morning, like little needles of rain, to assure that the sunflower blooms early as we have learned it should.",
+    },
   },
   {
     heisig_number: null,
@@ -16,8 +18,10 @@ export const rrtk = [
       primary: "animal legs",
       secondary: [],
     },
-    description:
-      "Like the four that follow it, this primitive is not a kanji in its own right, though it is said to be derived from 八, the character we learned earlier for eight. It always comes at the bottom of the primitive to which it is related. It can mean the legs of any kind of animal: from a grizzly bear's paws to an octopus's tentacles to the spindle shanks of a spider. (The one animal not allowed is our friend homo sapiens.) Even where the term \"legs\" will apply metaphorically to the legs of pieces of furniture, it is best to keep the association with animal legs.",
+    description: {
+      has_image: false,
+      info: "Like the four that follow it, this primitive is not a kanji in its own right, though it is said to be derived from 八, the character we learned earlier for eight. It always comes at the bottom of the primitive to which it is related. It can mean the legs of any kind of animal: from a grizzly bear's paws to an octopus's tentacles to the spindle shanks of a spider. (The one animal not allowed is our friend homo sapiens.) Even where the term \"legs\" will apply metaphorically to the legs of pieces of furniture, it is best to keep the association with animal legs.",
+    },
   },
   {
     heisig_number: null,
@@ -26,8 +30,10 @@ export const rrtk = [
       primary: "horns",
       secondary: [],
     },
-    description:
-      "This primitive element always appears at the top of the element to which it is related, and is always attached, or almost attached, to the first horizontal line to come under it. The horns can never simply be left hanging in the air. When there is no line available, an extra horizontal stroke (like a one) is added (for example, in '首'.) The meaning of this element is wide enough to embrace the horns of bulls, rams, billy goats, and moose, but not the family of musical instruments. As with other elements with such \"open\" meanings, it is best to settle on one that you find most vivid and stick with that image consistently.",
+    description: {
+      has_image: false,
+      info: "This primitive element always appears at the top of the element to which it is related, and is always attached, or almost attached, to the first horizontal line to come under it. The horns can never simply be left hanging in the air. When there is no line available, an extra horizontal stroke (like a one) is added (for example, in '首'.) The meaning of this element is wide enough to embrace the horns of bulls, rams, billy goats, and moose, but not the family of musical instruments. As with other elements with such \"open\" meanings, it is best to settle on one that you find most vivid and stick with that image consistently.",
+    },
   },
   {
     heisig_number: null,
@@ -36,8 +42,10 @@ export const rrtk = [
       primary: "tool",
       secondary: [],
     },
-    description:
-      "Although this primitive is not very common, it is useful to know, as the following examples will show. Conveniently, it is always drawn at the very bottom of any kanji in which it figures. The first stroke, the horizontal one, is detached from anything above it, but is necessary to distinguish tool from animal legs. The sense of the element is a carpenter's tool, which comes from its pictographic representation of a small table with legs (make them animal legs if you need a more graphic image), so that any element lying on top of it will come to be viewed as a tool in the hands of a carpenter.",
+    description: {
+      has_image: false,
+      info: "Although this primitive is not very common, it is useful to know, as the following examples will show. Conveniently, it is always drawn at the very bottom of any kanji in which it figures. The first stroke, the horizontal one, is detached from anything above it, but is necessary to distinguish tool from animal legs. The sense of the element is a carpenter's tool, which comes from its pictographic representation of a small table with legs (make them animal legs if you need a more graphic image), so that any element lying on top of it will come to be viewed as a tool in the hands of a carpenter.",
+    },
   },
   {
     heisig_number: null,
@@ -46,8 +54,10 @@ export const rrtk = [
       primary: "by one's side",
       secondary: [],
     },
-    description:
-      "This primitive has the look of ten, except that the left stroke is bent down toward the left. It indicates where your hands (your ten fingers) fall when you let them droop: by your side. The stroke order of this character can be reversed; but whichever stroke is written second, that stroke should be drawn longer than the other. The difference is slight, and all but unnoticeable in printed characters, but it should be learned all the same.",
+    description: {
+      has_image: true,
+      info: "This primitive has the look of ten, except that the left stroke is bent down toward the left. It indicates where your hands (your ten fingers) fall when you let them droop: by your side. The stroke order of this character can be reversed; but whichever stroke is written second, that stroke should be drawn longer than the other. The difference is slight, and all but unnoticeable in printed characters, but it should be learned all the same. paste-0e6cd48754c9ada8f052861adc7bf2b9079555ae.jpg",
+    },
   },
   {
     heisig_number: null,
@@ -56,8 +66,10 @@ export const rrtk = [
       primary: "umbrella",
       secondary: [],
     },
-    description:
-      "The actual kanji on which this primitive meaning umbrella is based (傘) does not show up in this deck. Think of it as a large and brightly-colored beach umbrella. If you compare this with '八', you will notice how the two strokes touch here, while the kanji for eight would leave a gaping leak in the top.",
+    description: {
+      has_image: false,
+      info: "The actual kanji on which this primitive meaning umbrella is based (傘) does not show up in this deck. Think of it as a large and brightly-colored beach umbrella. If you compare this with '八', you will notice how the two strokes touch here, while the kanji for eight would leave a gaping leak in the top.",
+    },
   },
   {
     heisig_number: null,
@@ -66,8 +78,10 @@ export const rrtk = [
       primary: "meeting",
       secondary: [],
     },
-    description:
-      "This compound primitive depicts a meeting as a massive gathering of people under one umbrella. The full kanji from which this derives (会) will be introduced later. The important thing here is to picture the scene just described and associate it with the word meeting.",
+    description: {
+      has_image: false,
+      info: "This compound primitive depicts a meeting as a massive gathering of people under one umbrella. The full kanji from which this derives (会) will be introduced later. The important thing here is to picture the scene just described and associate it with the word meeting.",
+    },
   },
   {
     heisig_number: null,
@@ -76,8 +90,10 @@ export const rrtk = [
       primary: "road",
       secondary: [],
     },
-    description:
-      "The road envisioned here is a road for traffic, or a path or walkway. The natural sweep of these three simple strokes should be easy to remember, as it appears so often.",
+    description: {
+      has_image: false,
+      info: "The road envisioned here is a road for traffic, or a path or walkway. The natural sweep of these three simple strokes should be easy to remember, as it appears so often.",
+    },
   },
   {
     heisig_number: null,
@@ -86,8 +102,10 @@ export const rrtk = [
       primary: "lidded crock",
       secondary: [],
     },
-    description:
-      "Soil over the mouth of a container gives us a piece of clay pottery with its lid. Behold the lidded crock.",
+    description: {
+      has_image: false,
+      info: "Soil over the mouth of a container gives us a piece of clay pottery with its lid. Behold the lidded crock.",
+    },
   },
   {
     heisig_number: null,
@@ -96,8 +114,10 @@ export const rrtk = [
       primary: "schoolhouse",
       secondary: [],
     },
-    description:
-      "Here we see a little red schoolhouse with the 3 dots on the roof. As you write it in the following frames, you should acquire a 'feel' for the way the first two short strokes move left to right, and the third one right to left. Write it twice now, saying to yourself the first time as you write the first 3 strokes, 'In the schoolhouse we learn our A-B-C s,' and the second time, 'In the schoolhouse we learn our 1-2-3s.'",
+    description: {
+      has_image: false,
+      info: "Here we see a little red schoolhouse with the 3 dots on the roof. As you write it in the following frames, you should acquire a 'feel' for the way the first two short strokes move left to right, and the third one right to left. Write it twice now, saying to yourself the first time as you write the first 3 strokes, 'In the schoolhouse we learn our A-B-C s,' and the second time, 'In the schoolhouse we learn our 1-2-3s.'",
+    },
   },
   {
     heisig_number: null,
@@ -106,8 +126,10 @@ export const rrtk = [
       primary: "quiver",
       secondary: [],
     },
-    description:
-      "This primitive is easy to remember as depicting something used to bring all one's arrows together into one handy place: the quiver.",
+    description: {
+      has_image: false,
+      info: "This primitive is easy to remember as depicting something used to bring all one's arrows together into one handy place: the quiver.",
+    },
   },
   {
     heisig_number: null,
@@ -116,8 +138,10 @@ export const rrtk = [
       primary: "float",
       secondary: [],
     },
-    description:
-      "The floats that are such an important part of a fiesta are shown here by the addition of the two extra horizontal strokes, which you may take as a quasi-pictographic representation of the platform structure of a float.",
+    description: {
+      has_image: false,
+      info: "The floats that are such an important part of a fiesta are shown here by the addition of the two extra horizontal strokes, which you may take as a quasi-pictographic representation of the platform structure of a float.",
+    },
   },
   {
     heisig_number: null,
@@ -126,8 +150,10 @@ export const rrtk = [
       primary: "mending",
       secondary: [],
     },
-    description:
-      'This primitive differs from the kanji for correct only by the movement added to the last two strokes, the "-ing" of mending if you will. But take a more concrete sense, like mending holes in socks.',
+    description: {
+      has_image: false,
+      info: 'This primitive differs from the kanji for correct only by the movement added to the last two strokes, the "-ing" of mending if you will. But take a more concrete sense, like mending holes in socks.',
+    },
   },
   {
     heisig_number: null,
@@ -136,8 +162,10 @@ export const rrtk = [
       primary: "apron",
       secondary: [],
     },
-    description:
-      "The towel that has edges jagged like little crowns is the cook's apron.",
+    description: {
+      has_image: false,
+      info: "The towel that has edges jagged like little crowns is the cook's apron.",
+    },
   },
   {
     heisig_number: null,
@@ -146,8 +174,10 @@ export const rrtk = [
       primary: "belt",
       secondary: [],
     },
-    description:
-      "This primitive, clearly derived from that for towel, is always hung on another vertical stroke, and takes the meaning of a belt.",
+    description: {
+      has_image: false,
+      info: "This primitive, clearly derived from that for towel, is always hung on another vertical stroke, and takes the meaning of a belt.",
+    },
   },
   {
     heisig_number: null,
@@ -156,8 +186,10 @@ export const rrtk = [
       primary: "reclining",
       secondary: [],
     },
-    description:
-      "The picture is obvious: the first stroke represents the head, and the second the body of someone reclining. You may also use the synonyms lying or lying down.",
+    description: {
+      has_image: false,
+      info: "The picture is obvious: the first stroke represents the head, and the second the body of someone reclining. You may also use the synonyms lying or lying down.",
+    },
   },
   {
     heisig_number: null,
@@ -166,8 +198,10 @@ export const rrtk = [
       primary: "double back",
       secondary: [],
     },
-    description:
-      "Either the idea of turning around and heading back during one's travels, or of folding an object in half will do. The kanji depicts someone doubling back to the nearest inn to lie down and rest a weary pair of walking legs after a full day's voyage.",
+    description: {
+      has_image: false,
+      info: "Either the idea of turning around and heading back during one's travels, or of folding an object in half will do. The kanji depicts someone doubling back to the nearest inn to lie down and rest a weary pair of walking legs after a full day's voyage.",
+    },
   },
   {
     heisig_number: null,
@@ -176,8 +210,10 @@ export const rrtk = [
       primary: "muzzle",
       secondary: [],
     },
-    description:
-      "The element for muzzle shows a vase fixed over a mouth, perhaps with a rubber band running around the back of the head to keep it in place.",
+    description: {
+      has_image: false,
+      info: "The element for muzzle shows a vase fixed over a mouth, perhaps with a rubber band running around the back of the head to keep it in place.",
+    },
   },
   {
     heisig_number: null,
@@ -186,8 +222,10 @@ export const rrtk = [
       primary: "kazoo",
       secondary: [],
     },
-    description:
-      "This primitive's special usefulness lies not in its frequency but in its simplification of a few otherwise difficult kanji. It pictures the sound of a fiesta, namely a kazoo. Note how the element for sound is written first, the fifth stroke extended so that it can be used in the element for fiesta.",
+    description: {
+      has_image: false,
+      info: "This primitive's special usefulness lies not in its frequency but in its simplification of a few otherwise difficult kanji. It pictures the sound of a fiesta, namely a kazoo. Note how the element for sound is written first, the fifth stroke extended so that it can be used in the element for fiesta.",
+    },
   },
   {
     heisig_number: null,
@@ -196,8 +234,10 @@ export const rrtk = [
       primary: "devil",
       secondary: [],
     },
-    description:
-      "The two horns on the head of the teenager are enough to suggest to most parents of adolescents a good image of a devil.",
+    description: {
+      has_image: false,
+      info: "The two horns on the head of the teenager are enough to suggest to most parents of adolescents a good image of a devil.",
+    },
   },
   {
     heisig_number: null,
@@ -206,8 +246,10 @@ export const rrtk = [
       primary: "piglets",
       secondary: [],
     },
-    description:
-      "This abbreviation of the full primitive for a sow, quite naturally, means piglets.",
+    description: {
+      has_image: false,
+      info: "This abbreviation of the full primitive for a sow, quite naturally, means piglets.",
+    },
   },
   {
     heisig_number: null,
@@ -216,8 +258,10 @@ export const rrtk = [
       primary: "wool",
       secondary: [],
     },
-    description:
-      "This rather uncommon primitive is made by pulling the tail of the sheep to one side to create a semi-enclosure. The meaning of wool is derived from the fact that the shearer is holding the sheep by the tail in order to trim its wool.",
+    description: {
+      has_image: false,
+      info: "This rather uncommon primitive is made by pulling the tail of the sheep to one side to create a semi-enclosure. The meaning of wool is derived from the fact that the shearer is holding the sheep by the tail in order to trim its wool.",
+    },
   },
   {
     heisig_number: null,
@@ -226,8 +270,10 @@ export const rrtk = [
       primary: "Pegasus",
       secondary: [],
     },
-    description:
-      "By combining the horse (giving a twist to its final stroke a bit to the left to keep the strokes from overlapping) with the turkey, we get a flying horse or Pegasus. Be sure not to confuse with the rarer element for turkey house that was introduced for '確'.",
+    description: {
+      has_image: false,
+      info: "By combining the horse (giving a twist to its final stroke a bit to the left to keep the strokes from overlapping) with the turkey, we get a flying horse or Pegasus. Be sure not to confuse with the rarer element for turkey house that was introduced for '確'.",
+    },
   },
   {
     heisig_number: null,
@@ -236,8 +282,10 @@ export const rrtk = [
       primary: "arm",
       secondary: [],
     },
-    description:
-      "The picture of an arm dangling from the trunk of the body gives us the element for arm, or tucked under the arm (relative to the element below it). Unlike most primitives, the kanji that bears the same meaning (腕) has absolutely no connection with it.",
+    description: {
+      has_image: false,
+      info: "The picture of an arm dangling from the trunk of the body gives us the element for arm, or tucked under the arm (relative to the element below it). Unlike most primitives, the kanji that bears the same meaning (腕) has absolutely no connection with it.",
+    },
   },
   {
     heisig_number: null,
@@ -246,8 +294,10 @@ export const rrtk = [
       primary: "fledgling",
       secondary: [],
     },
-    description:
-      "The vulture and child combine to create the image of an aerie full of fledglings.",
+    description: {
+      has_image: false,
+      info: "The vulture and child combine to create the image of an aerie full of fledglings.",
+    },
   },
   {
     heisig_number: null,
@@ -256,8 +306,10 @@ export const rrtk = [
       primary: "birdhouse",
       secondary: [],
     },
-    description:
-      "The claw and crown of the roof of a house (whose chimney is displaced by the claw) combine to give us a birdhouse.",
+    description: {
+      has_image: false,
+      info: "The claw and crown of the roof of a house (whose chimney is displaced by the claw) combine to give us a birdhouse.",
+    },
   },
   {
     heisig_number: null,
@@ -266,8 +318,10 @@ export const rrtk = [
       primary: "wall",
       secondary: [],
     },
-    description:
-      "The elbow hanging under a ceiling will become our element for a wall.",
+    description: {
+      has_image: false,
+      info: "The elbow hanging under a ceiling will become our element for a wall.",
+    },
   },
   {
     heisig_number: null,
@@ -276,8 +330,10 @@ export const rrtk = [
       primary: "infant",
       secondary: [],
     },
-    description:
-      "This primitive can be seen as an abbreviation of the full primitive for child, the second stroke dividing the head from the body much as it does in 子 and the other strokes condensing the long form so that it can be used atop its relative primitive. We change the meaning to infant to facilitate keeping the full form and its abbreviation distinct.",
+    description: {
+      has_image: false,
+      info: "This primitive can be seen as an abbreviation of the full primitive for child, the second stroke dividing the head from the body much as it does in 子 and the other strokes condensing the long form so that it can be used atop its relative primitive. We change the meaning to infant to facilitate keeping the full form and its abbreviation distinct.",
+    },
   },
   {
     heisig_number: null,
@@ -286,8 +342,10 @@ export const rrtk = [
       primary: "gully",
       secondary: [],
     },
-    description:
-      "As an abbreviation of the kanji for a valley, this primitive gets its meaning as a small valley or gully.",
+    description: {
+      has_image: false,
+      info: "As an abbreviation of the kanji for a valley, this primitive gets its meaning as a small valley or gully.",
+    },
   },
   {
     heisig_number: null,
@@ -296,8 +354,10 @@ export const rrtk = [
       primary: "outhouse",
       secondary: [],
     },
-    description:
-      'The combination of the element for little, the basic "roof" structure here (in which the chimney was overwritten, as it was in the element for birdhouse), combined with the "window" (mouth) below, gives this element its meaning of outhouse. Although the window is not an essential part of an outhouse, I think you will agree that its inclusion is a boon to the imagination, greatly simplifying the learning of the characters in which it appears.',
+    description: {
+      has_image: false,
+      info: 'The combination of the element for little, the basic "roof" structure here (in which the chimney was overwritten, as it was in the element for birdhouse), combined with the "window" (mouth) below, gives this element its meaning of outhouse. Although the window is not an essential part of an outhouse, I think you will agree that its inclusion is a boon to the imagination, greatly simplifying the learning of the characters in which it appears.',
+    },
   },
   {
     heisig_number: null,
@@ -306,7 +366,10 @@ export const rrtk = [
       primary: "plow",
       secondary: [],
     },
-    description: "Take this as a pictograph of a plow.",
+    description: {
+      has_image: false,
+      info: "Take this as a pictograph of a plow.",
+    },
   },
   {
     heisig_number: null,
@@ -315,8 +378,10 @@ export const rrtk = [
       primary: "banner",
       secondary: [],
     },
-    description:
-      'Here we have a unique enclosure made up of two elements: compass and reclining. Think of the banner as a standard for rallying around; then imagine a crowd reclining before a compass (presumably to give them a "direction" in life).',
+    description: {
+      has_image: false,
+      info: 'Here we have a unique enclosure made up of two elements: compass and reclining. Think of the banner as a standard for rallying around; then imagine a crowd reclining before a compass (presumably to give them a "direction" in life).',
+    },
   },
   {
     heisig_number: null,
@@ -325,8 +390,10 @@ export const rrtk = [
       primary: "rake",
       secondary: [],
     },
-    description:
-      "A single vertical stroke transforms broom into a rake. When an element comes below the rake, the vertical stroke is shortened, as we have seen before with other similar primitives such as sheep and cow. Moreover, when something comes above the rake and joins to it at the top, the vertical stroke begins at the top horizontal stroke, as in the following two frames.",
+    description: {
+      has_image: false,
+      info: "A single vertical stroke transforms broom into a rake. When an element comes below the rake, the vertical stroke is shortened, as we have seen before with other similar primitives such as sheep and cow. Moreover, when something comes above the rake and joins to it at the top, the vertical stroke begins at the top horizontal stroke, as in the following two frames.",
+    },
   },
   {
     heisig_number: null,
@@ -335,8 +402,10 @@ export const rrtk = [
       primary: "salad",
       secondary: [],
     },
-    description:
-      "The element for flowers joins with the long horizontal stroke beneath it to create the picture of a bowl of salad.",
+    description: {
+      has_image: false,
+      info: "The element for flowers joins with the long horizontal stroke beneath it to create the picture of a bowl of salad.",
+    },
   },
   {
     heisig_number: null,
@@ -345,8 +414,10 @@ export const rrtk = [
       primary: "caverns",
       secondary: [],
     },
-    description:
-      "The primitive for caverns differs from that for cave by the presence of the primitive for twenty, suggesting a maze of underground caves.",
+    description: {
+      has_image: false,
+      info: "The primitive for caverns differs from that for cave by the presence of the primitive for twenty, suggesting a maze of underground caves.",
+    },
   },
   {
     heisig_number: null,
@@ -355,8 +426,10 @@ export const rrtk = [
       primary: "quarter",
       secondary: [],
     },
-    description:
-      "This character simply splits the vertical stroke of a half in half once again, to get a quarter. In so doing, it spreads the split stroke out to form a sort of enclosure under which its main relative primitive will be placed. It can be used either in its substantive or verbal meaning.",
+    description: {
+      has_image: false,
+      info: "This character simply splits the vertical stroke of a half in half once again, to get a quarter. In so doing, it spreads the split stroke out to form a sort of enclosure under which its main relative primitive will be placed. It can be used either in its substantive or verbal meaning.",
+    },
   },
   {
     heisig_number: null,
@@ -365,8 +438,10 @@ export const rrtk = [
       primary: "spear",
       secondary: [],
     },
-    description:
-      "This weapon, which has the appearance of the long saber but is drawn slightly differently, depicts a spear.",
+    description: {
+      has_image: false,
+      info: "This weapon, which has the appearance of the long saber but is drawn slightly differently, depicts a spear.",
+    },
   },
   {
     heisig_number: null,
@@ -375,8 +450,10 @@ export const rrtk = [
       primary: "slingshot",
       secondary: [],
     },
-    description:
-      "The slingshot differs from the snare by virtue of the first stroke, which you may take as the strip of rubber you pull back on, to make the slingshot sling.",
+    description: {
+      has_image: false,
+      info: "The slingshot differs from the snare by virtue of the first stroke, which you may take as the strip of rubber you pull back on, to make the slingshot sling.",
+    },
   },
   {
     heisig_number: null,
@@ -385,8 +462,10 @@ export const rrtk = [
       primary: "scissors",
       secondary: [],
     },
-    description:
-      "This primitive is based on that for husband. The two extra strokes represent a pair of scissors he is carrying around.",
+    description: {
+      has_image: false,
+      info: "This primitive is based on that for husband. The two extra strokes represent a pair of scissors he is carrying around.",
+    },
   },
   {
     heisig_number: null,
@@ -395,8 +474,10 @@ export const rrtk = [
       primary: "paper punch",
       secondary: [],
     },
-    description:
-      "This primitive simply discards the first stroke of that for hole to become a paper punch. When found at the top of its relative primitive, it undergoes the same change, the eight becoming human legs.",
+    description: {
+      has_image: false,
+      info: "This primitive simply discards the first stroke of that for hole to become a paper punch. When found at the top of its relative primitive, it undergoes the same change, the eight becoming human legs.",
+    },
   },
   {
     heisig_number: null,
@@ -405,8 +486,10 @@ export const rrtk = [
       primary: "chop-seal",
       secondary: [],
     },
-    description:
-      "The chop-seal is the engraved piece of wood or stone used in the Orient to certify documents. Unlike the stamp, the top stroke here reaches a good distance to the left of its vertical stroke. When it appears at the top of another primitive, it is abbreviated to .",
+    description: {
+      has_image: true,
+      info: "The chop-seal is the engraved piece of wood or stone used in the Orient to certify documents. Unlike the stamp, the top stroke here reaches a good distance to the left of its vertical stroke. When it appears at the top of another primitive, it is abbreviated to paste-c068e927b9547eff115a658edfcfc1f3de757eb8.jpg.",
+    },
   },
   {
     heisig_number: null,
@@ -415,8 +498,10 @@ export const rrtk = [
       primary: "fingerprint",
       secondary: [],
     },
-    description:
-      "The primitive for fingerprint is like that for stamp except that the second stroke bends back towards the right, like an arm.",
+    description: {
+      has_image: false,
+      info: "The primitive for fingerprint is like that for stamp except that the second stroke bends back towards the right, like an arm.",
+    },
   },
   {
     heisig_number: null,
@@ -425,7 +510,7 @@ export const rrtk = [
       primary: "mailbox",
       secondary: [],
     },
-    description: "Evening . . . fingerprint.",
+    description: { has_image: false, info: "Evening . . . fingerprint." },
   },
   {
     heisig_number: null,
@@ -434,8 +519,10 @@ export const rrtk = [
       primary: "receipt",
       secondary: [],
     },
-    description:
-      "This primitive element is actually the mirror-image of that for stamp, but since Japanese does not permit a stroke to go to the left and bottom in one swoop, the visual similarity is not perfectly clear. If you play with the idea with pen and paper, its logic will become obvious.",
+    description: {
+      has_image: false,
+      info: "This primitive element is actually the mirror-image of that for stamp, but since Japanese does not permit a stroke to go to the left and bottom in one swoop, the visual similarity is not perfectly clear. If you play with the idea with pen and paper, its logic will become obvious.",
+    },
   },
   {
     heisig_number: null,
@@ -444,8 +531,10 @@ export const rrtk = [
       primary: "staples",
       secondary: [],
     },
-    description:
-      "This primitive represents a number of small staples, like the kind commonly used in an office and at school.",
+    description: {
+      has_image: false,
+      info: "This primitive represents a number of small staples, like the kind commonly used in an office and at school.",
+    },
   },
   {
     heisig_number: null,
@@ -454,8 +543,10 @@ export const rrtk = [
       primary: "waitress",
       secondary: [],
     },
-    description:
-      "If you draw this character once, you will see that its first three strokes resemble the form for receipt (except that the third stroke ends more parallel to the first), with its last stroke stretched to form the first of the two human legs. From this we give it its meaning of a waitress.",
+    description: {
+      has_image: false,
+      info: "If you draw this character once, you will see that its first three strokes resemble the form for receipt (except that the third stroke ends more parallel to the first), with its last stroke stretched to form the first of the two human legs. From this we give it its meaning of a waitress.",
+    },
   },
   {
     heisig_number: null,
@@ -464,8 +555,10 @@ export const rrtk = [
       primary: "sheaf",
       secondary: [],
     },
-    description:
-      "These two strokes are a crude drawing of a bundle of stalks bound together into a sheaf.",
+    description: {
+      has_image: false,
+      info: "These two strokes are a crude drawing of a bundle of stalks bound together into a sheaf.",
+    },
   },
   {
     heisig_number: null,
@@ -474,8 +567,10 @@ export const rrtk = [
       primary: "rice seedling",
       secondary: [],
     },
-    description:
-      "As we mentioned back in FRAME 249, rice seedlings get an element all their own: soil and human legs becomes an ideograph of the spikelets of rice bunched together for implanting in the muddy soil of the paddy.",
+    description: {
+      has_image: false,
+      info: "As we mentioned back in FRAME 249, rice seedlings get an element all their own: soil and human legs becomes an ideograph of the spikelets of rice bunched together for implanting in the muddy soil of the paddy.",
+    },
   },
   {
     heisig_number: null,
@@ -484,8 +579,10 @@ export const rrtk = [
       primary: "resin",
       secondary: [],
     },
-    description:
-      "This tree has become a pole (that is, a tree with its branches not touching) because most of its branches have been pruned off by a naive but greedy gardener anxious to siphon off its resin (the drop at the top, written as the final stroke) as quickly as possible.",
+    description: {
+      has_image: false,
+      info: "This tree has become a pole (that is, a tree with its branches not touching) because most of its branches have been pruned off by a naive but greedy gardener anxious to siphon off its resin (the drop at the top, written as the final stroke) as quickly as possible.",
+    },
   },
   {
     heisig_number: null,
@@ -494,8 +591,10 @@ export const rrtk = [
       primary: "celery",
       secondary: [],
     },
-    description:
-      "This primitive looks very close to that for salad, except that an extra horizontal line has been included, reminiscent I should think of the long celery sticks in your salad.",
+    description: {
+      has_image: false,
+      info: "This primitive looks very close to that for salad, except that an extra horizontal line has been included, reminiscent I should think of the long celery sticks in your salad.",
+    },
   },
   {
     heisig_number: null,
@@ -504,8 +603,10 @@ export const rrtk = [
       primary: "grow up",
       secondary: [],
     },
-    description:
-      "As the plant grows up it sprouts leaves and a stalk, which are depicted here over a single horizontal stroke for the soil. Think of something (its relative primitive) growing up in a flash to many times its normal size, much like little Alice in Wonderland, who grew up so fast she was soon larger than the room in which she was sitting.",
+    description: {
+      has_image: false,
+      info: "As the plant grows up it sprouts leaves and a stalk, which are depicted here over a single horizontal stroke for the soil. Think of something (its relative primitive) growing up in a flash to many times its normal size, much like little Alice in Wonderland, who grew up so fast she was soon larger than the room in which she was sitting.",
+    },
   },
   {
     heisig_number: null,
@@ -514,8 +615,10 @@ export const rrtk = [
       primary: "bonsai",
       secondary: [],
     },
-    description:
-      'The element for bushes has an extra stroke added (drawn down from the middle of the second stroke when it "encloses" something beneath, otherwise from the point where the third and fourth strokes intersect) to give the image of the crutches Japanese gardeners use to hold up a tree that is being bent into shape. From there it is but a short leap to the small bonsai plants that imitate this art in miniature.',
+    description: {
+      has_image: false,
+      info: 'The element for bushes has an extra stroke added (drawn down from the middle of the second stroke when it "encloses" something beneath, otherwise from the point where the third and fourth strokes intersect) to give the image of the crutches Japanese gardeners use to hold up a tree that is being bent into shape. From there it is but a short leap to the small bonsai plants that imitate this art in miniature.',
+    },
   },
   {
     heisig_number: null,
@@ -524,8 +627,10 @@ export const rrtk = [
       primary: "cornstalk",
       secondary: [],
     },
-    description:
-      "The element for bushes extended the vertical stroke beneath the final horizontal stroke; the cornstalk omits that final stroke altogether, leaving only the stalk and the leaves bursting forth on all sides.",
+    description: {
+      has_image: false,
+      info: "The element for bushes extended the vertical stroke beneath the final horizontal stroke; the cornstalk omits that final stroke altogether, leaving only the stalk and the leaves bursting forth on all sides.",
+    },
   },
   {
     heisig_number: null,
@@ -534,8 +639,10 @@ export const rrtk = [
       primary: "cabbage",
       secondary: [],
     },
-    description:
-      "The flower, the mouth, and the element for grow up combine here to create the primitive for cabbage.",
+    description: {
+      has_image: false,
+      info: "The flower, the mouth, and the element for grow up combine here to create the primitive for cabbage.",
+    },
   },
   {
     heisig_number: null,
@@ -544,8 +651,10 @@ export const rrtk = [
       primary: "scarecrow",
       secondary: [],
     },
-    description:
-      "By twisting the final two strokes of our cabbage into a pair of legs, we get a scarecrow with a cabbage for a head.",
+    description: {
+      has_image: false,
+      info: "By twisting the final two strokes of our cabbage into a pair of legs, we get a scarecrow with a cabbage for a head.",
+    },
   },
   {
     heisig_number: null,
@@ -554,8 +663,10 @@ export const rrtk = [
       primary: "silage",
       secondary: [],
     },
-    description:
-      "This is a pictograph of all sorts of plants and grasses thrown together to make silage. The vertical stroke is drawn here with a broken line to indicate that it will always double up with another primitive element's vertical stroke.",
+    description: {
+      has_image: false,
+      info: "This is a pictograph of all sorts of plants and grasses thrown together to make silage. The vertical stroke is drawn here with a broken line to indicate that it will always double up with another primitive element's vertical stroke.",
+    },
   },
   {
     heisig_number: null,
@@ -564,8 +675,10 @@ export const rrtk = [
       primary: "key",
       secondary: [],
     },
-    description:
-      "This element gets its name and meaning from its pictographic representation of a key. The shape should be familiar: it is none other than the third and fourth strokes of the kanji for five.",
+    description: {
+      has_image: false,
+      info: "This element gets its name and meaning from its pictographic representation of a key. The shape should be familiar: it is none other than the third and fourth strokes of the kanji for five.",
+    },
   },
   {
     heisig_number: null,
@@ -574,8 +687,10 @@ export const rrtk = [
       primary: "guillotine",
       secondary: [],
     },
-    description:
-      "This element depicts a large, sharpened key coming down on the head of a criminal St. Bernard.",
+    description: {
+      has_image: false,
+      info: "This element depicts a large, sharpened key coming down on the head of a criminal St. Bernard.",
+    },
   },
   {
     heisig_number: null,
@@ -584,8 +699,10 @@ export const rrtk = [
       primary: "awl",
       secondary: [],
     },
-    description:
-      "We include this element here because of its visible similarity to the element for bundle. Be sure to make a distinct image out of its composite ingredients: meeting . . . mouth . . . person. The stroke order follows the order of the elements exactly, but note how the person runs through the mouth.",
+    description: {
+      has_image: false,
+      info: "We include this element here because of its visible similarity to the element for bundle. Be sure to make a distinct image out of its composite ingredients: meeting . . . mouth . . . person. The stroke order follows the order of the elements exactly, but note how the person runs through the mouth.",
+    },
   },
   {
     heisig_number: null,
@@ -594,8 +711,10 @@ export const rrtk = [
       primary: "fenceposts",
       secondary: [],
     },
-    description:
-      "This element means just what it looks like: two fenceposts. They enclose whatever comes between them, as distinct from a pair of walking sticks (see '介').",
+    description: {
+      has_image: false,
+      info: "This element means just what it looks like: two fenceposts. They enclose whatever comes between them, as distinct from a pair of walking sticks (see '介').",
+    },
   },
   {
     heisig_number: null,
@@ -604,8 +723,10 @@ export const rrtk = [
       primary: "sparkler",
       secondary: [],
     },
-    description:
-      "As the pictograph itself immediately suggests, this element depicts spreading out or scattering from a focal point. To capture this meaning, we choose the image of a sparkler. It will often have another primitive put at its center point.",
+    description: {
+      has_image: false,
+      info: "As the pictograph itself immediately suggests, this element depicts spreading out or scattering from a focal point. To capture this meaning, we choose the image of a sparkler. It will often have another primitive put at its center point.",
+    },
   },
   {
     heisig_number: null,
@@ -614,8 +735,10 @@ export const rrtk = [
       primary: "purse",
       secondary: [],
     },
-    description:
-      "By adding a single stroke at the bottom of the kanji for in, we get a sort of pictograph of a purse.",
+    description: {
+      has_image: false,
+      info: "By adding a single stroke at the bottom of the kanji for in, we get a sort of pictograph of a purse.",
+    },
   },
   {
     heisig_number: null,
@@ -624,8 +747,10 @@ export const rrtk = [
       primary: "scrapbook",
       secondary: [],
     },
-    description:
-      "Glass canopy . . . flower. It is most rare to see the flower come under its relative element. Note how it is straightened out to fill the space available.",
+    description: {
+      has_image: false,
+      info: "Glass canopy . . . flower. It is most rare to see the flower come under its relative element. Note how it is straightened out to fill the space available.",
+    },
   },
   {
     heisig_number: null,
@@ -634,7 +759,7 @@ export const rrtk = [
       primary: "calling card",
       secondary: [],
     },
-    description: "Family name . . . floor.",
+    description: { has_image: false, info: "Family name . . . floor." },
   },
   {
     heisig_number: null,
@@ -643,8 +768,10 @@ export const rrtk = [
       primary: "drag",
       secondary: [],
     },
-    description:
-      "Although not a pictograph in the strict sense, this primitive depicts one stroke pulling another along behind it. Note how it differs from cliff and person because of this dragging effect, not to mention the fact that the first stroke is written right to left, almost as if it were a long drop. When this element comes under a different element, the strokes are drawn apart like this: .",
+    description: {
+      has_image: true,
+      info: "Although not a pictograph in the strict sense, this primitive depicts one stroke pulling another along behind it. Note how it differs from cliff and person because of this dragging effect, not to mention the fact that the first stroke is written right to left, almost as if it were a long drop. When this element comes under a different element, the strokes are drawn apart like this: paste-c892de9ce80342e4c249ffee44eeff29a110d3cd.jpg.",
+    },
   },
   {
     heisig_number: null,
@@ -653,8 +780,10 @@ export const rrtk = [
       primary: "lock of hair",
       secondary: [],
     },
-    description:
-      "This element is clearly derived from that for fur. By leaving out the second stroke, we get simply a lock of hair.",
+    description: {
+      has_image: false,
+      info: "This element is clearly derived from that for fur. By leaving out the second stroke, we get simply a lock of hair.",
+    },
   },
   {
     heisig_number: null,
@@ -663,8 +792,10 @@ export const rrtk = [
       primary: "tail feathers",
       secondary: [],
     },
-    description:
-      "So as not to confuse this primitive element with the character for feathers, think of the extravagant tail-feather plumage of the peacock. The form itself is too pictographic to need breaking down further.",
+    description: {
+      has_image: false,
+      info: "So as not to confuse this primitive element with the character for feathers, think of the extravagant tail-feather plumage of the peacock. The form itself is too pictographic to need breaking down further.",
+    },
   },
   {
     heisig_number: null,
@@ -673,8 +804,10 @@ export const rrtk = [
       primary: "hairpin",
       secondary: [],
     },
-    description:
-      "Here we have a quasi-pictograph of the colorful and decorated clips used to bind up long hair. Note its similarity to the scarf, which differs only by the addition of one stroke.",
+    description: {
+      has_image: false,
+      info: "Here we have a quasi-pictograph of the colorful and decorated clips used to bind up long hair. Note its similarity to the scarf, which differs only by the addition of one stroke.",
+    },
   },
   {
     heisig_number: null,
@@ -683,8 +816,10 @@ export const rrtk = [
       primary: "owl",
       secondary: [],
     },
-    description:
-      "We have met these three strokes before. When they come under another stroke, they represent a claw, and thence a vulture. And when placed atop a roof structure, they create a schoolhouse. The owl has something to do with both: it is a bird of prey, and it has come to be associated with learning.",
+    description: {
+      has_image: false,
+      info: "We have met these three strokes before. When they come under another stroke, they represent a claw, and thence a vulture. And when placed atop a roof structure, they create a schoolhouse. The owl has something to do with both: it is a bird of prey, and it has come to be associated with learning.",
+    },
   },
   {
     heisig_number: null,
@@ -693,8 +828,10 @@ export const rrtk = [
       primary: "mountain goat",
       secondary: [],
     },
-    description:
-      "The animal horns and mountain unite, quite naturally, to give us a mountain goat. The extension of the final stroke indicates its tail, which only shows up when it has something under it. In an overhead enclosure, it is to be pictured as standing still, so that its tail droops down and out of sight.",
+    description: {
+      has_image: false,
+      info: "The animal horns and mountain unite, quite naturally, to give us a mountain goat. The extension of the final stroke indicates its tail, which only shows up when it has something under it. In an overhead enclosure, it is to be pictured as standing still, so that its tail droops down and out of sight.",
+    },
   },
   {
     heisig_number: null,
@@ -703,8 +840,10 @@ export const rrtk = [
       primary: "walking stick",
       secondary: [],
     },
-    description:
-      " This primitive element is a picture of just what it looks like: a cane or walking stick. It carries with it the connotations of lameness and whatever else one associates with the use of a cane. Rarely—but very rarely—it will be laid on its side. Whenever this occurs, it will always be driven through the middle of some other primitive element. In this way, you need not worry about confusing it with the primitive meanings of one.",
+    description: {
+      has_image: false,
+      info: "This primitive element is a picture of just what it looks like: a cane or walking stick. It carries with it the connotations of lameness and whatever else one associates with the use of a cane. Rarely—but very rarely—it will be laid on its side. Whenever this occurs, it will always be driven through the middle of some other primitive element. In this way, you need not worry about confusing it with the primitive meanings of one.",
+    },
   },
   {
     heisig_number: null,
@@ -713,8 +852,10 @@ export const rrtk = [
       primary: "a drop of",
       secondary: [],
     },
-    description:
-      'The meaning of this primitive is obvious from the first moment you look at it, though just what it will be a drop of will differ from case to case. The important thing is not to think of it as something insignificant like a "drop in the bucket" but as something so important that it can change the whole picture—like a drop of arsenic in your mother-in-law\'s coffee. In general, it is written from right to left, but there are times when it can be slanted left to right. At other times it can be stretched out a bit. (In cases where you have trouble remembering this, it may help to think of it as an eyedropper dripping drops of something or other.)',
+    description: {
+      has_image: false,
+      info: 'The meaning of this primitive is obvious from the first moment you look at it, though just what it will be a drop of will differ from case to case. The important thing is not to think of it as something insignificant like a "drop in the bucket" but as something so important that it can change the whole picture—like a drop of arsenic in your mother-in-law\'s coffee. In general, it is written from right to left, but there are times when it can be slanted left to right. At other times it can be stretched out a bit. (In cases where you have trouble remembering this, it may help to think of it as an eyedropper dripping drops of something or other.)',
+    },
   },
   {
     heisig_number: null,
@@ -723,8 +864,10 @@ export const rrtk = [
       primary: "augury",
       secondary: ["divining", "fortune telling"],
     },
-    description:
-      "As a primitive, we shall use this to mean divining rod. Although it's composed of a drop and a walking stick, it should be enough to remember as a pictograph. Alternately, you can think of it as a magic wand. In either case, it should suggest images of magic or fortune-telling.",
+    description: {
+      has_image: false,
+      info: "As a primitive, we shall use this to mean divining rod. Although it's composed of a drop and a walking stick, it should be enough to remember as a pictograph. Alternately, you can think of it as a magic wand. In either case, it should suggest images of magic or fortune-telling.",
+    },
   },
   {
     heisig_number: null,
@@ -733,8 +876,10 @@ export const rrtk = [
       primary: "human legs",
       secondary: [],
     },
-    description:
-      'Notice how these human legs are somewhat shapelier and more highly evolved than those of the so-called "lower animals." The one on the left, drawn first, is straight; while the one on the right bends gracefully and ends with a hook. Though they are not likely to suggest the legs of any human you know, they do have something of the look of someone out for a stroll, especially if you compare them to animal legs.',
+    description: {
+      has_image: false,
+      info: 'Notice how these human legs are somewhat shapelier and more highly evolved than those of the so-called "lower animals." The one on the left, drawn first, is straight; while the one on the right bends gracefully and ends with a hook. Though they are not likely to suggest the legs of any human you know, they do have something of the look of someone out for a stroll, especially if you compare them to animal legs.',
+    },
   },
   {
     heisig_number: null,
@@ -743,8 +888,10 @@ export const rrtk = [
       primary: "wind",
       secondary: [],
     },
-    description:
-      'This primitive gets its name from the full kanji for the wind (風). It is called an "enclosure" because other elements are often drawn in the middle of it, though it can also be compressed together so that there is no room for anything in it. The main thing to remember when writing this element is that the second stroke bends OUTWARDS , like a gust of wind blown from above. In addition to the basic meaning of wind, we shall also have occasion to use the image of a weather vane. The derivation is obvious.',
+    description: {
+      has_image: false,
+      info: 'This primitive gets its name from the full kanji for the wind (風). It is called an "enclosure" because other elements are often drawn in the middle of it, though it can also be compressed together so that there is no room for anything in it. The main thing to remember when writing this element is that the second stroke bends OUTWARDS , like a gust of wind blown from above. In addition to the basic meaning of wind, we shall also have occasion to use the image of a weather vane. The derivation is obvious.',
+    },
   },
   {
     heisig_number: null,
@@ -753,8 +900,10 @@ export const rrtk = [
       primary: "bound up",
       secondary: [],
     },
-    description:
-      'Like wind, the element meaning bound up is also an enclosure that can wrap itself around other elements or be compressed when there is nothing to enclose. When this latter happens—usually because there is not enough room—and it is set on top, the little hook at the end is dropped off, like this: . The sense of bound up is that of being "tied and gagged" or wrapped up tightly. If you have trouble remembering when it serves as an enclosure (with the hook) and when not (without the hook), you might think of the former as a chain and the latter as a rope.',
+    description: {
+      has_image: true,
+      info: 'Like wind, the element meaning bound up is also an enclosure that can wrap itself around other elements or be compressed when there is nothing to enclose. When this latter happens—usually because there is not enough room—and it is set on top, the little hook at the end is dropped off, like this: paste-320a30c9122a1556bef6d0571e2e449cd6885fb1.jpg. The sense of bound up is that of being "tied and gagged" or wrapped up tightly. If you have trouble remembering when it serves as an enclosure (with the hook) and when not (without the hook), you might think of the former as a chain and the latter as a rope.',
+    },
   },
   {
     heisig_number: null,
@@ -763,8 +912,10 @@ export const rrtk = [
       primary: "wealth",
       secondary: [],
     },
-    description:
-      "To prepare for following frame, we introduce here a somewhat rare primitive meaning wealth. It takes its meaning from the common image of the overwealthy as also being overfed. More specifically, the kanji shows us one single mouth devouring all the harvest of the fields, presumably while those who labor in them go hungry. Think of the phrase exactly as it is written when you draw the character, and the disposition of the elements is easy.",
+    description: {
+      has_image: false,
+      info: "To prepare for following frame, we introduce here a somewhat rare primitive meaning wealth. It takes its meaning from the common image of the overwealthy as also being overfed. More specifically, the kanji shows us one single mouth devouring all the harvest of the fields, presumably while those who labor in them go hungry. Think of the phrase exactly as it is written when you draw the character, and the disposition of the elements is easy.",
+    },
   },
   {
     heisig_number: null,
@@ -773,8 +924,10 @@ export const rrtk = [
       primary: "cliff",
       secondary: [],
     },
-    description:
-      "This primitive means precisely what it looks like: a steep cliff. You can almost see someone standing at the top looking down into the abyss below.",
+    description: {
+      has_image: false,
+      info: "This primitive means precisely what it looks like: a steep cliff. You can almost see someone standing at the top looking down into the abyss below.",
+    },
   },
   {
     heisig_number: null,
@@ -783,8 +936,10 @@ export const rrtk = [
       primary: "hood",
       secondary: [],
     },
-    description:
-      'In addition to the basic meaning of hood, this shape can be used for a glass canopy, such as that used to serve "pheasant under glass." Note its difference from the element for wind: the second stroke is hooked inwards here. To help remember this detail, think of the wind as blowing "out" and a glass canopy as keeping something "in." Among the related images suggested by this primitive are: a monk\'s cowl, a riding hood, a helmet, and an automobile hood.',
+    description: {
+      has_image: false,
+      info: 'In addition to the basic meaning of hood, this shape can be used for a glass canopy, such as that used to serve "pheasant under glass." Note its difference from the element for wind: the second stroke is hooked inwards here. To help remember this detail, think of the wind as blowing "out" and a glass canopy as keeping something "in." Among the related images suggested by this primitive are: a monk\'s cowl, a riding hood, a helmet, and an automobile hood.',
+    },
   },
   {
     heisig_number: null,
@@ -793,8 +948,10 @@ export const rrtk = [
       primary: "house",
       secondary: [],
     },
-    description:
-      'This extremely useful primitive element depicts the roof of a house. You can see the chimney at the top and the eaves on either side without much trouble. It is a "crown" element, which means that it is invariably set atop other things. Examples follow immediately.',
+    description: {
+      has_image: false,
+      info: 'This extremely useful primitive element depicts the roof of a house. You can see the chimney at the top and the eaves on either side without much trouble. It is a "crown" element, which means that it is invariably set atop other things. Examples follow immediately.',
+    },
   },
   {
     heisig_number: null,
@@ -803,8 +960,10 @@ export const rrtk = [
       primary: "flower",
       secondary: [],
     },
-    description:
-      'We are not yet equipped with all the pieces necessary to learn the character for flower, so shall have to content ourselves here with the first three strokes, which represent the primitive of the same meaning. Concentrate on the actual "bloom" of the flower, and keep a particular flower in mind. Try a rose, a tulip, or a daisy, since none of them will have their own kanji. Think about it well, since once you have decided on your flower of choice, you will be using it in a rather large number of stories later on.',
+    description: {
+      has_image: false,
+      info: 'We are not yet equipped with all the pieces necessary to learn the character for flower, so shall have to content ourselves here with the first three strokes, which represent the primitive of the same meaning. Concentrate on the actual "bloom" of the flower, and keep a particular flower in mind. Try a rose, a tulip, or a daisy, since none of them will have their own kanji. Think about it well, since once you have decided on your flower of choice, you will be using it in a rather large number of stories later on.',
+    },
   },
   {
     heisig_number: null,
@@ -813,8 +972,10 @@ export const rrtk = [
       primary: "walking legs",
       secondary: [],
     },
-    description:
-      "We call this element walking legs because it indicates \"legs in motion,\" whether you want to think of them as jogging or walking in long strides, as the shape seems to suggest. Be careful how you write it, with the first two strokes like a stylized '7.'",
+    description: {
+      has_image: false,
+      info: "We call this element walking legs because it indicates \"legs in motion,\" whether you want to think of them as jogging or walking in long strides, as the shape seems to suggest. Be careful how you write it, with the first two strokes like a stylized '7.'",
+    },
   },
   {
     heisig_number: null,
@@ -823,8 +984,10 @@ export const rrtk = [
       primary: "crown",
       secondary: [],
     },
-    description:
-      "This pictograph of a simple crown is distinguished from the roof only by the absence of the chimney (the first drop at the top). It can be used for all the principal connotations of the word crown. The full character from which this element is derived (冠) doesn't show up in this deck.",
+    description: {
+      has_image: false,
+      info: "This pictograph of a simple crown is distinguished from the roof only by the absence of the chimney (the first drop at the top). It can be used for all the principal connotations of the word crown. The full character from which this element is derived (冠) doesn't show up in this deck.",
+    },
   },
   {
     heisig_number: null,
@@ -833,8 +996,10 @@ export const rrtk = [
       primary: "top hat",
       secondary: [],
     },
-    description:
-      "The broad rim and tall top of the top hat is pictured graphically here in these two simple strokes. At this point, by the way, you can revert back to six (六). If you have had any trouble with that character, you now have the requisite elements to make a story: Six suggests the number of an ant's legs; just set a tall silk top hat on the crawling creature and you have your character.",
+    description: {
+      has_image: false,
+      info: "The broad rim and tall top of the top hat is pictured graphically here in these two simple strokes. At this point, by the way, you can revert back to six (六). If you have had any trouble with that character, you now have the requisite elements to make a story: Six suggests the number of an ant's legs; just set a tall silk top hat on the crawling creature and you have your character.",
+    },
   },
   {
     heisig_number: null,
@@ -843,8 +1008,10 @@ export const rrtk = [
       primary: "brush",
       secondary: [],
     },
-    description:
-      'This primitive element, not itself a kanji, is a pictograph of a writing brush. Let the first 3 strokes represent the hairs at the tip of the brush, and the following two strokes the thumb and forefinger that guide it when you write. Note how the long vertical stroke, cutting through everything, is drawn last. This is standard procedure when you have such a stroke running the length of a character. However, as we saw in the case of cow, when this primitive appears on top of another primitive, its "tail" is cut off, giving us .',
+    description: {
+      has_image: true,
+      info: 'This primitive element, not itself a kanji, is a pictograph of a writing brush. Let the first 3 strokes represent the hairs at the tip of the brush, and the following two strokes the thumb and forefinger that guide it when you write. Note how the long vertical stroke, cutting through everything, is drawn last. This is standard procedure when you have such a stroke running the length of a character. However, as we saw in the case of cow, when this primitive appears on top of another primitive, its "tail" is cut off, giving us paste-ae80fd4c3a65ba2303a4ce9effdb409bd73c90db.jpg .',
+    },
   },
   {
     heisig_number: null,
@@ -853,8 +1020,10 @@ export const rrtk = [
       primary: "taskmaster",
       secondary: [],
     },
-    description:
-      "First find the long rod (the first stroke), held in the hand of someone seated (the next 3 strokes, not unlike the pictograph for woman (女), but quite different from that for walking legs (夂). The only thing left to do is conjure up the memory of some taskmaster (or taskmistress) from your past whom you will 'never forget.'",
+    description: {
+      has_image: false,
+      info: "First find the long rod (the first stroke), held in the hand of someone seated (the next 3 strokes, not unlike the pictograph for woman (女), but quite different from that for walking legs (夂). The only thing left to do is conjure up the memory of some taskmaster (or taskmistress) from your past whom you will 'never forget.'",
+    },
   },
   {
     heisig_number: null,
@@ -863,8 +1032,10 @@ export const rrtk = [
       primary: "arrow",
       secondary: [],
     },
-    description:
-      "Here we see a pictograph of a long and slightly warped arrow. By extending the short final stroke in both directions, you should see the arrowhead without any difficulty. The hook at the bottom represents the feathers at the butt end. When it serves as a semi- enclosure for other primitives, the first stroke is drawn longer, as we shall see in the following frames.",
+    description: {
+      has_image: false,
+      info: "Here we see a pictograph of a long and slightly warped arrow. By extending the short final stroke in both directions, you should see the arrowhead without any difficulty. The hook at the bottom represents the feathers at the butt end. When it serves as a semi- enclosure for other primitives, the first stroke is drawn longer, as we shall see in the following frames.",
+    },
   },
   {
     heisig_number: null,
@@ -873,8 +1044,10 @@ export const rrtk = [
       primary: "fiesta",
       secondary: [],
     },
-    description:
-      'The picture in this primitive is what we may call a "tassled arrow." A decorative tassle is strung on the shaft of an arrow to indicate that it is no longer a weapon but a symbol of a fiesta. As before, the first stroke is extended when it serves as a semi-enclosure.',
+    description: {
+      has_image: false,
+      info: 'The picture in this primitive is what we may call a "tassled arrow." A decorative tassle is strung on the shaft of an arrow to indicate that it is no longer a weapon but a symbol of a fiesta. As before, the first stroke is extended when it serves as a semi-enclosure.',
+    },
   },
   {
     heisig_number: null,
@@ -883,8 +1056,10 @@ export const rrtk = [
       primary: "parade",
       secondary: [],
     },
-    description:
-      "Note first the order of the writing. The first stroke, added to fiesta, gives us a full-fledged enclosure, because of which we should always think of this as a parade of something or other, namely whatever is inside the enclosure.",
+    description: {
+      has_image: false,
+      info: "Note first the order of the writing. The first stroke, added to fiesta, gives us a full-fledged enclosure, because of which we should always think of this as a parade of something or other, namely whatever is inside the enclosure.",
+    },
   },
   {
     heisig_number: null,
@@ -893,8 +1068,10 @@ export const rrtk = [
       primary: "march",
       secondary: [],
     },
-    description:
-      "As distinct from the parade, the march points to a formal demonstration, whose emotions are generally a far cry from the happy spirit of the parade. The inclusion of the one gives the sense of the singlemindedness and unity of the group joined in the march. As was the case with parade, the primitive inside the enclosure indicates who or what is marching.",
+    description: {
+      has_image: false,
+      info: "As distinct from the parade, the march points to a formal demonstration, whose emotions are generally a far cry from the happy spirit of the parade. The inclusion of the one gives the sense of the singlemindedness and unity of the group joined in the march. As was the case with parade, the primitive inside the enclosure indicates who or what is marching.",
+    },
   },
   {
     heisig_number: null,
@@ -903,8 +1080,10 @@ export const rrtk = [
       primary: "stretch",
       secondary: [],
     },
-    description:
-      "The primitive meaning to stretch might at first seem similar to that for road. Take a moment to study it more carefully and you will see the difference. Like road, this character holds other primitives above its sweeping final stroke.",
+    description: {
+      has_image: false,
+      info: "The primitive meaning to stretch might at first seem similar to that for road. Take a moment to study it more carefully and you will see the difference. Like road, this character holds other primitives above its sweeping final stroke.",
+    },
   },
   {
     heisig_number: null,
@@ -913,8 +1092,10 @@ export const rrtk = [
       primary: "ice",
       secondary: [],
     },
-    description:
-      "The condensation of the three drops we have been using to mean water into two drops signals the solidifying of water into ice. Note that when this primitive appears to the left, it is written like the last two strokes of the element for water, 冫, whereas under another primitive, it is written like the first two strokes of the water primitive: .",
+    description: {
+      has_image: true,
+      info: "The condensation of the three drops we have been using to mean water into two drops signals the solidifying of water into ice. Note that when this primitive appears to the left, it is written like the last two strokes of the element for water, 冫, whereas under another primitive, it is written like the first two strokes of the water primitive: paste-f4e543290d668167aa0b4fb6a6a33fe41f02771a.jpg .",
+    },
   },
   {
     heisig_number: null,
@@ -923,8 +1104,10 @@ export const rrtk = [
       primary: "angel",
       secondary: [],
     },
-    description:
-      "The sense of the primitive, angel, derives from the primitive for witch replacing the top hat in the character for tall.",
+    description: {
+      has_image: false,
+      info: "The sense of the primitive, angel, derives from the primitive for witch replacing the top hat in the character for tall.",
+    },
   },
   {
     heisig_number: null,
@@ -933,8 +1116,10 @@ export const rrtk = [
       primary: "antique",
       secondary: [],
     },
-    description:
-      "The primitive meaning antique, not itself a kanji, depicts a vase kept under a glass hood because it is very, very old.",
+    description: {
+      has_image: false,
+      info: "The primitive meaning antique, not itself a kanji, depicts a vase kept under a glass hood because it is very, very old.",
+    },
   },
   {
     heisig_number: null,
@@ -943,8 +1128,10 @@ export const rrtk = [
       primary: "mirror",
       secondary: [],
     },
-    description:
-      "This primitive gets its meaning from the following frame. It shows a pair of human legs and a tongue-wagging mouth looking at a mirror standing on the wall, asking perhaps who might be the fairest of them all.",
+    description: {
+      has_image: false,
+      info: "This primitive gets its meaning from the following frame. It shows a pair of human legs and a tongue-wagging mouth looking at a mirror standing on the wall, asking perhaps who might be the fairest of them all.",
+    },
   },
   {
     heisig_number: null,
@@ -953,8 +1140,10 @@ export const rrtk = [
       primary: "porter",
       secondary: [],
     },
-    description:
-      "Let the extended dot at the top represent the load that the samurai is carrying in his role as the master's porter.",
+    description: {
+      has_image: false,
+      info: "Let the extended dot at the top represent the load that the samurai is carrying in his role as the master's porter.",
+    },
   },
   {
     heisig_number: null,
@@ -963,8 +1152,10 @@ export const rrtk = [
       primary: "sow",
       secondary: [],
     },
-    description:
-      "Let this primitive represent a fat sow. Easier than pulling it apart into smaller elements is remembering its shape as a highly stylized pictograph.",
+    description: {
+      has_image: false,
+      info: "Let this primitive represent a fat sow. Easier than pulling it apart into smaller elements is remembering its shape as a highly stylized pictograph.",
+    },
   },
   {
     heisig_number: null,
@@ -973,8 +1164,10 @@ export const rrtk = [
       primary: "piggy bank",
       secondary: [],
     },
-    description:
-      "Just remember that each day you put a few pennies into the back of the little piglet on your bureau that you call a piggy bank.",
+    description: {
+      has_image: false,
+      info: "Just remember that each day you put a few pennies into the back of the little piglet on your bureau that you call a piggy bank.",
+    },
   },
   {
     heisig_number: null,
@@ -983,8 +1176,10 @@ export const rrtk = [
       primary: "that",
       secondary: [],
     },
-    description:
-      "As a primitive it means bushel basket. As the two legs at the bottom suggest, this bushel basket is a large container, standing on the floor. Its first four strokes indicate that it is made of wicker, much like the small wicker basket introduced earlier. To make room for something inside of the bushel basket, the legs at the bottom are attached to the final horizontal stroke and extended to make an enclosure.",
+    description: {
+      has_image: false,
+      info: "As a primitive it means bushel basket. As the two legs at the bottom suggest, this bushel basket is a large container, standing on the floor. Its first four strokes indicate that it is made of wicker, much like the small wicker basket introduced earlier. To make room for something inside of the bushel basket, the legs at the bottom are attached to the final horizontal stroke and extended to make an enclosure.",
+    },
   },
   {
     heisig_number: null,
@@ -993,8 +1188,10 @@ export const rrtk = [
       primary: "turkey",
       secondary: [],
     },
-    description:
-      "This primitive is best remembered as an old turkey, complete with pipe and monocle. Its writing is somewhat peculiar, so take note of the order of the strokes. Let the first four strokes stand for the turkey's head, neck, and drooping chin. The remainder can then be pictographic of the plumage.",
+    description: {
+      has_image: false,
+      info: "This primitive is best remembered as an old turkey, complete with pipe and monocle. Its writing is somewhat peculiar, so take note of the order of the strokes. Let the first four strokes stand for the turkey's head, neck, and drooping chin. The remainder can then be pictographic of the plumage.",
+    },
   },
   {
     heisig_number: null,
@@ -1003,8 +1200,10 @@ export const rrtk = [
       primary: "pent in",
       secondary: [],
     },
-    description:
-      "This primitive depicts a corral or pen surrounding something, which is thus pent in.",
+    description: {
+      has_image: false,
+      info: "This primitive depicts a corral or pen surrounding something, which is thus pent in.",
+    },
   },
   {
     heisig_number: null,
@@ -1013,8 +1212,10 @@ export const rrtk = [
       primary: "cave",
       secondary: [],
     },
-    description:
-      'This primitive combines the cliff (the last 2 strokes) with the first dot we use on the roof of the house. Together they make a "cliff house" or cave. It "encloses" its relative primitives beneath it and to the right.',
+    description: {
+      has_image: false,
+      info: 'This primitive combines the cliff (the last 2 strokes) with the first dot we use on the roof of the house. Together they make a "cliff house" or cave. It "encloses" its relative primitives beneath it and to the right.',
+    },
   },
   {
     heisig_number: null,
@@ -1023,8 +1224,10 @@ export const rrtk = [
       primary: "fingers",
       secondary: [],
     },
-    description:
-      "This alternate form of the primitive for hand we shall use to represent finger or fingers. It always appears at the left.",
+    description: {
+      has_image: false,
+      info: "This alternate form of the primitive for hand we shall use to represent finger or fingers. It always appears at the left.",
+    },
   },
   {
     heisig_number: null,
@@ -1033,8 +1236,10 @@ export const rrtk = [
       primary: "two hands",
       secondary: [],
     },
-    description:
-      "Let this primitive represent a union of two hands, both of which are used at the same time. Whenever this element appears at the bottom of its relative primitive, the top line is omitted (廾), whether or not there is a horizontal line to replace it.",
+    description: {
+      has_image: false,
+      info: "Let this primitive represent a union of two hands, both of which are used at the same time. Whenever this element appears at the bottom of its relative primitive, the top line is omitted (廾), whether or not there is a horizontal line to replace it.",
+    },
   },
   {
     heisig_number: null,
@@ -1043,8 +1248,10 @@ export const rrtk = [
       primary: "missile",
       secondary: [],
     },
-    description:
-      "Although modern connotations are more suggestive, this primitive simply refers to something thrown as a weapon. Its elements: wind . . . crotch.",
+    description: {
+      has_image: false,
+      info: "Although modern connotations are more suggestive, this primitive simply refers to something thrown as a weapon. Its elements: wind . . . crotch.",
+    },
   },
   {
     heisig_number: null,
@@ -1053,8 +1260,10 @@ export const rrtk = [
       primary: "spool",
       secondary: [],
     },
-    description:
-      "Here we see a simplified drawing of a spool (the element for earth at the bottom) with threads being wound about it tightly (the crotch at the top). You may remember it either pictographically or by way of the primitives.",
+    description: {
+      has_image: false,
+      info: "Here we see a simplified drawing of a spool (the element for earth at the bottom) with threads being wound about it tightly (the crotch at the top). You may remember it either pictographically or by way of the primitives.",
+    },
   },
   {
     heisig_number: null,
@@ -1063,7 +1272,10 @@ export const rrtk = [
       primary: "elbow",
       secondary: [],
     },
-    description: "This pictograph of an arm bent at the elbow is obvious.",
+    description: {
+      has_image: false,
+      info: "This pictograph of an arm bent at the elbow is obvious.",
+    },
   },
   {
     heisig_number: null,
@@ -1072,8 +1284,10 @@ export const rrtk = [
       primary: "bone",
       secondary: [],
     },
-    description:
-      "This character is meant to be a pictograph of a bone attached to a piece of flesh (or vice versa.) The first stroke serves to keep it distinct from the character for evening (夕).",
+    description: {
+      has_image: false,
+      info: "This character is meant to be a pictograph of a bone attached to a piece of flesh (or vice versa.) The first stroke serves to keep it distinct from the character for evening (夕).",
+    },
   },
   {
     heisig_number: null,
@@ -1082,8 +1296,10 @@ export const rrtk = [
       primary: "sunglasses",
       secondary: [],
     },
-    description:
-      "To the left, we see the familiar shape of evening, and to the right a completely new shape. The meaning we have assigned, sunglasses, is entirely arbitrary.",
+    description: {
+      has_image: false,
+      info: "To the left, we see the familiar shape of evening, and to the right a completely new shape. The meaning we have assigned, sunglasses, is entirely arbitrary.",
+    },
   },
   {
     heisig_number: null,
@@ -1092,8 +1308,10 @@ export const rrtk = [
       primary: "wheat",
       secondary: [],
     },
-    description:
-      "This primitive element will be made to stand for wheat. It connotes a special grain, more expensive than ordinary rice and so reserved for special occasions. Alternatively, it can mean cereal. Its form is like that for tree, except for the dot at the top to represent a spike of wheat blowing in the wind.",
+    description: {
+      has_image: false,
+      info: "This primitive element will be made to stand for wheat. It connotes a special grain, more expensive than ordinary rice and so reserved for special occasions. Alternatively, it can mean cereal. Its form is like that for tree, except for the dot at the top to represent a spike of wheat blowing in the wind.",
+    },
   },
   {
     heisig_number: null,
@@ -1102,8 +1320,10 @@ export const rrtk = [
       primary: "assembly line",
       secondary: [],
     },
-    description:
-      "The duplication of the kanji for person gives us this primitive for assembly line. Perhaps you can imagine clones of your chosen person rolling off an assembly line in a factory.",
+    description: {
+      has_image: false,
+      info: "The duplication of the kanji for person gives us this primitive for assembly line. Perhaps you can imagine clones of your chosen person rolling off an assembly line in a factory.",
+    },
   },
   {
     heisig_number: null,
@@ -1112,8 +1332,10 @@ export const rrtk = [
       primary: "flag",
       secondary: [],
     },
-    description:
-      "The pictographic representation of this element is obvious. Provided you can hold your imagination in check for the first example, you might best imagine your own national flag in composing your stories.",
+    description: {
+      has_image: false,
+      info: "The pictographic representation of this element is obvious. Provided you can hold your imagination in check for the first example, you might best imagine your own national flag in composing your stories.",
+    },
   },
   {
     heisig_number: null,
@@ -1122,8 +1344,10 @@ export const rrtk = [
       primary: "saw",
       secondary: [],
     },
-    description:
-      'The saw in this primitive is distinguished from the primitive for ax by the extra "teeth" on the blade.',
+    description: {
+      has_image: false,
+      info: 'The saw in this primitive is distinguished from the primitive for ax by the extra "teeth" on the blade.',
+    },
   },
   {
     heisig_number: null,
@@ -1132,8 +1356,10 @@ export const rrtk = [
       primary: "broom",
       secondary: [],
     },
-    description:
-      "The pictographic representation here is of the bristles on the head of a broom. Note that the second stroke stops short without cutting through the first.",
+    description: {
+      has_image: false,
+      info: "The pictographic representation here is of the bristles on the head of a broom. Note that the second stroke stops short without cutting through the first.",
+    },
   },
   {
     heisig_number: null,
@@ -1142,8 +1368,10 @@ export const rrtk = [
       primary: "mop",
       secondary: [],
     },
-    description:
-      "The only thing distinguishing a mop from a rake is the bent handle that does not cut through the top horizontal stroke. It depicts the swish-swash motion of a mop.",
+    description: {
+      has_image: false,
+      info: "The only thing distinguishing a mop from a rake is the bent handle that does not cut through the top horizontal stroke. It depicts the swish-swash motion of a mop.",
+    },
   },
   {
     heisig_number: null,
@@ -1152,8 +1380,10 @@ export const rrtk = [
       primary: "shovel",
       secondary: [],
     },
-    description:
-      "This enclosure—which embraces its relative primitive from the bottom—is a pictograph of the scoop of a shovel. When room permits, the arms are extended upwards to nearly the same height as the relative element it holds.",
+    description: {
+      has_image: false,
+      info: "This enclosure—which embraces its relative primitive from the bottom—is a pictograph of the scoop of a shovel. When room permits, the arms are extended upwards to nearly the same height as the relative element it holds.",
+    },
   },
   {
     heisig_number: null,
@@ -1162,8 +1392,10 @@ export const rrtk = [
       primary: "haystack",
       secondary: [],
     },
-    description:
-      "The three needles stacked up give us a haystack (in which it may be harder to find the hay than the needles). In the rare case in which there is nothing underneath this element, as in '奔', the last three strokes are written virtually the same as two hands—that is, the second stroke sweeps down slightly to the left.",
+    description: {
+      has_image: false,
+      info: "The three needles stacked up give us a haystack (in which it may be harder to find the hay than the needles). In the rare case in which there is nothing underneath this element, as in '奔', the last three strokes are written virtually the same as two hands—that is, the second stroke sweeps down slightly to the left.",
+    },
   },
   {
     heisig_number: null,
@@ -1172,8 +1404,10 @@ export const rrtk = [
       primary: "straw man",
       secondary: [],
     },
-    description:
-      "The two human legs added to the haystack (with the horizontal stroke to keep the two parts distinct from one another and avoid an ugly tangle) give us a straw man.",
+    description: {
+      has_image: false,
+      info: "The two human legs added to the haystack (with the horizontal stroke to keep the two parts distinct from one another and avoid an ugly tangle) give us a straw man.",
+    },
   },
   {
     heisig_number: null,
@@ -1182,8 +1416,10 @@ export const rrtk = [
       primary: "dollar sign",
       secondary: [],
     },
-    description:
-      "Composed of two walking sticks running through a bow, this character is infrequent as a primitive, and yet easy to remember for what it looks like (which is also what the Japanese adopted it to mean in days gone by): the dollar sign, $. When it is written under another element, the first vertical stroke is abbreviated to a short \"tail\" as the final stroke, and the second vertical stroke is cut off at the top. Examples follow in '第' and '弟'.",
+    description: {
+      has_image: false,
+      info: "Composed of two walking sticks running through a bow, this character is infrequent as a primitive, and yet easy to remember for what it looks like (which is also what the Japanese adopted it to mean in days gone by): the dollar sign, $. When it is written under another element, the first vertical stroke is abbreviated to a short \"tail\" as the final stroke, and the second vertical stroke is cut off at the top. Examples follow in '第' and '弟'.",
+    },
   },
   {
     heisig_number: null,
@@ -1192,8 +1428,10 @@ export const rrtk = [
       primary: "snare",
       secondary: [],
     },
-    description:
-      "The simple snare composed of a piece of vine and a bent twig is depicted here as a sort of abbreviation of the bow, to which it is related.",
+    description: {
+      has_image: false,
+      info: "The simple snare composed of a piece of vine and a bent twig is depicted here as a sort of abbreviation of the bow, to which it is related.",
+    },
   },
   {
     heisig_number: null,
@@ -1202,8 +1440,10 @@ export const rrtk = [
       primary: "maestro",
       secondary: [],
     },
-    description:
-      "To remember with this primitive meaning, you might picture a tuxedo-clad maestro waving his baton about wildly. The baton is, of course, the little drop at the top. And the two boxes attached to the long vertical stroke may represent his tuxedo tails, if you wish.",
+    description: {
+      has_image: false,
+      info: "To remember with this primitive meaning, you might picture a tuxedo-clad maestro waving his baton about wildly. The baton is, of course, the little drop at the top. And the two boxes attached to the long vertical stroke may represent his tuxedo tails, if you wish.",
+    },
   },
   {
     heisig_number: null,
@@ -1212,8 +1452,10 @@ export const rrtk = [
       primary: "jawbone",
       secondary: [],
     },
-    description:
-      'The meaning of this primitive is taken from the combination of "the joint" above and the mouth in the cowl below.',
+    description: {
+      has_image: false,
+      info: 'The meaning of this primitive is taken from the combination of "the joint" above and the mouth in the cowl below.',
+    },
   },
   {
     heisig_number: null,
@@ -1222,8 +1464,10 @@ export const rrtk = [
       primary: "pinnacle",
       secondary: [],
     },
-    description:
-      'This key word has been chosen because of its connotation of "the highest point," thereby suggesting the image of the highest point in a village, that is, a hill or mountain on which sacred or festive events take place. If you have a clear image of the Athenian acropolis, you might use it to express this element for a pinnacle. Note that this primitive appears only on the left. On the right, as we shall see later, the same form takes a different meaning.',
+    description: {
+      has_image: false,
+      info: 'This key word has been chosen because of its connotation of "the highest point," thereby suggesting the image of the highest point in a village, that is, a hill or mountain on which sacred or festive events take place. If you have a clear image of the Athenian acropolis, you might use it to express this element for a pinnacle. Note that this primitive appears only on the left. On the right, as we shall see later, the same form takes a different meaning.',
+    },
   },
   {
     heisig_number: null,
@@ -1232,8 +1476,10 @@ export const rrtk = [
       primary: "cocoon",
       secondary: [],
     },
-    description:
-      "The two triangular shapes here and their final stroke are intended as a pictograph of a cocoon, spun in circles and tied up at the end. It is like the character for thread, except that the silkworm's actual product has not yet emerged clearly at the bottom.",
+    description: {
+      has_image: false,
+      info: "The two triangular shapes here and their final stroke are intended as a pictograph of a cocoon, spun in circles and tied up at the end. It is like the character for thread, except that the silkworm's actual product has not yet emerged clearly at the bottom.",
+    },
   },
   {
     heisig_number: null,
@@ -1242,8 +1488,10 @@ export const rrtk = [
       primary: "stamp",
       secondary: [],
     },
-    description:
-      "This character is a kind of pictograph of a stamp that may best be imagined as a postage stamp to distinguish it from other stamp- like things to come up later.",
+    description: {
+      has_image: false,
+      info: "This character is a kind of pictograph of a stamp that may best be imagined as a postage stamp to distinguish it from other stamp- like things to come up later.",
+    },
   },
   {
     heisig_number: null,
@@ -1252,8 +1500,10 @@ export const rrtk = [
       primary: "drum",
       secondary: [],
     },
-    description:
-      "The element for drum shows a samurai over a table. The top stroke of the table appears to be missing, but actually it has doubled up with the final stroke of the element for samurai.",
+    description: {
+      has_image: false,
+      info: "The element for drum shows a samurai over a table. The top stroke of the table appears to be missing, but actually it has doubled up with the final stroke of the element for samurai.",
+    },
   },
   {
     heisig_number: null,
@@ -1262,8 +1512,10 @@ export const rrtk = [
       primary: "silver",
       secondary: [],
     },
-    description:
-      "We give this element the meaning of silver from the kanji '銀'. Both the original pictographic representation and the primitive elements that make it up are more trouble to hunt out than they are worth. It is best simply to learn it as is. In doing so, take careful note of the stroke order, and also the fact that when this element appears on the left, the penultimate stroke is omitted, giving us simply .",
+    description: {
+      has_image: true,
+      info: "We give this element the meaning of silver from the kanji '銀'. Both the original pictographic representation and the primitive elements that make it up are more trouble to hunt out than they are worth. It is best simply to learn it as is. In doing so, take careful note of the stroke order, and also the fact that when this element appears on the left, the penultimate stroke is omitted, giving us simply paste-a363db52df1d8088c391a995a36749b09ba4b3cc.jpg.",
+    },
   },
   {
     heisig_number: null,
@@ -1272,8 +1524,10 @@ export const rrtk = [
       primary: "ketchup",
       secondary: [],
     },
-    description:
-      'One way American children learn to cope with food they are forced to eat against their will is to smother it with ketchup. We can see this depicted in the mouth with the flag over it (in this case, the Stars and Stripes), set alongside the element for spicy (all of which is not far removed from the original meaning it had as a character on its own: "false").',
+    description: {
+      has_image: false,
+      info: 'One way American children learn to cope with food they are forced to eat against their will is to smother it with ketchup. We can see this depicted in the mouth with the flag over it (in this case, the Stars and Stripes), set alongside the element for spicy (all of which is not far removed from the original meaning it had as a character on its own: "false").',
+    },
   },
   {
     heisig_number: null,
@@ -1282,8 +1536,10 @@ export const rrtk = [
       primary: "cornucopia",
       secondary: [],
     },
-    description:
-      "Considering the lack of circular lines, this kanji is not a bad pictograph of a cornucopia. Despite the appearance of the printed form, what looks like the first two strokes are actually written as one.",
+    description: {
+      has_image: false,
+      info: "Considering the lack of circular lines, this kanji is not a bad pictograph of a cornucopia. Despite the appearance of the printed form, what looks like the first two strokes are actually written as one.",
+    },
   },
   {
     heisig_number: null,
@@ -1292,8 +1548,10 @@ export const rrtk = [
       primary: "grass skirt",
       secondary: [],
     },
-    description:
-      "This unusual looking grass skirt is composed of a top hat and scarf, and eight celery sticks.",
+    description: {
+      has_image: false,
+      info: "This unusual looking grass skirt is composed of a top hat and scarf, and eight celery sticks.",
+    },
   },
   {
     heisig_number: null,
@@ -1302,8 +1560,10 @@ export const rrtk = [
       primary: "locket",
       secondary: [],
     },
-    description:
-      "The vertical stroke added here (the third stroke) turns the primitive element for a key into a locket. Below that, we find a square container (the mouth) and sunglasses with one of the lenses popped out. Note that in the primitive element for locket the final vertical stroke of sunglasses reaches all the way through to touch the mouth.",
+    description: {
+      has_image: false,
+      info: "The vertical stroke added here (the third stroke) turns the primitive element for a key into a locket. Below that, we find a square container (the mouth) and sunglasses with one of the lenses popped out. Note that in the primitive element for locket the final vertical stroke of sunglasses reaches all the way through to touch the mouth.",
+    },
   },
   {
     heisig_number: null,
@@ -1312,8 +1572,10 @@ export const rrtk = [
       primary: "potato",
       secondary: [],
     },
-    description:
-      "Note how this element differs from dry in virtue of the small hook at the end of the third stroke.",
+    description: {
+      has_image: false,
+      info: "Note how this element differs from dry in virtue of the small hook at the end of the third stroke.",
+    },
   },
   {
     heisig_number: null,
@@ -1322,8 +1584,10 @@ export const rrtk = [
       primary: "sickness",
       secondary: [],
     },
-    description:
-      "The enclosure shown in this frame is composed of a cave with ice outside of it. It is used for a number of kanji related to sickness. If you want to picture a caveman nursing a hangover with an ice-pack, that should provide enough help to remember the shape of this element and its meaning.",
+    description: {
+      has_image: false,
+      info: "The enclosure shown in this frame is composed of a cave with ice outside of it. It is used for a number of kanji related to sickness. If you want to picture a caveman nursing a hangover with an ice-pack, that should provide enough help to remember the shape of this element and its meaning.",
+    },
   },
   {
     heisig_number: null,
@@ -1332,8 +1596,10 @@ export const rrtk = [
       primary: "box",
       secondary: [],
     },
-    description:
-      "This enclosure, open at the right, represents a box lying on its side. When it is not used as an enclosure, its form is cramped to look like this: . You may distinguish its meaning by picturing it then as a very small box.",
+    description: {
+      has_image: true,
+      info: "This enclosure, open at the right, represents a box lying on its side. When it is not used as an enclosure, its form is cramped to look like this: paste-ce8b697523fc6f4f4663177c5f3c98c9b090c191.jpg. You may distinguish its meaning by picturing it then as a very small box.",
+    },
   },
   {
     heisig_number: null,
@@ -1342,8 +1608,10 @@ export const rrtk = [
       primary: "teepee",
       secondary: [],
     },
-    description:
-      "The dots at the top of this tent are the wooden poles protruding outside the canvas walls of a teepee.",
+    description: {
+      has_image: false,
+      info: "The dots at the top of this tent are the wooden poles protruding outside the canvas walls of a teepee.",
+    },
   },
   {
     heisig_number: null,
@@ -1352,8 +1620,10 @@ export const rrtk = [
       primary: "shape",
       secondary: [],
     },
-    description:
-      'The three simple strokes of this element actually represent the form or shape of the hair of one\'s beard. But we keep the simple sense of a shape, or its verb "to shape," in order to avoid confusion later when we meet an element for hair. When using this element, be sure to visualize yourself shaping the thing in question, or better still, twisting it out of shape.',
+    description: {
+      has_image: false,
+      info: 'The three simple strokes of this element actually represent the form or shape of the hair of one\'s beard. But we keep the simple sense of a shape, or its verb "to shape," in order to avoid confusion later when we meet an element for hair. When using this element, be sure to visualize yourself shaping the thing in question, or better still, twisting it out of shape.',
+    },
   },
   {
     heisig_number: null,
@@ -1362,7 +1632,7 @@ export const rrtk = [
       primary: "funnel",
       secondary: [],
     },
-    description: "Celery . . . again.",
+    description: { has_image: false, info: "Celery . . . again." },
   },
   {
     heisig_number: null,
@@ -1371,8 +1641,10 @@ export const rrtk = [
       primary: "dog tag",
       secondary: [],
     },
-    description:
-      "This primitive refers to all sorts of identification tags, but dog tag is chosen for its descriptiveness. On the top we see the arrowhead, joined to the screwdriver below by the lengthened vertical stroke.",
+    description: {
+      has_image: false,
+      info: "This primitive refers to all sorts of identification tags, but dog tag is chosen for its descriptiveness. On the top we see the arrowhead, joined to the screwdriver below by the lengthened vertical stroke.",
+    },
   },
   {
     heisig_number: null,
@@ -1381,8 +1653,10 @@ export const rrtk = [
       primary: "city walls",
       secondary: [],
     },
-    description:
-      "On the left, and rather more pressed in its form, this element meant the high spot of a village, or its pinnacle. On the right side, in the form shown here, it means the lowest part of the city, around which its walls rise up as a protection against invaders. Hence we nickname this element: city walls.",
+    description: {
+      has_image: false,
+      info: "On the left, and rather more pressed in its form, this element meant the high spot of a village, or its pinnacle. On the right side, in the form shown here, it means the lowest part of the city, around which its walls rise up as a protection against invaders. Hence we nickname this element: city walls.",
+    },
   },
   {
     heisig_number: null,
@@ -1391,8 +1665,10 @@ export const rrtk = [
       primary: "animal tracks",
       secondary: [],
     },
-    description:
-      "Having already met the primitive for human footprints, we now introduce the one for animal tracks. Its elements are simply: a drop of . . . rice.",
+    description: {
+      has_image: false,
+      info: "Having already met the primitive for human footprints, we now introduce the one for animal tracks. Its elements are simply: a drop of . . . rice.",
+    },
   },
   {
     heisig_number: null,
@@ -1401,8 +1677,10 @@ export const rrtk = [
       primary: "golden calf",
       secondary: [],
     },
-    description:
-      "The story is told of the people of the Exodus that, disstisfied with Moses' leadership, they colleted their gold ornaments and melted them down to fashion a golden calf for an idol. The animal horns and heavens here represent that god of theirs.",
+    description: {
+      has_image: false,
+      info: "The story is told of the people of the Exodus that, disstisfied with Moses' leadership, they colleted their gold ornaments and melted them down to fashion a golden calf for an idol. The animal horns and heavens here represent that god of theirs.",
+    },
   },
   {
     heisig_number: "1",
@@ -1411,8 +1689,10 @@ export const rrtk = [
       primary: "one",
       secondary: [],
     },
-    description:
-      "As a primitive element, the key-word meaning is discarded, since it is too abstract to be of much help. Instead, the single horizontal stroke takes on the meaning of floor or ceiling, depending on its position: if it stands above another primitive, it means ceiling; if below, floor.",
+    description: {
+      has_image: false,
+      info: "As a primitive element, the key-word meaning is discarded, since it is too abstract to be of much help. Instead, the single horizontal stroke takes on the meaning of floor or ceiling, depending on its position: if it stands above another primitive, it means ceiling; if below, floor.",
+    },
   },
   {
     heisig_number: "2",
@@ -1466,8 +1746,10 @@ export const rrtk = [
       primary: "seven",
       secondary: [],
     },
-    description:
-      'As a primitive, this form takes on the meaning of diced, i.e., "cut" into little pieces, consistent both with the way the character is written and with its association with the kanji for cut (切) to be learned in a later lesson',
+    description: {
+      has_image: false,
+      info: 'As a primitive, this form takes on the meaning of diced, i.e., "cut" into little pieces, consistent both with the way the character is written and with its association with the kanji for cut (切) to be learned in a later lesson',
+    },
   },
   {
     heisig_number: "8",
@@ -1485,8 +1767,10 @@ export const rrtk = [
       primary: "nine",
       secondary: [],
     },
-    description:
-      "As a primitive, we shall use this kanji to mean baseball team or simply baseball. The meaning, of course, is derived from the nine players who make up a team.",
+    description: {
+      has_image: false,
+      info: "As a primitive, we shall use this kanji to mean baseball team or simply baseball. The meaning, of course, is derived from the nine players who make up a team.",
+    },
   },
   {
     heisig_number: "10",
@@ -1495,8 +1779,10 @@ export const rrtk = [
       primary: "ten",
       secondary: [],
     },
-    description:
-      "As a primitive, this character sometimes keeps its meaning of ten and sometimes signifies needle, this latter derived from the kanji for needle (針).",
+    description: {
+      has_image: false,
+      info: "As a primitive, this character sometimes keeps its meaning of ten and sometimes signifies needle, this latter derived from the kanji for needle (針).",
+    },
   },
   {
     heisig_number: "11",
@@ -1505,8 +1791,10 @@ export const rrtk = [
       primary: "mouth",
       secondary: [],
     },
-    description:
-      "As a primitive, this form also means mouth. Any of the range of possible images that the word suggests—an opening or entrance to a cave, a river, a bottle, or even the largest hole in your head—can be used for the primitive meaning.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this form also means mouth. Any of the range of possible images that the word suggests—an opening or entrance to a cave, a river, a bottle, or even the largest hole in your head—can be used for the primitive meaning.",
+    },
   },
   {
     heisig_number: "12",
@@ -1515,8 +1803,10 @@ export const rrtk = [
       primary: "day",
       secondary: ["sun", "Japan"],
     },
-    description:
-      'Used as a primitive, this kanji can mean sun or day or a tongue wagging in the mouth. This latter meaning, incidentally, derives from an old character outside the standard list meaning something like "sayeth" and written almost exactly the same, except that the stroke in the middle does not touch the right side (曰).',
+    description: {
+      has_image: false,
+      info: 'Used as a primitive, this kanji can mean sun or day or a tongue wagging in the mouth. This latter meaning, incidentally, derives from an old character outside the standard list meaning something like "sayeth" and written almost exactly the same, except that the stroke in the middle does not touch the right side (曰).',
+    },
   },
   {
     heisig_number: "13",
@@ -1525,8 +1815,10 @@ export const rrtk = [
       primary: "month",
       secondary: ["moon"],
     },
-    description:
-      "As a primitive element, this character can take on the sense of moon, flesh, or part of the body. The reasons for the latter two meanings will be explained further on.",
+    description: {
+      has_image: false,
+      info: "As a primitive element, this character can take on the sense of moon, flesh, or part of the body. The reasons for the latter two meanings will be explained further on.",
+    },
   },
   {
     heisig_number: "14",
@@ -1535,8 +1827,10 @@ export const rrtk = [
       primary: "rice field",
       secondary: ["rice paddy"],
     },
-    description:
-      "When used as a primitive element, the meaning of rice field is most common, but now and again it will take the meaning of brains from the fact that it looks a bit like that tangle of gray matter nestled under our skulls.",
+    description: {
+      has_image: false,
+      info: "When used as a primitive element, the meaning of rice field is most common, but now and again it will take the meaning of brains from the fact that it looks a bit like that tangle of gray matter nestled under our skulls.",
+    },
   },
   {
     heisig_number: "15",
@@ -1545,8 +1839,10 @@ export const rrtk = [
       primary: "eye",
       secondary: ["class", "look", "insight", "experience", "care", "favor"],
     },
-    description:
-      "As a primitive, the kanji keeps its sense of eye, or to be more specific, an eyeball. When placed in the surroundings of a complex kanji, the primitive will sometimes be turned on its side like this: 罒.",
+    description: {
+      has_image: false,
+      info: "As a primitive, the kanji keeps its sense of eye, or to be more specific, an eyeball. When placed in the surroundings of a complex kanji, the primitive will sometimes be turned on its side like this: 罒.",
+    },
   },
   {
     heisig_number: "16",
@@ -1555,8 +1851,10 @@ export const rrtk = [
       primary: "old",
       secondary: [],
     },
-    description:
-      "Used as a primitive element, this kanji keeps its key-word sense of old, but care should be taken to make that abstract notion as graphic as possible.",
+    description: {
+      has_image: false,
+      info: "Used as a primitive element, this kanji keeps its key-word sense of old, but care should be taken to make that abstract notion as graphic as possible.",
+    },
   },
   {
     heisig_number: "17",
@@ -1606,8 +1904,10 @@ export const rrtk = [
       primary: "early",
       secondary: ["fast"],
     },
-    description:
-      "As a primitive element, this kanji takes the meaning of sun-flower, which was used to make the abstract key word early more graphic.",
+    description: {
+      has_image: false,
+      info: "As a primitive element, this kanji takes the meaning of sun-flower, which was used to make the abstract key word early more graphic.",
+    },
   },
   {
     heisig_number: "28",
@@ -1652,8 +1952,10 @@ export const rrtk = [
       primary: "white",
       secondary: [],
     },
-    description:
-      "As a primitive, this character can either retain its meaning of white or take the more graphic meaning of a white bird or dove. This latter stems from the fact that it appears at the top of the kanji for bird, which we shall get to later.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this character can either retain its meaning of white or take the more graphic meaning of a white bird or dove. This latter stems from the fact that it appears at the top of the kanji for bird, which we shall get to later.",
+    },
   },
   {
     heisig_number: "38",
@@ -1717,8 +2019,10 @@ export const rrtk = [
         "explain away",
       ],
     },
-    description:
-      "As a primitive, this element takes the meaning of a fat man. Think of a grotesquely fat man whose paunch so covers the plate that he is always getting hit by the pitch. Hence a round baseball player becomes a fat man.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this element takes the meaning of a fat man. Think of a grotesquely fat man whose paunch so covers the plate that he is always getting hit by the pitch. Hence a round baseball player becomes a fat man.",
+    },
   },
   {
     heisig_number: "45",
@@ -1727,8 +2031,10 @@ export const rrtk = [
       primary: "measurement",
       secondary: ["foot/10"],
     },
-    description:
-      "As a primitive, we shall use this to mean glue or glued to. There is no need to devise a story to remember this, since the primitive will appear so often you would have to struggle hard not to remember it.",
+    description: {
+      has_image: false,
+      info: "As a primitive, we shall use this to mean glue or glued to. There is no need to devise a story to remember this, since the primitive will appear so often you would have to struggle hard not to remember it.",
+    },
   },
   {
     heisig_number: "47",
@@ -1753,8 +2059,10 @@ export const rrtk = [
         "fair",
       ],
     },
-    description:
-      "The primitive form of this kanji eliminates the needle on the left and gets the meaning of an acupuncturist.",
+    description: {
+      has_image: false,
+      info: "The primitive form of this kanji eliminates the needle on the left and gets the meaning of an acupuncturist.",
+    },
   },
   {
     heisig_number: "49",
@@ -1808,8 +2116,10 @@ export const rrtk = [
       primary: "shellfish",
       secondary: [],
     },
-    description:
-      "When used as a primitive, in addition to shells, the meanings oyster and clam will often come in handy.",
+    description: {
+      has_image: false,
+      info: "When used as a primitive, in addition to shells, the meanings oyster and clam will often come in handy.",
+    },
   },
   {
     heisig_number: "59",
@@ -1854,8 +2164,10 @@ export const rrtk = [
       primary: "page",
       secondary: ["leaf"],
     },
-    description:
-      "As a primitive, this kanji takes the unrelated meaning of a head (preferably one detached from its body), derived from the character for head (頭).",
+    description: {
+      has_image: false,
+      info: "As a primitive, this kanji takes the unrelated meaning of a head (preferably one detached from its body), derived from the character for head (頭).",
+    },
   },
   {
     heisig_number: "65",
@@ -1949,8 +2261,10 @@ export const rrtk = [
       primary: "fish guts",
       secondary: ["the latter", "duplicate", "strange", "witty"],
     },
-    description:
-      "We will take fishhook and hook as primitive meanings. The shape will rarely be quite the same as that of the kanji. When it appears at the bottom of another primitive, it is straightened out, almost as if the weight of the upper element had bent it out of shape: . And when it appears to the right of another element, the short horizontal line that gets the shape started is omitted and it is stretched out and narrowed, all for reasons of space and aesthetics: 乚.",
+    description: {
+      has_image: true,
+      info: "We will take fishhook and hook as primitive meanings. The shape will rarely be quite the same as that of the kanji. When it appears at the bottom of another primitive, it is straightened out, almost as if the weight of the upper element had bent it out of shape: paste-c913d1ea6f92440a0ca636f9afe21618ddc797e6.jpg . And when it appears to the right of another element, the short horizontal line that gets the shape started is omitted and it is stretched out and narrowed, all for reasons of space and aesthetics: 乚.",
+    },
   },
   {
     heisig_number: "76",
@@ -2003,8 +2317,10 @@ export const rrtk = [
       primary: "craft",
       secondary: ["construction"],
     },
-    description:
-      "As a primitive element, the key word retains the meaning of craft and also takes on the related meanings of I beam and artificial.",
+    description: {
+      has_image: false,
+      info: "As a primitive element, the key word retains the meaning of craft and also takes on the related meanings of I beam and artificial.",
+    },
   },
   {
     heisig_number: "81",
@@ -2040,8 +2356,10 @@ export const rrtk = [
       primary: "sword",
       secondary: ["saber", "knife"],
     },
-    description:
-      "In the form of the kanji, this primitive means a dagger. When it appears to the right of another element, it is commonly stretched out like this 刂 and takes the sense of a great and flashing saber, a meaning it gets from a character that will show up later (剣).",
+    description: {
+      has_image: false,
+      info: "In the form of the kanji, this primitive means a dagger. When it appears to the right of another element, it is commonly stretched out like this 刂 and takes the sense of a great and flashing saber, a meaning it gets from a character that will show up later (剣).",
+    },
   },
   {
     heisig_number: "88",
@@ -2078,8 +2396,10 @@ export const rrtk = [
         "catch (cold)",
       ],
     },
-    description:
-      "The primitive meaning remains the same: seduce. Just be sure to associate it with a very concrete image.",
+    description: {
+      has_image: false,
+      info: "The primitive meaning remains the same: seduce. Just be sure to associate it with a very concrete image.",
+    },
   },
   {
     heisig_number: "91",
@@ -2130,8 +2450,10 @@ export const rrtk = [
         "4th calendar sign",
       ],
     },
-    description:
-      "Used as a primitive, we change the meaning of the key word and take the shape to signify a nail or a spike. Should it happen, on reviewing, that you find the pictographs get jumbled, then think of jerking a street sign out of the ground and using it as a nail to repair your garage roof.",
+    description: {
+      has_image: false,
+      info: "Used as a primitive, we change the meaning of the key word and take the shape to signify a nail or a spike. Should it happen, on reviewing, that you find the pictographs get jumbled, then think of jerking a street sign out of the ground and using it as a nail to repair your garage roof.",
+    },
   },
   {
     heisig_number: "96",
@@ -2167,8 +2489,10 @@ export const rrtk = [
       primary: "child",
       secondary: [],
     },
-    description:
-      "As a primitive, the meaning of child is retained, though you might imagine a little older child, able to run around and get into more mischief.",
+    description: {
+      has_image: false,
+      info: "As a primitive, the meaning of child is retained, though you might imagine a little older child, able to run around and get into more mischief.",
+    },
   },
   {
     heisig_number: "101",
@@ -2186,7 +2510,10 @@ export const rrtk = [
       primary: "woman",
       secondary: ["female"],
     },
-    description: "The primitive meaning is the same: woman.",
+    description: {
+      has_image: false,
+      info: "The primitive meaning is the same: woman.",
+    },
   },
   {
     heisig_number: "103",
@@ -2204,8 +2531,10 @@ export const rrtk = [
       primary: "mama",
       secondary: ["mother"],
     },
-    description:
-      "As a primitive we shall add the meaning of breasts in accord with the explanation given above. Take careful note of the fact that the form is altered slightly when this kanji serves as a primitive, the final two dots joining together to form a longer stroke (for example in '貫').",
+    description: {
+      has_image: false,
+      info: "As a primitive we shall add the meaning of breasts in accord with the explanation given above. Take careful note of the fact that the form is altered slightly when this kanji serves as a primitive, the final two dots joining together to form a longer stroke (for example in '貫').",
+    },
   },
   {
     heisig_number: "107",
@@ -2214,8 +2543,10 @@ export const rrtk = [
       primary: "elder brother",
       secondary: ["big brother"],
     },
-    description:
-      "As a primitive this character will take the meaning of teenager, in accord with the familiar image of the big mouth and the gangling, clumsy legs.",
+    description: {
+      has_image: false,
+      info: "As a primitive this character will take the meaning of teenager, in accord with the familiar image of the big mouth and the gangling, clumsy legs.",
+    },
   },
   {
     heisig_number: "110",
@@ -2224,8 +2555,10 @@ export const rrtk = [
       primary: "little",
       secondary: ["small"],
     },
-    description:
-      "The primitive of the same shape keeps the same meaning. Written above a horizontal line, its form is slightly altered, the last two strokes turning inwards like this: .",
+    description: {
+      has_image: true,
+      info: "The primitive of the same shape keeps the same meaning. Written above a horizontal line, its form is slightly altered, the last two strokes turning inwards like this: paste-781408d20567d3083d8d5963f36db08954697d75.jpg .",
+    },
   },
   {
     heisig_number: "111",
@@ -2243,8 +2576,10 @@ export const rrtk = [
       primary: "large",
       secondary: ["big"],
     },
-    description:
-      "As a primitive, we need a different meaning, since the element representing the human person will come up later. Therefore, this shape will become a large dog or, if you prefer, a St. Bernard dog.",
+    description: {
+      has_image: false,
+      info: "As a primitive, we need a different meaning, since the element representing the human person will come up later. Therefore, this shape will become a large dog or, if you prefer, a St. Bernard dog.",
+    },
   },
   {
     heisig_number: "113",
@@ -2262,8 +2597,10 @@ export const rrtk = [
       primary: "evening",
       secondary: [],
     },
-    description:
-      "The primitive keeps the same meaning and connotation as the kanji.",
+    description: {
+      has_image: false,
+      info: "The primitive keeps the same meaning and connotation as the kanji.",
+    },
   },
   {
     heisig_number: "116",
@@ -2290,8 +2627,10 @@ export const rrtk = [
       primary: "stone",
       secondary: [],
     },
-    description:
-      "The stone is a quite common primitive element, which is not restricted to great boulders but used of stones or rocks of any size or shape.",
+    description: {
+      has_image: false,
+      info: "The stone is a quite common primitive element, which is not restricted to great boulders but used of stones or rocks of any size or shape.",
+    },
   },
   {
     heisig_number: "119",
@@ -2300,8 +2639,10 @@ export const rrtk = [
       primary: "resemblance",
       secondary: [],
     },
-    description:
-      "When used as a primitive, the sense of resemblance is replaced by that of spark or candle. (If you want an explanation: the kanji for moon also carries a secondary sense of fire, which we omitted because we are keeping that meaning for other primitives.)",
+    description: {
+      has_image: false,
+      info: "When used as a primitive, the sense of resemblance is replaced by that of spark or candle. (If you want an explanation: the kanji for moon also carries a secondary sense of fire, which we omitted because we are keeping that meaning for other primitives.)",
+    },
   },
   {
     heisig_number: "121",
@@ -2310,8 +2651,10 @@ export const rrtk = [
       primary: "smash",
       secondary: ["break", "crush", "familiar", "popular"],
     },
-    description:
-      "We begin with the two elements on the right, baseball and needle. Since they will be coming together from time to time, let us give the two of them the sense of a game of cricket in which a needle is laid across the wicket. Then imagine using a rock for a ball. A smash hit would probably splinter the bat in all directions, and a smashing pitch would do the same with the needle wicket.",
+    description: {
+      has_image: false,
+      info: "We begin with the two elements on the right, baseball and needle. Since they will be coming together from time to time, let us give the two of them the sense of a game of cricket in which a needle is laid across the wicket. Then imagine using a rock for a ball. A smash hit would probably splinter the bat in all directions, and a smashing pitch would do the same with the needle wicket.",
+    },
   },
   {
     heisig_number: "122",
@@ -2400,8 +2743,10 @@ export const rrtk = [
       primary: "stream",
       secondary: ["river"],
     },
-    description:
-      "As a primitive, this character adds to the meaning of stream the more vivid image of a flood. Note, however, that there are certain small changes in the writing of the element, depending on where it appears relative to other elements: On the left, it is written 川. On the top, it is written 巛. On the bottom, it is written {x}",
+    description: {
+      has_image: true,
+      info: "As a primitive, this character adds to the meaning of stream the more vivid image of a flood. Note, however, that there are certain small changes in the writing of the element, depending on where it appears relative to other elements: On the left, it is written 川. On the top, it is written 巛. On the bottom, it is written paste-df7d948a774a4877311a756fc8f3b65befbb0a36.jpg",
+    },
   },
   {
     heisig_number: "135",
@@ -2428,8 +2773,10 @@ export const rrtk = [
       primary: "water",
       secondary: [],
     },
-    description:
-      "As a primitive, this character can keep its form, or it can be written with three drops to the left of another primitive, like this: 氵. This latter, as we will see, is far more common.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this character can keep its form, or it can be written with three drops to the left of another primitive, like this: 氵. This latter, as we will see, is far more common.",
+    },
   },
   {
     heisig_number: "139",
@@ -2447,8 +2794,10 @@ export const rrtk = [
       primary: "spring",
       secondary: ["fountain"],
     },
-    description:
-      "We will keep this image of a spring when using this kanji as a primitive, but not without first drawing attention to a slight change that distinguishes the primitive from the kanji. The final 4 strokes (the element for water) are abbreviated to the three small drops that we learned earlier as the kanji for little, giving us: .",
+    description: {
+      has_image: true,
+      info: "We will keep this image of a spring when using this kanji as a primitive, but not without first drawing attention to a slight change that distinguishes the primitive from the kanji. The final 4 strokes (the element for water) are abbreviated to the three small drops that we learned earlier as the kanji for little, giving us: paste-54a2b1f7d5aa2f1cfbe24dc0f6ee7caffae8ed34.jpg.",
+    },
   },
   {
     heisig_number: "142",
@@ -2519,8 +2868,10 @@ export const rrtk = [
       primary: "soil",
       secondary: ["earth", "ground", "Turkey"],
     },
-    description:
-      "As a primitive, the sense of soil is extended to that of ground because of its connection with the kanji for the same (地). From there it also takes the added meanings of dirt and land.",
+    description: {
+      has_image: false,
+      info: "As a primitive, the sense of soil is extended to that of ground because of its connection with the kanji for the same (地). From there it also takes the added meanings of dirt and land.",
+    },
   },
   {
     heisig_number: "167",
@@ -2529,8 +2880,10 @@ export const rrtk = [
       primary: "squared jewel",
       secondary: ["square jewel", "corner", "angle", "edge"],
     },
-    description:
-      'As a primitive, we shall use this character to mean ivy, that creepy vegetation that covers the surface of the ground to form a sort of "second" ground that can get somewhat tricky to walk on without tripping.',
+    description: {
+      has_image: false,
+      info: 'As a primitive, we shall use this character to mean ivy, that creepy vegetation that covers the surface of the ground to form a sort of "second" ground that can get somewhat tricky to walk on without tripping.',
+    },
   },
   {
     heisig_number: "170",
@@ -2557,8 +2910,10 @@ export const rrtk = [
       primary: "fire",
       secondary: [],
     },
-    description:
-      "To avoid confusion later on, it is best to keep to the meaning of a fireplace (or hearth) or a raging conflagration like a forest fire for this kanji's primitive meaning. Another primitive element for fire, based on this one, is written 灬 and will mean flames, cauldron, cooking fire, or an oven fire.",
+    description: {
+      has_image: false,
+      info: "To avoid confusion later on, it is best to keep to the meaning of a fireplace (or hearth) or a raging conflagration like a forest fire for this kanji's primitive meaning. Another primitive element for fire, based on this one, is written 灬 and will mean flames, cauldron, cooking fire, or an oven fire.",
+    },
   },
   {
     heisig_number: "174",
@@ -2603,8 +2958,10 @@ export const rrtk = [
       primary: "ri",
       secondary: ["village", "parent's home", "league"],
     },
-    description:
-      "To get a more concrete primitive meaning for this kanji, we shall refer to it as a computer, a meaning deriving from the kanji for logic (理).",
+    description: {
+      has_image: false,
+      info: "To get a more concrete primitive meaning for this kanji, we shall refer to it as a computer, a meaning deriving from the kanji for logic (理).",
+    },
   },
   {
     heisig_number: "186",
@@ -2640,8 +2997,10 @@ export const rrtk = [
       primary: "same",
       secondary: ["agree", "equal"],
     },
-    description:
-      "As a primitive, this kanji will mean monks dressed in a common habit.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this kanji will mean monks dressed in a common habit.",
+    },
   },
   {
     heisig_number: "195",
@@ -2727,8 +3086,10 @@ export const rrtk = [
       primary: "tree",
       secondary: ["wood"],
     },
-    description:
-      "As a primitive, this kanji can mean tree or wood. When the last two strokes are detached from the trunk (), we shall change its meaning to pole, or wooden pole.",
+    description: {
+      has_image: true,
+      info: "As a primitive, this kanji can mean tree or wood. When the last two strokes are detached from the trunk (paste-8eb97a24abd0cd110e6295edcf3b4e9b55aee356.jpg), we shall change its meaning to pole, or wooden pole.",
+    },
   },
   {
     heisig_number: "208",
@@ -2943,8 +3304,10 @@ export const rrtk = [
       primary: "portent",
       secondary: ["10**12", "trillion", "sign", "omen", "symptoms"],
     },
-    description:
-      "When this character is used as a primitive in its full form, we keep the key-word sense of a portent. When it appears to the left in its abbreviated form (namely, the left half only, ), we shall give it the pictographic sense of a turtle.",
+    description: {
+      has_image: true,
+      info: "When this character is used as a primitive in its full form, we keep the key-word sense of a portent. When it appears to the left in its abbreviated form (namely, the left half only, paste-37985c7785a2d9ce0be9f5d658d24bc4cb3cb00c.jpg ), we shall give it the pictographic sense of a turtle.",
+    },
   },
   {
     heisig_number: "252",
@@ -2962,8 +3325,10 @@ export const rrtk = [
       primary: "dog",
       secondary: [],
     },
-    description:
-      "As a primitive this character can take two meanings. In the form given here it will mean a very small dog (which we shall refer to as a chihuahua for convenience sake). When it takes the form 犭 to the left of a character, we shall give it the meaning of a pack of wild dogs.",
+    description: {
+      has_image: false,
+      info: "As a primitive this character can take two meanings. In the form given here it will mean a very small dog (which we shall refer to as a chihuahua for convenience sake). When it takes the form 犭 to the left of a character, we shall give it the meaning of a pack of wild dogs.",
+    },
   },
   {
     heisig_number: "254",
@@ -2999,8 +3364,10 @@ export const rrtk = [
       primary: "cow",
       secondary: [],
     },
-    description:
-      "As a primitive, the same sense of cow is kept. Note only that when it is placed over another element, its tail is cut off, giving us . In this case, and when the element appears on the left, the stroke order is changed.",
+    description: {
+      has_image: true,
+      info: "As a primitive, the same sense of cow is kept. Note only that when it is placed over another element, its tail is cut off, giving us paste-c01229b23372e4233d48bddbf52f9e918dfb3009.jpg . In this case, and when the element appears on the left, the stroke order is changed.",
+    },
   },
   {
     heisig_number: "261",
@@ -3081,8 +3448,10 @@ export const rrtk = [
       primary: "king",
       secondary: ["rule", "magnate"],
     },
-    description:
-      "As a primitive, this can mean either king or scepter, but it will usually be taken to mean ball, as an abbreviation of jewel (玉).",
+    description: {
+      has_image: false,
+      info: "As a primitive, this can mean either king or scepter, but it will usually be taken to mean ball, as an abbreviation of jewel (玉).",
+    },
   },
   {
     heisig_number: "272",
@@ -3091,8 +3460,10 @@ export const rrtk = [
       primary: "jewel",
       secondary: ["ball"],
     },
-    description:
-      "As a primitive, we can use this to mean either jewel or ball. When it appears anywhere other than on the left side of a kanji, it generally takes the same shape as here. On the left, it will be lacking the final stroke, making it the same as king (王): .",
+    description: {
+      has_image: true,
+      info: "As a primitive, we can use this to mean either jewel or ball. When it appears anywhere other than on the left side of a kanji, it generally takes the same shape as here. On the left, it will be lacking the final stroke, making it the same as king (王): paste-e58029e7154f69fbbdb7958df25f8e1d7170a8a4.jpg .",
+    },
   },
   {
     heisig_number: "275",
@@ -3146,8 +3517,10 @@ export const rrtk = [
       primary: "lord",
       secondary: ["chief", "master", "main thing", "principal"],
     },
-    description:
-      "As a primitive element, we set the key word aside entirely and take it as a pictograph of a solid brass candlestick (with the drop representing the flame at the top).",
+    description: {
+      has_image: false,
+      info: "As a primitive element, we set the key word aside entirely and take it as a pictograph of a solid brass candlestick (with the drop representing the flame at the top).",
+    },
   },
   {
     heisig_number: "285",
@@ -3173,7 +3546,10 @@ export const rrtk = [
       primary: "gold",
       secondary: [],
     },
-    description: "As a primitive, it means not only gold but any metal at all.",
+    description: {
+      has_image: false,
+      info: "As a primitive, it means not only gold but any metal at all.",
+    },
   },
   {
     heisig_number: "295",
@@ -3234,8 +3610,10 @@ export const rrtk = [
       primary: "car",
       secondary: [],
     },
-    description:
-      "Car, cart, wagon, and vehicle may all be used as primitive meanings.",
+    description: {
+      has_image: false,
+      info: "Car, cart, wagon, and vehicle may all be used as primitive meanings.",
+    },
   },
   {
     heisig_number: "305",
@@ -3262,8 +3640,10 @@ export const rrtk = [
       primary: "each",
       secondary: ["every", "either"],
     },
-    description:
-      'The sense of the proverb should help when using this kanji as a primitive; otherwise, reduce it to its original elements. But do not associate it in any way with the word "every," which we shall meet later in another context.',
+    description: {
+      has_image: false,
+      info: 'The sense of the proverb should help when using this kanji as a primitive; otherwise, reduce it to its original elements. But do not associate it in any way with the word "every," which we shall meet later in another context.',
+    },
   },
   {
     heisig_number: "312",
@@ -3358,7 +3738,10 @@ export const rrtk = [
       primary: "army",
       secondary: ["force", "troops", "war", "battle"],
     },
-    description: "Used as a primitive this kanji means only chariot.",
+    description: {
+      has_image: false,
+      info: "Used as a primitive this kanji means only chariot.",
+    },
   },
   {
     heisig_number: "325",
@@ -3393,8 +3776,10 @@ export const rrtk = [
       primary: "tall",
       secondary: ["high", "expensive"],
     },
-    description:
-      "As a primitive, this character keeps its sense of tall and its position at the top of other primitives, but its writing is abbreviated to the first 5 strokes: .",
+    description: {
+      has_image: true,
+      info: "As a primitive, this character keeps its sense of tall and its position at the top of other primitives, but its writing is abbreviated to the first 5 strokes: paste-81f2a5f45621791e8b7639472bda730478f203bc.jpg.",
+    },
   },
   {
     heisig_number: "334",
@@ -3430,8 +3815,10 @@ export const rrtk = [
       primary: "circumference",
       secondary: ["circuit", "lap"],
     },
-    description:
-      "As a primitive, this character can take the added significance of a lap.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this character can take the added significance of a lap.",
+    },
   },
   {
     heisig_number: "340",
@@ -3449,8 +3836,10 @@ export const rrtk = [
       primary: "gentleman",
       secondary: ["samurai"],
     },
-    description:
-      "The primitive meaning reverts to the more colorful image of the samurai, Japan's warrior class.",
+    description: {
+      has_image: false,
+      info: "The primitive meaning reverts to the more colorful image of the samurai, Japan's warrior class.",
+    },
   },
   {
     heisig_number: "342",
@@ -3459,8 +3848,10 @@ export const rrtk = [
       primary: "good luck",
       secondary: ["joy", "congratulations"],
     },
-    description:
-      "As a primitive, we shall take this shape to mean an aerosol can, from the mouth and the very tightly-fitting lid (note how it differs here from the lidded crock).",
+    description: {
+      has_image: false,
+      info: "As a primitive, we shall take this shape to mean an aerosol can, from the mouth and the very tightly-fitting lid (note how it differs here from the lidded crock).",
+    },
   },
   {
     heisig_number: "343",
@@ -3577,8 +3968,10 @@ export const rrtk = [
       primary: "say",
       secondary: [],
     },
-    description:
-      "This kanji, which appears often as a primitive, can mean saying, speech, or words, depending on which is most useful.",
+    description: {
+      has_image: false,
+      info: "This kanji, which appears often as a primitive, can mean saying, speech, or words, depending on which is most useful.",
+    },
   },
   {
     heisig_number: "358",
@@ -3757,8 +4150,10 @@ export const rrtk = [
       primary: "stop",
       secondary: ["halt"],
     },
-    description:
-      "Although the meaning of stop will be retained, we will return often to the pictographic meaning of footprint.",
+    description: {
+      has_image: false,
+      info: "Although the meaning of stop will be retained, we will return often to the pictographic meaning of footprint.",
+    },
   },
   {
     heisig_number: "397",
@@ -3884,8 +4279,10 @@ export const rrtk = [
       primary: "garment",
       secondary: ["clothes", "dressing"],
     },
-    description:
-      "Used as a primitive, the additional meanings of cloak or scarf will come in handy. What has to be noted particularly are the changes in shape the kanji can undergo when it becomes an element in other kanji. In fact, it is the most volatile of all the kanji we shall treat, and for that reason deserves special attention here. When it appears to the left, it looks like this: 衤, and we shall take it to mean cloak. At the bottom, when attached to the stroke immediately above it, the first two strokes (the top hat) are omitted, giving us: , which we shall take to mean a scarf. On rare occasions, the element can be torn right across the middle, with the first 2 strokes appearing at the top and the last 4 at the bottom of another primitive or cluster of primitives: , in which cases we shall speak of a top hat and scarf. And finally, of course, it can keep its original kanji shape, along with its original meaning of garment in general. Note that when any of the above forms have something beneath them (as in '遠'), the third from final stroke is \"unhooked,\" like this: .",
+    description: {
+      has_image: true,
+      info: "Used as a primitive, the additional meanings of cloak or scarf will come in handy. What has to be noted particularly are the changes in shape the kanji can undergo when it becomes an element in other kanji. In fact, it is the most volatile of all the kanji we shall treat, and for that reason deserves special attention here. When it appears to the left, it looks like this: 衤, and we shall take it to mean cloak. At the bottom, when attached to the stroke immediately above it, the first two strokes (the top hat) are omitted, giving us: paste-f4dfc590b8816326a3a51046b162f5be976747e3.jpg , which we shall take to mean a scarf. On rare occasions, the element can be torn right across the middle, with the first 2 strokes appearing at the top and the last 4 at the bottom of another primitive or cluster of primitives: paste-7c7eb2645ec77bef988ced93237ec896249d1c04.jpg , in which cases we shall speak of a top hat and scarf. And finally, of course, it can keep its original kanji shape, along with its original meaning of garment in general. Note that when any of the above forms have something beneath them (as in '遠'), the third from final stroke is \"unhooked,\" like this: paste-45403057587f1316a4be8cfa5801cf06cc8b98ba.jpg.",
+    },
   },
   {
     heisig_number: "425",
@@ -4039,8 +4436,10 @@ export const rrtk = [
       primary: "rain",
       secondary: [],
     },
-    description:
-      "As a primitive it can mean either rain or weather in general. Because it takes so much space, it usually has to be contracted into a crown by shortening the second and third strokes into a crown like this: .",
+    description: {
+      has_image: true,
+      info: "As a primitive it can mean either rain or weather in general. Because it takes so much space, it usually has to be contracted into a crown by shortening the second and third strokes into a crown like this: paste-221f6500c19077e751cd67ccd7adde3b72f7f1f3.jpg.",
+    },
   },
   {
     heisig_number: "452",
@@ -4067,8 +4466,10 @@ export const rrtk = [
       primary: "heavens",
       secondary: ["sky", "imperial"],
     },
-    description:
-      "The primitive can mean either the heaven of eternal bliss or the general term for sky, the heavens. Pay special attention to the fact that in its primitive form the first stroke is written right to left, rather like the first stroke of thousand (千), rather than left to right, giving us: 夭. It can also take on the primitive meaning of a witch.",
+    description: {
+      has_image: false,
+      info: "The primitive can mean either the heaven of eternal bliss or the general term for sky, the heavens. Pay special attention to the fact that in its primitive form the first stroke is written right to left, rather like the first stroke of thousand (千), rather than left to right, giving us: 夭. It can also take on the primitive meaning of a witch.",
+    },
   },
   {
     heisig_number: "460",
@@ -4086,8 +4487,10 @@ export const rrtk = [
       primary: "stand up",
       secondary: [],
     },
-    description:
-      "Used as a primitive, it can also mean vase. Using its kanji meaning, think of something standing up that is normally lying down, or something standing up in an unusual way.",
+    description: {
+      has_image: false,
+      info: "Used as a primitive, it can also mean vase. Using its kanji meaning, think of something standing up that is normally lying down, or something standing up in an unusual way.",
+    },
   },
   {
     heisig_number: "463",
@@ -4141,8 +4544,10 @@ export const rrtk = [
       primary: "spoon",
       secondary: [],
     },
-    description:
-      "As a primitive, this kanji can take on the additional meaning of someone sitting on the ground, of which it can also be considered a pictograph. In general, the second stroke does not cut through the first—or if it does in some fonts, only slightly.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this kanji can take on the additional meaning of someone sitting on the ground, of which it can also be considered a pictograph. In general, the second stroke does not cut through the first—or if it does in some fonts, only slightly.",
+    },
   },
   {
     heisig_number: "479",
@@ -4256,8 +4661,10 @@ export const rrtk = [
       primary: "lack",
       secondary: ["gap", "fail", "yawn"],
     },
-    description:
-      "When used as a primitive element, this kanji can mean either yawn or lack.",
+    description: {
+      has_image: false,
+      info: "When used as a primitive element, this kanji can mean either yawn or lack.",
+    },
   },
   {
     heisig_number: "506",
@@ -4284,8 +4691,10 @@ export const rrtk = [
       primary: "next",
       secondary: ["order", "sequence"],
     },
-    description:
-      "As a primitive, this character can either retain its key word meaning of next or the related meaning of second.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this character can either retain its key word meaning of next or the related meaning of second.",
+    },
   },
   {
     heisig_number: "512",
@@ -4319,7 +4728,10 @@ export const rrtk = [
       primary: "sound",
       secondary: ["noise"],
     },
-    description: "The primitive from this kanji also means simply a sound.",
+    description: {
+      has_image: false,
+      info: "The primitive from this kanji also means simply a sound.",
+    },
   },
   {
     heisig_number: "519",
@@ -4364,8 +4776,10 @@ export const rrtk = [
       primary: "deceased",
       secondary: ["the late", "dying", "perish"],
     },
-    description:
-      "In addition to deceased, the primitive meaning of to perish will also be used for this character.",
+    description: {
+      has_image: false,
+      info: "In addition to deceased, the primitive meaning of to perish will also be used for this character.",
+    },
   },
   {
     heisig_number: "527",
@@ -4392,8 +4806,10 @@ export const rrtk = [
       primary: "direction",
       secondary: ["person", "alternative"],
     },
-    description:
-      "As a primitive, this character will take the sense of a compass, the instrument used to determine direction.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this character will take the sense of a compass, the instrument used to determine direction.",
+    },
   },
   {
     heisig_number: "531",
@@ -4462,8 +4878,10 @@ export const rrtk = [
       primary: "formerly",
       secondary: ["once", "before", "formerly", "ever", "never", "ex-"],
     },
-    description:
-      "The primitive meaning, increase, comes from the next frame. Always think of something multiplying wildly as you watch.",
+    description: {
+      has_image: false,
+      info: "The primitive meaning, increase, comes from the next frame. Always think of something multiplying wildly as you watch.",
+    },
   },
   {
     heisig_number: "541",
@@ -4481,8 +4899,10 @@ export const rrtk = [
       primary: "east",
       secondary: [],
     },
-    description:
-      "Both the direction east and the part of the world called 'the East' are primitive meanings of this character.",
+    description: {
+      has_image: false,
+      info: "Both the direction east and the part of the world called 'the East' are primitive meanings of this character.",
+    },
   },
   {
     heisig_number: "547",
@@ -4545,8 +4965,10 @@ export const rrtk = [
       primary: "insect",
       secondary: ["bug", "temper"],
     },
-    description:
-      "As a primitive, this insect will refer to the whole insect kingdom;, it can be specified for each kanji that contains it.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this insect will refer to the whole insect kingdom;, it can be specified for each kanji that contains it.",
+    },
   },
   {
     heisig_number: "561",
@@ -4573,8 +4995,10 @@ export const rrtk = [
       primary: "self",
       secondary: ["snake", "serpent"],
     },
-    description:
-      "As a primitive element, this kanji can be used for the snake—of which it is a pictograph—or any of the various concrete symbolic meanings the snake has in myth and fable.",
+    description: {
+      has_image: false,
+      info: "As a primitive element, this kanji can be used for the snake—of which it is a pictograph—or any of the various concrete symbolic meanings the snake has in myth and fable.",
+    },
   },
   {
     heisig_number: "565",
@@ -4618,8 +5042,10 @@ export const rrtk = [
       primary: "wrap",
       secondary: ["pack up", "cover", "conceal"],
     },
-    description:
-      "The primitive meaning of wrap should always be used with the snake in mind to avoid confusion with similar terms. Just let 'wrap' mean 'with a snake coiled about it.'",
+    description: {
+      has_image: false,
+      info: "The primitive meaning of wrap should always be used with the snake in mind to avoid confusion with similar terms. Just let 'wrap' mean 'with a snake coiled about it.'",
+    },
   },
   {
     heisig_number: "573",
@@ -4628,8 +5054,10 @@ export const rrtk = [
       primary: "tortoise",
       secondary: ["turtle"],
     },
-    description:
-      "When this kanji is abbreviated to its bottom half (), it takes the primitive meaning of an eel. When only the first two strokes are omitted (), it will mean a bucket of eels.",
+    description: {
+      has_image: true,
+      info: "When this kanji is abbreviated to its bottom half (paste-747a78d4602049cea98435a6e9753c1ee5cc2014.jpg), it takes the primitive meaning of an eel. When only the first two strokes are omitted (paste-b772ad195e453552f5330e2905978bec811f09eb.jpg), it will mean a bucket of eels.",
+    },
   },
   {
     heisig_number: "574",
@@ -4683,8 +5111,10 @@ export const rrtk = [
       primary: "sheep",
       secondary: [],
     },
-    description:
-      'The primitive from this kanji also means sheep. As we saw with the cow, the "tail" is cut off when it is set immediately over another element: . Note the change in stroke order, as exemplified in the following frame.',
+    description: {
+      has_image: true,
+      info: 'The primitive from this kanji also means sheep. As we saw with the cow, the "tail" is cut off when it is set immediately over another element: paste-169d8997b0b5ba5971d6c76ba2a81e1a57178564.jpg. Note the change in stroke order, as exemplified in the following frame.',
+    },
   },
   {
     heisig_number: "587",
@@ -4848,8 +5278,10 @@ export const rrtk = [
       primary: "noon",
       secondary: [],
     },
-    description:
-      "As a primitive, this character gets the meaning of a horse. Any horse image will do, except that of a team of horses, which will come later (馬) and get its own primitive.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this character gets the meaning of a horse. Any horse image will do, except that of a team of horses, which will come later (馬) and get its own primitive.",
+    },
   },
   {
     heisig_number: "611",
@@ -4885,8 +5317,10 @@ export const rrtk = [
       primary: "feathers",
       secondary: ["counter for birds", "rabbits"],
     },
-    description:
-      "The related image of wings can be added as a primitive meaning. It can also take the form when used as a primitive.",
+    description: {
+      has_image: true,
+      info: "The related image of wings can be added as a primitive meaning. It can also take the form paste-f1d34bd7614616adc1c84c3cdba654505192abae.jpg when used as a primitive.",
+    },
   },
   {
     heisig_number: "616",
@@ -5021,8 +5455,10 @@ export const rrtk = [
       primary: "heart",
       secondary: ["mind", "spirit"],
     },
-    description:
-      "As a primitive, it can take three forms, to which we shall assign three distinct meanings: In its kanji-form, it appears beneath or to the right of its relative primitive and means the physical organ of the heart. To the left, it is abbreviated to three strokes, 忄, and means a wildly emotional state of mind. At the very bottom, it can take the form 㣺, in which case we give it the meaning of a valentine.",
+    description: {
+      has_image: false,
+      info: "As a primitive, it can take three forms, to which we shall assign three distinct meanings: In its kanji-form, it appears beneath or to the right of its relative primitive and means the physical organ of the heart. To the left, it is abbreviated to three strokes, 忄, and means a wildly emotional state of mind. At the very bottom, it can take the form 㣺, in which case we give it the meaning of a valentine.",
+    },
   },
   {
     heisig_number: "640",
@@ -5228,8 +5664,10 @@ export const rrtk = [
       primary: "hand",
       secondary: [],
     },
-    description:
-      "Keep to the etymology when using this kanji as a primitive: a single hand all by itself.",
+    description: {
+      has_image: false,
+      info: "Keep to the etymology when using this kanji as a primitive: a single hand all by itself.",
+    },
   },
   {
     heisig_number: "690",
@@ -5424,8 +5862,10 @@ export const rrtk = [
       primary: "genius",
       secondary: ["years old"],
     },
-    description:
-      "The primitive meaning, genie, derives from the roots of the word genius. Use the genie out in the open when the primitive appears to the right of or below its relative primitive; in that case it also keeps its same form. At the left, the form is altered to , and the meaning becomes a genie in the bottle.",
+    description: {
+      has_image: true,
+      info: "The primitive meaning, genie, derives from the roots of the word genius. Use the genie out in the open when the primitive appears to the right of or below its relative primitive; in that case it also keeps its same form. At the left, the form is altered to paste-d5cff43cbbaf1d8bac6466504cf8d0293801122a.jpg , and the meaning becomes a genie in the bottle.",
+    },
   },
   {
     heisig_number: "739",
@@ -5452,7 +5892,10 @@ export const rrtk = [
       primary: "from",
       secondary: ["possessive particle", "whereupon", "accordingly"],
     },
-    description: "The primitive meaning is taken from the pictograph: a fist.",
+    description: {
+      has_image: false,
+      info: "The primitive meaning is taken from the pictograph: a fist.",
+    },
   },
   {
     heisig_number: "743",
@@ -5461,7 +5904,10 @@ export const rrtk = [
       primary: "reach out",
       secondary: ["exert", "exercise", "cause"],
     },
-    description: "As a primitive, this shall stand for outstretched hands.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this shall stand for outstretched hands.",
+    },
   },
   {
     heisig_number: "744",
@@ -5535,8 +5981,10 @@ export const rrtk = [
       primary: "or again",
       secondary: ["furthermore", "on the other hand"],
     },
-    description:
-      "As a primitive, it will mean crotch, as in the crotch of the arm. Or whatever.",
+    description: {
+      has_image: false,
+      info: "As a primitive, it will mean crotch, as in the crotch of the arm. Or whatever.",
+    },
   },
   {
     heisig_number: "755",
@@ -5733,8 +6181,10 @@ export const rrtk = [
       primary: "claw",
       secondary: ["nail", "talon"],
     },
-    description:
-      "As a primitive, we shall use the graphic image of a vulture, a bird known for its powerful claws. It generally appears above another primitive, in which case it gets squeezed into the form .",
+    description: {
+      has_image: true,
+      info: "As a primitive, we shall use the graphic image of a vulture, a bird known for its powerful claws. It generally appears above another primitive, in which case it gets squeezed into the form paste-2a7c3ad37e58bceff6f3593ef555886ffb47de91.jpg .",
+    },
   },
   {
     heisig_number: "787",
@@ -6020,8 +6470,10 @@ export const rrtk = [
       primary: "enter",
       secondary: ["insert"],
     },
-    description:
-      "As a primitive, the meaning of the key word is expanded to include: to go in, to put in, to come in, and the like. It generally appears atop its relative primitive, where, unlike the element for umbrella, the two strokes do not touch each other, making it virtually the same as the kanji for eight. When it appears in any other position, however, it retains its original form.",
+    description: {
+      has_image: false,
+      info: "As a primitive, the meaning of the key word is expanded to include: to go in, to put in, to come in, and the like. It generally appears atop its relative primitive, where, unlike the element for umbrella, the two strokes do not touch each other, making it virtually the same as the kanji for eight. When it appears in any other position, however, it retains its original form.",
+    },
   },
   {
     heisig_number: "843",
@@ -6374,7 +6826,10 @@ export const rrtk = [
       primary: "retainer",
       secondary: ["subject"],
     },
-    description: "As a primitive, the meaning of the key word becomes slave.",
+    description: {
+      has_image: false,
+      info: "As a primitive, the meaning of the key word becomes slave.",
+    },
   },
   {
     heisig_number: "920",
@@ -6392,7 +6847,10 @@ export const rrtk = [
       primary: "power",
       secondary: ["strong", "strain", "bear up", "exert"],
     },
-    description: "As a primitive, either muscle or power can be used.",
+    description: {
+      has_image: false,
+      info: "As a primitive, either muscle or power can be used.",
+    },
   },
   {
     heisig_number: "923",
@@ -6446,8 +6904,10 @@ export const rrtk = [
       primary: "going",
       secondary: ["journey"],
     },
-    description:
-      "As a primitive, this character has two forms. Reduced to the left side only, 彳, it can mean a column, going, or a line of something or other. When the middle is opened up to make room for other elements, it means a boulevard.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this character has two forms. Reduced to the left side only, 彳, it can mean a column, going, or a line of something or other. When the middle is opened up to make room for other elements, it means a boulevard.",
+    },
   },
   {
     heisig_number: "940",
@@ -6679,8 +7139,10 @@ export const rrtk = [
       primary: "rice",
       secondary: ["USA"],
     },
-    description:
-      "As a primitive, it keeps its meaning of rice, and is meant to connote a very ordinary, commonplace grain, in contrast to the primitive for wheat that we just learned. (This meaning accords well with Japan, where the output of rice far exceeds that of wheat.) It occasionally takes the shape when it stands on its own, or is joined to a line above. In this case, we shall have it refer specifically to grains of rice. This primitive is not to be confused with the similar-looking primitive for water. While the stroke orders are nearly alike, grains of rice has 5 strokes, while water only has 4 because it joins the second and third strokes into one. Finally, we may note that by itself the kanji for rice is an abbreviation used for the United States, which can then also serve as an alternate reading for the main primitive form, if you so wish.",
+    description: {
+      has_image: true,
+      info: "As a primitive, it keeps its meaning of rice, and is meant to connote a very ordinary, commonplace grain, in contrast to the primitive for wheat that we just learned. (This meaning accords well with Japan, where the output of rice far exceeds that of wheat.) It occasionally takes the shape paste-91d41ab385f1f9e5324a47f1331b38d1ad270a7f.jpg when it stands on its own, or is joined to a line above. In this case, we shall have it refer specifically to grains of rice. This primitive is not to be confused with the similar-looking primitive for water. While the stroke orders are nearly alike, grains of rice has 5 strokes, while water only has 4 because it joins the second and third strokes into one. Finally, we may note that by itself the kanji for rice is an abbreviation used for the United States, which can then also serve as an alternate reading for the main primitive form, if you so wish.",
+    },
   },
   {
     heisig_number: "992",
@@ -6752,8 +7214,10 @@ export const rrtk = [
       primary: "bamboo",
       secondary: [],
     },
-    description:
-      "As a primitive, the meaning remains the same, but the vertical lines are severely abbreviated so that they can take their place at the top where, like flowers, they are always to be found.",
+    description: {
+      has_image: false,
+      info: "As a primitive, the meaning remains the same, but the vertical lines are severely abbreviated so that they can take their place at the top where, like flowers, they are always to be found.",
+    },
   },
   {
     heisig_number: "1008",
@@ -6825,8 +7289,10 @@ export const rrtk = [
       primary: "person",
       secondary: [],
     },
-    description:
-      "As a primitive, it can keep its kanji form except when it appears to the left (its normal position), where it is made to stand up in the form 亻. The primitive meaning is another matter. The abstract notion of person so often has a relation to the meaning of the kanji that confusion readily sets in. So many of the previous stories have included people in them that simply to use person for a primitive meaning would be risky. We need to be more specific, to focus on one particular person. Try to choose someone who has not figured in the stories so far, perhaps a colorful member of the family or a friend whom you have known for a long time. That individual will appear again and again, so be sure to choose someone who excites your imagination.",
+    description: {
+      has_image: false,
+      info: "As a primitive, it can keep its kanji form except when it appears to the left (its normal position), where it is made to stand up in the form 亻. The primitive meaning is another matter. The abstract notion of person so often has a relation to the meaning of the kanji that confusion readily sets in. So many of the previous stories have included people in them that simply to use person for a primitive meaning would be risky. We need to be more specific, to focus on one particular person. Try to choose someone who has not figured in the stories so far, perhaps a colorful member of the family or a friend whom you have known for a long time. That individual will appear again and again, so be sure to choose someone who excites your imagination.",
+    },
   },
   {
     heisig_number: "1027",
@@ -7403,8 +7869,10 @@ export const rrtk = [
       primary: "not",
       secondary: ["must do be not"],
     },
-    description:
-      "The primitive meaning of this character is knot. Think of it as the piglet minus its body (the horizontal stroke), that is, the curly tail that looks like a knot. As an exception, we will use the homonym to remember the abstract key word, not.",
+    description: {
+      has_image: false,
+      info: "The primitive meaning of this character is knot. Think of it as the piglet minus its body (the horizontal stroke), that is, the curly tail that looks like a knot. As an exception, we will use the homonym to remember the abstract key word, not.",
+    },
   },
   {
     heisig_number: "1129",
@@ -7583,8 +8051,10 @@ export const rrtk = [
       primary: "show",
       secondary: ["indicate", "point out", "express", "display"],
     },
-    description:
-      "As a primitive, this kanji means altar. At the left, the abbreviated form that this element takes is made by chopping the altar in half and leaving only one dot behind to represent the right side. The new appearance of this primitive form, 礻, should be kept distinct from that for cloak, 衤, identical except for the one final short stroke.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this kanji means altar. At the left, the abbreviated form that this element takes is made by chopping the altar in half and leaving only one dot behind to represent the right side. The new appearance of this primitive form, 礻, should be kept distinct from that for cloak, 衤, identical except for the one final short stroke.",
+    },
   },
   {
     heisig_number: "1168",
@@ -7656,8 +8126,10 @@ export const rrtk = [
       primary: "wherefore",
       secondary: ["a reason"],
     },
-    description:
-      "As a primitive, in conformity to the explanation above, this kanji will be taken to mean a sprout.",
+    description: {
+      has_image: false,
+      info: "As a primitive, in conformity to the explanation above, this kanji will be taken to mean a sprout.",
+    },
   },
   {
     heisig_number: "1188",
@@ -7682,8 +8154,10 @@ export const rrtk = [
         "carapace",
       ],
     },
-    description:
-      'The primitive meaning is roots. Important to that word is the image of "pushing downwards," as roots do.',
+    description: {
+      has_image: false,
+      info: 'The primitive meaning is roots. Important to that word is the image of "pushing downwards," as roots do.',
+    },
   },
   {
     heisig_number: "1195",
@@ -7712,8 +8186,10 @@ export const rrtk = [
       primary: "speaketh",
       secondary: ["speak", "have the honor to", "monkey (zodiac sign)"],
     },
-    description:
-      'While this kanji has obvious affinities to the "seed" group, it also happens to be the zodiacal sign of the monkey. We shall therefore take monkey as its primitive meaning.',
+    description: {
+      has_image: false,
+      info: 'While this kanji has obvious affinities to the "seed" group, it also happens to be the zodiacal sign of the monkey. We shall therefore take monkey as its primitive meaning.',
+    },
   },
   {
     heisig_number: "1199",
@@ -8018,8 +8494,10 @@ export const rrtk = [
       primary: "Big Dipper",
       secondary: ["10 sho (vol)", "sake dipper"],
     },
-    description:
-      'Since we already have a primitive element for a "dipper"—namely, the ladle—we shall let this one stand for a measuring cup. By the way, it would make a rather large one, since the kanji is also used for a measure of about 18 liters!',
+    description: {
+      has_image: false,
+      info: 'Since we already have a primitive element for a "dipper"—namely, the ladle—we shall let this one stand for a measuring cup. By the way, it would make a rather large one, since the kanji is also used for a measure of about 18 liters!',
+    },
   },
   {
     heisig_number: "1262",
@@ -8055,8 +8533,10 @@ export const rrtk = [
       primary: "utilize",
       secondary: ["business", "service", "use", "employ"],
     },
-    description:
-      "As a primitive element, we shall substitute the image of a screwdriver, perhaps the most utilized of all tools around the house.",
+    description: {
+      has_image: false,
+      info: "As a primitive element, we shall substitute the image of a screwdriver, perhaps the most utilized of all tools around the house.",
+    },
   },
   {
     heisig_number: "1267",
@@ -8235,8 +8715,10 @@ export const rrtk = [
       primary: "of",
       secondary: ["this"],
     },
-    description:
-      "In order to give this kanji a more concrete meaning when it is used as a primitive element, think of it as referring to building blocks with the hiragana written on them, much the same as the A-B-C blocks you played with as a child.",
+    description: {
+      has_image: false,
+      info: "In order to give this kanji a more concrete meaning when it is used as a primitive element, think of it as referring to building blocks with the hiragana written on them, much the same as the A-B-C blocks you played with as a child.",
+    },
   },
   {
     heisig_number: "1301",
@@ -8470,8 +8952,10 @@ export const rrtk = [
       primary: "old man",
       secondary: ["old age", "grow old"],
     },
-    description:
-      "As a primitive, the meaning is the same, but the final two strokes are omitted so that they can be replaced with other elements: .",
+    description: {
+      has_image: true,
+      info: "As a primitive, the meaning is the same, but the final two strokes are omitted so that they can be replaced with other elements: paste-7a46cac740e51706d89ff0fc85762f2a77e83a92.jpg.",
+    },
   },
   {
     heisig_number: "1341",
@@ -8507,7 +8991,10 @@ export const rrtk = [
       primary: "someone",
       secondary: ["person"],
     },
-    description: "As a primitive it means a puppet-on-a-string.",
+    description: {
+      has_image: false,
+      info: "As a primitive it means a puppet-on-a-string.",
+    },
   },
   {
     heisig_number: "1347",
@@ -8636,8 +9123,10 @@ export const rrtk = [
       primary: "leg",
       secondary: ["foot", "be sufficient"],
     },
-    description:
-      "As a primitive on the left, it is amended to . Its meaning remains leg, but should be thought of as a wooden leg in order to avoid confusion with other similar elements, namely human legs, animal legs, and walking legs.",
+    description: {
+      has_image: true,
+      info: "As a primitive on the left, it is amended to paste-bb71768590115d523e8c52e0abba143dec3fdeaf.jpg. Its meaning remains leg, but should be thought of as a wooden leg in order to avoid confusion with other similar elements, namely human legs, animal legs, and walking legs.",
+    },
   },
   {
     heisig_number: "1375",
@@ -8826,8 +9315,10 @@ export const rrtk = [
       primary: "hole",
       secondary: ["aperture", "slit", "cave", "den"],
     },
-    description:
-      "As a primitive, this kanji uses an alternate form: the primitive for eight is replaced with that for human legs.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this kanji uses an alternate form: the primitive for eight is replaced with that for human legs.",
+    },
   },
   {
     heisig_number: "1414",
@@ -9102,8 +9593,10 @@ export const rrtk = [
       primary: "how many",
       secondary: ["how much", "how far", "how long"],
     },
-    description:
-      "As a primitive, this kanji will mean an abacus, the bead-instrument used in the Orient to calculate how many.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this kanji will mean an abacus, the bead-instrument used in the Orient to calculate how many.",
+    },
   },
   {
     heisig_number: "1482",
@@ -9130,8 +9623,10 @@ export const rrtk = [
       primary: "lineage",
       secondary: ["system"],
     },
-    description:
-      "As a primitive, we shall give this kanji the meaning of yarn, as the uniting of many threads into a single strand is most obvious with yarn.",
+    description: {
+      has_image: false,
+      info: "As a primitive, we shall give this kanji the meaning of yarn, as the uniting of many threads into a single strand is most obvious with yarn.",
+    },
   },
   {
     heisig_number: "1493",
@@ -9339,8 +9834,10 @@ export const rrtk = [
       primary: "sign of the bird",
       secondary: ["west (sake rad)"],
     },
-    description:
-      'As a primitive, it means whiskey bottle. In its pictograph, you can see the loosely corked lid, the bottle, and the contents (about one-third full). You might also think of the Spanish "porrón," a decanter shaped like a long-necked bird.',
+    description: {
+      has_image: false,
+      info: 'As a primitive, it means whiskey bottle. In its pictograph, you can see the loosely corked lid, the bottle, and the contents (about one-third full). You might also think of the Spanish "porrón," a decanter shaped like a long-necked bird.',
+    },
   },
   {
     heisig_number: "1535",
@@ -9394,7 +9891,10 @@ export const rrtk = [
       primary: "beans",
       secondary: ["pea", "midget"],
     },
-    description: "As a primitive, this kanji will also mean table.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this kanji will also mean table.",
+    },
   },
   {
     heisig_number: "1549",
@@ -9561,8 +10061,10 @@ export const rrtk = [
       primary: "good",
       secondary: ["pleasing", "skilled"],
     },
-    description:
-      "As a primitive, use the image of a saint's halo. As with silver, when this element is drawn on the left, the penultimate stroke is omitted, giving us .",
+    description: {
+      has_image: true,
+      info: "As a primitive, use the image of a saint's halo. As with silver, when this element is drawn on the left, the penultimate stroke is omitted, giving us paste-8b923006b9be53063be255cec0a33e0fb1d41820.jpg.",
+    },
   },
   {
     heisig_number: "1581",
@@ -9580,8 +10082,10 @@ export const rrtk = [
       primary: "eat",
       secondary: ["food"],
     },
-    description:
-      "As a primitive the kanji means eating or food. As with silver, on the left the final two strokes are combined into one.",
+    description: {
+      has_image: false,
+      info: "As a primitive the kanji means eating or food. As with silver, on the left the final two strokes are combined into one.",
+    },
   },
   {
     heisig_number: "1583",
@@ -9644,8 +10148,10 @@ export const rrtk = [
       primary: "even",
       secondary: ["flat", "peace"],
     },
-    description:
-      "As a primitive, this kanji can keep its pictographic meaning of a water lily.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this kanji can keep its pictographic meaning of a water lily.",
+    },
   },
   {
     heisig_number: "1597",
@@ -9744,8 +10250,10 @@ export const rrtk = [
       primary: "spicy",
       secondary: ["bitter", "hot", "acrid"],
     },
-    description:
-      "As a primitive, we shall use this meaning of spicy, except when the two extra strokes are added to the bottom, giving it the form of a tree: . Then we take its alternate meaning of a red pepper plant. The connection is obvious.",
+    description: {
+      has_image: true,
+      info: "As a primitive, we shall use this meaning of spicy, except when the two extra strokes are added to the bottom, giving it the form of a tree: paste-da167cca4e5b3a87c1533494852c65963464deee.jpg[[/simage]]. Then we take its alternate meaning of a red pepper plant. The connection is obvious.",
+    },
   },
   {
     heisig_number: "1613",
@@ -9853,8 +10361,10 @@ export const rrtk = [
       primary: "sign of the hog",
       secondary: [],
     },
-    description:
-      "The top hat represents the external shape of the acorn, and the unusual but easily written complex of strokes beneath it (which you might also see as distortions of an elbow and person) stands for the mysterious secret whereby the acorn contains the oak tree in a nutshell.",
+    description: {
+      has_image: false,
+      info: "The top hat represents the external shape of the acorn, and the unusual but easily written complex of strokes beneath it (which you might also see as distortions of an elbow and person) stands for the mysterious secret whereby the acorn contains the oak tree in a nutshell.",
+    },
   },
   {
     heisig_number: "1639",
@@ -10033,8 +10543,10 @@ export const rrtk = [
       primary: "life",
       secondary: ["genuine", "birth"],
     },
-    description:
-      "As a primitive, we may think of a microscopic cell, that miraculous unit that grows up to become a living being.",
+    description: {
+      has_image: false,
+      info: "As a primitive, we may think of a microscopic cell, that miraculous unit that grows up to become a living being.",
+    },
   },
   {
     heisig_number: "1676",
@@ -10157,8 +10669,10 @@ export const rrtk = [
       primary: "now",
       secondary: [],
     },
-    description:
-      "We shall use clock as the primitive meaning of this character, in line with the above explanation.",
+    description: {
+      has_image: false,
+      info: "We shall use clock as the primitive meaning of this character, in line with the above explanation.",
+    },
   },
   {
     heisig_number: "1712",
@@ -10230,8 +10744,10 @@ export const rrtk = [
       primary: "west",
       secondary: ["Spain"],
     },
-    description:
-      'As a primitive, the meaning of west can be expanded to refer to the Old West of cowboy-movie fame, just as the meaning of the character for east was expanded into the East. Note, however, that in its primitive form the legs are straightened out and reach down to the bottom of the mouth. Hence, we get the shape . With the exception of the kanji "価," this element always appears at the top of its relative primitives.',
+    description: {
+      has_image: true,
+      info: 'As a primitive, the meaning of west can be expanded to refer to the Old West of cowboy-movie fame, just as the meaning of the character for east was expanded into the East. Note, however, that in its primitive form the legs are straightened out and reach down to the bottom of the mouth. Hence, we get the shape paste-1ec2d3adf85df8cfc4e5f14386b8c956a739ca90.jpg. With the exception of the kanji "価," this element always appears at the top of its relative primitives.',
+    },
   },
   {
     heisig_number: "1729",
@@ -10285,8 +10801,10 @@ export const rrtk = [
       primary: "gates",
       secondary: [],
     },
-    description:
-      "As a primitive, we shall continue to give it the meaning of gates, but recommend the image of swinging doors (like the kind once common at entrances to saloons) to distinguish it from the primitive for door.",
+    description: {
+      has_image: false,
+      info: "As a primitive, we shall continue to give it the meaning of gates, but recommend the image of swinging doors (like the kind once common at entrances to saloons) to distinguish it from the primitive for door.",
+    },
   },
   {
     heisig_number: "1744",
@@ -10376,8 +10894,10 @@ export const rrtk = [
       primary: "un-",
       secondary: ["mistake", "negative", "injustice", "non-"],
     },
-    description:
-      "As a primitive, we shall draw on the explanation above for the meaning of jail cell.",
+    description: {
+      has_image: false,
+      info: "As a primitive, we shall draw on the explanation above for the meaning of jail cell.",
+    },
   },
   {
     heisig_number: "1763",
@@ -10482,7 +11002,10 @@ export const rrtk = [
       primary: "dry",
       secondary: ["parch"],
     },
-    description: "The primitive meaning is clothesline.",
+    description: {
+      has_image: false,
+      info: "The primitive meaning is clothesline.",
+    },
   },
   {
     heisig_number: "1781",
@@ -10509,8 +11032,10 @@ export const rrtk = [
       primary: "too much",
       secondary: ["myself", "surplus", "other", "remainder"],
     },
-    description:
-      'Since the phrase "too much" is overly abstract, we shall take the image of a scale whose indicator spins round and round on the dial because too much weight has been set on it. It will help to use this image in learning the kanji itself.',
+    description: {
+      has_image: false,
+      info: 'Since the phrase "too much" is overly abstract, we shall take the image of a scale whose indicator spins round and round on the dial because too much weight has been set on it. It will help to use this image in learning the kanji itself.',
+    },
   },
   {
     heisig_number: "1790",
@@ -10822,8 +11347,10 @@ export const rrtk = [
         "plan",
       ],
     },
-    description:
-      "The primitive meaning for this character will be plaid, the familiar crisscross pattern frequently used in textiles.",
+    description: {
+      has_image: false,
+      info: "The primitive meaning for this character will be plaid, the familiar crisscross pattern frequently used in textiles.",
+    },
   },
   {
     heisig_number: "1862",
@@ -10904,8 +11431,10 @@ export const rrtk = [
       primary: "red",
       secondary: [],
     },
-    description:
-      "As a primitive on the left, this kanji keeps the same form. Elsewhere, the first two strokes are abbreviated to a single dot, giving us 亦. This latter form will take the meaning of an apple.",
+    description: {
+      has_image: false,
+      info: "As a primitive on the left, this kanji keeps the same form. Elsewhere, the first two strokes are abbreviated to a single dot, giving us 亦. This latter form will take the meaning of an apple.",
+    },
   },
   {
     heisig_number: "1882",
@@ -10984,8 +11513,10 @@ export const rrtk = [
       primary: "sweet",
       secondary: ["coax", "pamper", "be content", "sugary"],
     },
-    description:
-      "As a primitive, the pictograph's meaning of a wicker basket is used, a small one like the kind used for picnics.",
+    description: {
+      has_image: false,
+      info: "As a primitive, the pictograph's meaning of a wicker basket is used, a small one like the kind used for picnics.",
+    },
   },
   {
     heisig_number: "1902",
@@ -11109,8 +11640,10 @@ export const rrtk = [
         "equal",
       ],
     },
-    description:
-      "The primitive meaning remains the same as that of the kanji, but special attention has to be given to the varieties of shape this element can undergo. It is the most difficult one you will meet in this book. When it appears beneath its relative primitive, the top three strokes are omitted, though the third horizontal stroke may be doubled up with the bottom horizontal stroke of the element above it: . Atop its relative primitive, it can keep its kanji shape. When it does not, the top three strokes are removed and all of them are replaced below the primitive's bottom line: . We shall acknowledge this latter transformation by changing its meaning to upside down in a row.",
+    description: {
+      has_image: true,
+      info: "The primitive meaning remains the same as that of the kanji, but special attention has to be given to the varieties of shape this element can undergo. It is the most difficult one you will meet in this book. When it appears beneath its relative primitive, the top three strokes are omitted, though the third horizontal stroke may be doubled up with the bottom horizontal stroke of the element above it: paste-403050b93824231930ea4571c7cc12309586fd12.jpg. Atop its relative primitive, it can keep its kanji shape. When it does not, the top three strokes are removed and all of them are replaced below the primitive's bottom line: paste-6e212dbd98c84fa4bf4de0391a091b86e3bfbe4d.jpg. We shall acknowledge this latter transformation by changing its meaning to upside down in a row.",
+    },
   },
   {
     heisig_number: "1925",
@@ -11155,8 +11688,10 @@ export const rrtk = [
       primary: "together",
       secondary: ["both", "neither", "all", "and", "alike", "with"],
     },
-    description:
-      "The primitive retains the meaning of together. Imagine things strung together like fish on a line, beads on a thread, or whatever. The main thing is to avoid putting them in a straight row, which would confound this element with the previous one. As we saw with bushel basket, this primitive can join its legs to the final horizontal stroke and stretch them to form an enclosure.",
+    description: {
+      has_image: false,
+      info: "The primitive retains the meaning of together. Imagine things strung together like fish on a line, beads on a thread, or whatever. The main thing is to avoid putting them in a straight row, which would confound this element with the previous one. As we saw with bushel basket, this primitive can join its legs to the final horizontal stroke and stretch them to form an enclosure.",
+    },
   },
   {
     heisig_number: "1935",
@@ -11269,8 +11804,10 @@ export const rrtk = [
       primary: "angle",
       secondary: ["corner", "square"],
     },
-    description:
-      "As a primitive, imagine the tool used by draftsmen and carpenters to draw right-angles.",
+    description: {
+      has_image: false,
+      info: "As a primitive, imagine the tool used by draftsmen and carpenters to draw right-angles.",
+    },
   },
   {
     heisig_number: "1954",
@@ -11685,8 +12222,10 @@ export const rrtk = [
       primary: "tusk",
       secondary: ["fang"],
     },
-    description:
-      "Since this kanji has 4 strokes, you would expect that as a primitive it would also have 4—but in fact it has 5.",
+    description: {
+      has_image: false,
+      info: "Since this kanji has 4 strokes, you would expect that as a primitive it would also have 4—but in fact it has 5.",
+    },
   },
   {
     heisig_number: "2055",
@@ -11704,8 +12243,10 @@ export const rrtk = [
       primary: "turn",
       secondary: ["number in a series"],
     },
-    description:
-      "As a primitive element, we choose the image of a pair of dice which it is your turn to throw.",
+    description: {
+      has_image: false,
+      info: "As a primitive element, we choose the image of a pair of dice which it is your turn to throw.",
+    },
   },
   {
     heisig_number: "2062",
@@ -11764,8 +12305,10 @@ export const rrtk = [
       primary: "long",
       secondary: ["leader"],
     },
-    description:
-      "The primitive of this kanji has two more shapes in addition to that of the kanji itself. It is often abbreviated to the form and will mean hair. Further abbreviated to , it will mean the long, mangy mane of an animal.",
+    description: {
+      has_image: true,
+      info: "The primitive of this kanji has two more shapes in addition to that of the kanji itself. It is often abbreviated to the form paste-352327eed0ff9ffc2941fced2211650ec1290477.jpg and will mean hair. Further abbreviated to paste-5db51f8475016025fbfe223279c530ede434ee28.jpg, it will mean the long, mangy mane of an animal.",
+    },
   },
   {
     heisig_number: "2071",
@@ -11914,8 +12457,10 @@ export const rrtk = [
       primary: "excuse",
       secondary: ["dismissal"],
     },
-    description:
-      "For the primitive meaning, we shall refer to this character as a rabbit, for which the old form of the character is 兔.",
+    description: {
+      has_image: false,
+      info: "For the primitive meaning, we shall refer to this character as a rabbit, for which the old form of the character is 兔.",
+    },
   },
   {
     heisig_number: "2128",
@@ -11966,8 +12511,10 @@ export const rrtk = [
       primary: "horse",
       secondary: [],
     },
-    description:
-      "As a primitive, this kanji will mean a team of horses as distinct from the single horse whose primitive we met earlier.",
+    description: {
+      has_image: false,
+      info: "As a primitive, this kanji will mean a team of horses as distinct from the single horse whose primitive we met earlier.",
+    },
   },
   {
     heisig_number: "2134",
@@ -12021,8 +12568,10 @@ export const rrtk = [
       primary: "tiger",
       secondary: ["drunkard"],
     },
-    description:
-      "As a primitive element itself, the human legs are also swallowed up, but the meaning of tiger is kept, and the whole serves as a roof for what comes beneath, , giving the tiger something else to eat.",
+    description: {
+      has_image: true,
+      info: "As a primitive element itself, the human legs are also swallowed up, but the meaning of tiger is kept, and the whole serves as a roof for what comes beneath, paste-21335ea52b84e06ab21f313471c64d80bbadd236.jpg, giving the tiger something else to eat.",
+    },
   },
   {
     heisig_number: "2148",
@@ -12067,8 +12616,10 @@ export const rrtk = [
       primary: "deer",
       secondary: [],
     },
-    description:
-      "As a primitive, this kanji is abbreviated much the same as the tiger was: the lower element is dropped to leave room for a replacement: . Its meaning, however, remains the same. There are a very few cases in which there is no abbreviation (for example, '麗'). When this happens, we may keep the image suggested by the above explanation: painting of a deer.",
+    description: {
+      has_image: true,
+      info: "As a primitive, this kanji is abbreviated much the same as the tiger was: the lower element is dropped to leave room for a replacement: paste-300241fb2d507edb2773b6dda33ad0cf1578f71e.jpg. Its meaning, however, remains the same. There are a very few cases in which there is no abbreviation (for example, '麗'). When this happens, we may keep the image suggested by the above explanation: painting of a deer.",
+    },
   },
   {
     heisig_number: "2158",
@@ -12194,7 +12745,10 @@ export const rrtk = [
       primary: "barracks",
       secondary: ["police station", "camp"],
     },
-    description: "As a primitive it means earthworm.",
+    description: {
+      has_image: false,
+      info: "As a primitive it means earthworm.",
+    },
   },
   {
     heisig_number: "2190",
@@ -12203,8 +12757,10 @@ export const rrtk = [
       primary: "moreover",
       secondary: ["also", "furthermore"],
     },
-    description:
-      "The pictographic representation of this character is a small stand with horizontal shelves. Thus, as a primitive element, we give it the general meaning of a shelf. Think of it as a shelf for special keepsakes or a glass bureau for knickknacks.",
+    description: {
+      has_image: false,
+      info: "The pictographic representation of this character is a small stand with horizontal shelves. Thus, as a primitive element, we give it the general meaning of a shelf. Think of it as a shelf for special keepsakes or a glass bureau for knickknacks.",
+    },
   },
   {
     heisig_number: "2234",
@@ -12222,8 +12778,10 @@ export const rrtk = [
       primary: "est",
       secondary: ["to be (classical)"],
     },
-    description:
-      "As a primitive, we shall use this to mean scorpion, the first 2 strokes representing its head and pincers, the last stroke its barbed tail.",
+    description: {
+      has_image: false,
+      info: "As a primitive, we shall use this to mean scorpion, the first 2 strokes representing its head and pincers, the last stroke its barbed tail.",
+    },
   },
   {
     heisig_number: "2237",
@@ -12232,7 +12790,7 @@ export const rrtk = [
       primary: "comma-design",
       secondary: [],
     },
-    description: "As a primitive it means mosaic.",
+    description: { has_image: false, info: "As a primitive it means mosaic." },
   },
   {
     heisig_number: "2238",
@@ -12241,8 +12799,10 @@ export const rrtk = [
       primary: "critters",
       secondary: ["head", "no. of animals"],
     },
-    description:
-      "To avoid confusion with the other animals that will be showing up, as a primitive, this will signify a zoo.",
+    description: {
+      has_image: false,
+      info: "To avoid confusion with the other animals that will be showing up, as a primitive, this will signify a zoo.",
+    },
   },
   {
     heisig_number: "2241",
@@ -12251,8 +12811,10 @@ export const rrtk = [
       primary: "quote",
       secondary: ["say"],
     },
-    description:
-      "As a primitive it means rising cloud. It's meant to depict in graphic fashion a cloud of something rising upwards, like vapor or smoke or dust.",
+    description: {
+      has_image: false,
+      info: "As a primitive it means rising cloud. It's meant to depict in graphic fashion a cloud of something rising upwards, like vapor or smoke or dust.",
+    },
   },
   {
     heisig_number: "2242",
@@ -12261,8 +12823,10 @@ export const rrtk = [
       primary: "shalt",
       secondary: ["must not", "do not", "be not"],
     },
-    description:
-      "As a primitive, the element shown here should be taken to represent a modern graveyard. Gone are the cobwebs and gnarled trees, the tilted headstones and dark, moonless nights that used to scare the wits out of our childhood imaginations. Instead, we see brightly colored flowers placed before the tombstones, the sun shining gloriously overhead, and a cuddly St. Bernard sitting at the gate keeping watch.",
+    description: {
+      has_image: false,
+      info: "As a primitive, the element shown here should be taken to represent a modern graveyard. Gone are the cobwebs and gnarled trees, the tilted headstones and dark, moonless nights that used to scare the wits out of our childhood imaginations. Instead, we see brightly colored flowers placed before the tombstones, the sun shining gloriously overhead, and a cuddly St. Bernard sitting at the gate keeping watch.",
+    },
   },
   {
     heisig_number: "2243",
@@ -12271,8 +12835,10 @@ export const rrtk = [
       primary: "and then",
       secondary: ["rake"],
     },
-    description:
-      "As a primitive element, we set the key word aside entirely and take it as a pictograph of a comb.",
+    description: {
+      has_image: false,
+      info: "As a primitive element, we set the key word aside entirely and take it as a pictograph of a comb.",
+    },
   },
   {
     heisig_number: "2534",

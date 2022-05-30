@@ -6,10 +6,11 @@ import { Modal, Badge, Tooltip, ActionIcon, Loader } from "@mantine/core";
 import { useClipboard } from "@mantine/hooks";
 // Icons
 import { BiCopy } from "react-icons/bi";
+// Utilities
+import reactStringReplace from "react-string-replace";
 
 const InfoModal = ({ content, isFetching, opened, handleCloseModal }) => {
   const clipboard = useClipboard({ timeout: 1500 });
-
   return (
     <Modal
       size="lg"
@@ -96,7 +97,7 @@ const InfoModal = ({ content, isFetching, opened, handleCloseModal }) => {
                   </Badge>
                 </div>
                 <div>
-                  <span>{content.kunyomi.join(", ")}</span>
+                  {content.kunyomi && <span>{content.kunyomi.join(", ")}</span>}
                 </div>
               </div>
               <div className="flex pb-4">
@@ -106,7 +107,7 @@ const InfoModal = ({ content, isFetching, opened, handleCloseModal }) => {
                   </Badge>
                 </div>
                 <div>
-                  <span>{content.onyomi.join(", ")}</span>
+                  {content.onyomi && <span>{content.onyomi.join(", ")}</span>}
                 </div>
               </div>
             </>
@@ -124,14 +125,37 @@ const InfoModal = ({ content, isFetching, opened, handleCloseModal }) => {
                 )}
               </p>
             </div>
-            {content.description && (
-              <div>
-                <Badge color="grape" variant="filled">
-                  Description
-                </Badge>
-                <p className="text-md pt-2 px-2">{content.description}</p>
-              </div>
-            )}
+            {content.description &&
+              (content.description.has_image ? (
+                <div>
+                  <Badge color="grape" variant="filled">
+                    Description
+                  </Badge>
+                  <p className="text-md pt-2 px-2">
+                    {reactStringReplace(
+                      content.description.info,
+                      /(paste-\S+?(?:jpe?g|png|gif))/g,
+                      (match, i) => (
+                        <img
+                          alt={match}
+                          key={i}
+                          src={`/description_images/${match}`}
+                          className="inline-block h-5"
+                        />
+                      )
+                    )}
+                  </p>
+                </div>
+              ) : (
+                <div>
+                  <Badge color="grape" variant="filled">
+                    Description
+                  </Badge>
+                  <p className="text-md pt-2 px-2">
+                    {content.description.info}
+                  </p>
+                </div>
+              ))}
           </div>
         </>
       )}
