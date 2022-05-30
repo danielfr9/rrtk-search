@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rrtk-search/static/css/main.9dcb4523.css",
+    "main.js": "/rrtk-search/static/js/main.e0d78d2b.js",
+    "index.html": "/rrtk-search/index.html",
+    "main.9dcb4523.css.map": "/rrtk-search/static/css/main.9dcb4523.css.map",
+    "main.e0d78d2b.js.map": "/rrtk-search/static/js/main.e0d78d2b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9dcb4523.css",
+    "static/js/main.e0d78d2b.js"
+  ]
+}
