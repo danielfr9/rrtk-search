@@ -63,7 +63,7 @@ const MainHeader = ({
             {filters.map((item, index) => (
               <Menu.Item
                 className={`font-semibold  ${
-                  item.title === menuSelected.title && `bg-amber-400 text-black`
+                  item.title === menuSelected.title && `bg-cyan-700 !text-white`
                 } `}
                 onClick={() => changeFilter(index)}
                 key={item.title}

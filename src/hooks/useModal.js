@@ -1,30 +1,39 @@
 import { useState } from "react";
 
-const useModal = () => {
-  const [content, setContent] = useState({
-    heisig_number: null,
-    kanji: null,
-    keywords: {
-      primary: null,
-      secondary: [],
-    },
-    description: null,
-    onyomi: [],
-    kunyomi: [],
-    stroke_count: null,
-    jlpt: null,
-    grade: null,
-  });
+const initialState = {
+  heisig_number: null,
+  kanji: null,
+  keywords: {
+    primary: null,
+    secondary: [],
+  },
+  description: null,
+  onyomi: [],
+  kunyomi: [],
+  stroke_count: null,
+  jlpt: null,
+  grade: null,
+};
+
+const kanjiApi = "https://kanjiapi.dev/v1/kanji/";
+
+const useModal = (initValue = initialState) => {
+  const [content, setContent] = useState(initValue);
   const [opened, setOpened] = useState(false);
+  const [isFetching, setIsFetching] = useState(false);
 
   const handleOpenModal = async (data) => {
     if (!data.kanji) {
       await setContent(data);
+      await setOpened(true);
     } else {
+      await setIsFetching(true);
+      await setOpened(true);
+
       try {
-        const result = await fetch(
-          `https://kanjiapi.dev/v1/kanji/${data.kanji}`
-        ).then((res) => res.json());
+        const result = await fetch(`${kanjiApi}${data.kanji}`).then((res) =>
+          res.json()
+        );
 
         await setContent({
           ...data,
@@ -34,19 +43,20 @@ const useModal = () => {
           jlpt: result.jlpt,
           grade: result.grade,
         });
+        await setIsFetching(false);
       } catch {
         console.log("Error Fetching Data");
         await setContent(data);
+        await setIsFetching(false);
       }
     }
-    await setOpened(true);
   };
 
   const handleCloseModal = () => {
     setOpened(false);
   };
 
-  return { content, opened, handleCloseModal, handleOpenModal };
+  return { content, opened, isFetching, handleCloseModal, handleOpenModal };
 };
 
 export default useModal;

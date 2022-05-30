@@ -20,7 +20,8 @@ const RRTK = () => {
 
   const { selected, handleFilter, filteredData } = useFilter(rrtk, filters);
   const { query, setQuery, searchResult } = useSearch(filteredData, virtuoso);
-  const { content, opened, handleCloseModal, handleOpenModal } = useModal();
+  const { content, opened, isFetching, handleCloseModal, handleOpenModal } =
+    useModal();
 
   return (
     <>
@@ -50,6 +51,7 @@ const RRTK = () => {
       </div>
       <InfoModal
         content={content}
+        isFetching={isFetching}
         opened={opened}
         handleCloseModal={handleCloseModal}
       />
