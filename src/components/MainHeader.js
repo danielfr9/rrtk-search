@@ -20,7 +20,7 @@ const MainHeader = ({
 
   return (
     <div>
-      <Header className="border-0 flex flex-col shadow-md" height={110} p="xs">
+      <Header className="border-0 border-b-2 flex flex-col" height={110} p="xs">
         <div className="flex items-center">
           <h1
             className={`font-semibold text-2xl text-center grow ${
