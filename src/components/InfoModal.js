@@ -89,7 +89,7 @@ const InfoModal = ({ content, isFetching, opened, handleCloseModal }) => {
           </div>
           {content.kanji && (
             <>
-              <div className="flex pb-4">
+              <div className="flex py-2">
                 <div style={{ width: 81 }} className="mr-2">
                   <Badge color="cyan" size="md" variant="filled">
                     Kunyomi:
@@ -112,29 +112,27 @@ const InfoModal = ({ content, isFetching, opened, handleCloseModal }) => {
             </>
           )}
 
-          <div className="pb-2">
-            <Badge color="violet" variant="filled">
-              Keywords
-            </Badge>
-            <p className="pt-2 px-2">
-              <span className="text-lg font-semibold">
-                {content.keywords.primary}
-              </span>
-              {content.keywords.secondary.length > 0 && (
-                <span className="text-lg">{`; ${content.keywords.secondary.join(
-                  ", "
-                )}`}</span>
-              )}
-            </p>
-          </div>
-          {content.description && (
-            <div className="py-2">
-              <Badge color="grape" variant="filled">
-                Description
+          <div className="pb-8">
+            <div className="pb-2">
+              <Badge color="violet" variant="filled">
+                Keywords
               </Badge>
-              <p className="text-md pt-2 px-2">{content.description}</p>
+              <p className="pt-2 px-2">
+                <span className="font-bold">{content.keywords.primary}</span>
+                {content.keywords.secondary.length > 0 && (
+                  <span>{`; ${content.keywords.secondary.join(", ")}`}</span>
+                )}
+              </p>
             </div>
-          )}
+            {content.description && (
+              <div>
+                <Badge color="grape" variant="filled">
+                  Description
+                </Badge>
+                <p className="text-md pt-2 px-2">{content.description}</p>
+              </div>
+            )}
+          </div>
         </>
       )}
     </Modal>
