@@ -1,4 +1,4 @@
-export const rrtk = [
+export const rrtk: kanjiData[] = [
   {
     heisig_number: null,
     kanji: null,

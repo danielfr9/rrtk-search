@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-const initialState = {
+const initialState: kanjiData = {
   heisig_number: null,
   kanji: null,
   keywords: {
-    primary: null,
+    primary: "",
     secondary: [],
   },
   description: null,
@@ -17,12 +17,12 @@ const initialState = {
 
 const kanjiApi = "https://kanjiapi.dev/v1/kanji/";
 
-const useModal = (initValue = initialState) => {
+const useModal = (initValue: kanjiData = initialState) => {
   const [content, setContent] = useState(initValue);
   const [opened, setOpened] = useState(false);
   const [isFetching, setIsFetching] = useState(false);
 
-  const handleOpenModal = async (data) => {
+  const handleOpenModal = async (data: kanjiData) => {
     if (!data.kanji) {
       await setContent(data);
       await setOpened(true);

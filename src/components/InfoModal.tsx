@@ -9,7 +9,19 @@ import { BiCopy } from "react-icons/bi";
 // Utilities
 import reactStringReplace from "react-string-replace";
 
-const InfoModal = ({ content, isFetching, opened, handleCloseModal }) => {
+type infoModalProps = {
+  content: kanjiData;
+  isFetching: boolean;
+  opened: boolean;
+  handleCloseModal: () => void;
+};
+
+const InfoModal = ({
+  content,
+  isFetching,
+  opened,
+  handleCloseModal,
+}: infoModalProps) => {
   const clipboard = useClipboard({ timeout: 1500 });
   return (
     <Modal
@@ -51,7 +63,7 @@ const InfoModal = ({ content, isFetching, opened, handleCloseModal }) => {
               )
             )}
           </div>
-          <div className="flex items-center justify-end">
+          <div className="flex items-center justify-end pr-6">
             {content.kanji && (
               <Tooltip
                 gutter={10}
@@ -115,7 +127,7 @@ const InfoModal = ({ content, isFetching, opened, handleCloseModal }) => {
             </>
           )}
 
-          <div className="pb-8">
+          <div className="pb-8 pr-6">
             <div className="pb-2">
               <Badge color="violet" variant="filled">
                 Keywords

@@ -9,7 +9,12 @@ import { useMantineColorScheme } from "@mantine/core";
 import { BiCopy } from "react-icons/bi";
 import { VscPreview } from "react-icons/vsc";
 
-const KanjiCard = ({ data, handleOpenModal }) => {
+type kanjiCardProps = {
+  data: kanjiData;
+  handleOpenModal: (data: kanjiData) => Promise<void>;
+};
+
+const KanjiCard = ({ data, handleOpenModal }: kanjiCardProps) => {
   const clipboard = useClipboard({ timeout: 1500 });
   const { colorScheme } = useMantineColorScheme();
   const dark = colorScheme === "dark";

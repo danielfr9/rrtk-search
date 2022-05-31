@@ -8,13 +8,13 @@ import useSearch from "./hooks/useSearch";
 import useModal from "./hooks/useModal";
 import { useMantineColorScheme } from "@mantine/core";
 // Components
-import { VirtuosoGrid } from "react-virtuoso";
+import { VirtuosoGrid, VirtuosoGridHandle } from "react-virtuoso";
 import MainHeader from "./components/MainHeader";
 import KanjiCard from "./components/KanjiCard";
 import InfoModal from "./components/InfoModal";
 
 const RRTK = () => {
-  const virtuoso = useRef(null);
+  const virtuoso = useRef<VirtuosoGridHandle>(null);
   const { colorScheme } = useMantineColorScheme();
   const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
 

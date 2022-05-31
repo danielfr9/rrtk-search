@@ -8,13 +8,21 @@ import { useMantineColorScheme } from "@mantine/core";
 import { HiOutlineAdjustments } from "react-icons/hi";
 import { BsSunFill, BsMoonFill } from "react-icons/bs";
 
+type headerProps = {
+  filters: filterOption[];
+  menuSelected: filterOption;
+  changeFilter: (index: number) => void;
+  query: string;
+  setQuery: (query: string) => void;
+};
+
 const MainHeader = ({
   filters,
   menuSelected,
   changeFilter,
   query,
   setQuery,
-}) => {
+}: headerProps) => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
 
@@ -60,7 +68,7 @@ const MainHeader = ({
           >
             <Menu.Label>Filters</Menu.Label>
             <Divider />
-            {filters.map((item, index) => (
+            {filters.map((item: filterOption, index: number) => (
               <Menu.Item
                 className={`font-semibold  ${
                   item.title === menuSelected.title && `bg-cyan-700 !text-white`

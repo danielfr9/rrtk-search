@@ -1,4 +1,4 @@
-export const filters = [
+export const filters: filterOption[] = [
   {
     title: "All",
     min: 1,
