@@ -42,7 +42,9 @@ const InfoModal = ({ content, isFetching, opened, handleCloseModal }) => {
                 <div className="py-5">
                   <img
                     className="h-12"
-                    src={`/primitives/${noKanji[content.keywords.primary]}`}
+                    src={`${process.env.PUBLIC_URL}/primitives/${
+                      noKanji[content.keywords.primary]
+                    }`}
                     alt={content.keywords.primary}
                   />
                 </div>
@@ -139,7 +141,7 @@ const InfoModal = ({ content, isFetching, opened, handleCloseModal }) => {
                         <img
                           alt={match}
                           key={i}
-                          src={`/description_images/${match}`}
+                          src={`${process.env.PUBLIC_URL}/description_images/${match}`}
                           className="inline-block h-5"
                         />
                       )

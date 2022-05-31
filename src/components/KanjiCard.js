@@ -48,7 +48,9 @@ const KanjiCard = ({ data, handleOpenModal }) => {
             <div className="py-5">
               <img
                 className="h-12"
-                src={`/primitives/${noKanji[data.keywords.primary]}`}
+                src={`${process.env.PUBLIC_URL}/primitives/${
+                  noKanji[data.keywords.primary]
+                }`}
                 alt={data.keywords.primary}
               />
             </div>
