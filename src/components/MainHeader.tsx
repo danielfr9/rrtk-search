@@ -13,7 +13,7 @@ type headerProps = {
   menuSelected: filterOption;
   changeFilter: (index: number) => void;
   query: string;
-  setQuery: (query: string) => void;
+  setQuery: React.Dispatch<React.SetStateAction<string>>;
 };
 
 const MainHeader = ({
