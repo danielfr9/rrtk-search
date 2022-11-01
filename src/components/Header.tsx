@@ -90,11 +90,11 @@ const Header = ({
         <label className="swap swap-rotate">
           <input
             type="checkbox"
-            defaultChecked={dark}
+            checked={dark}
             onChange={() => toggleColorScheme()}
           />
-          <BsFillMoonFill className="swap-on w-6 h-6 text-gray-600 cursor-pointer" />
-          <BsSun className="swap-off w-6 h-6 text-gray-300 cursor-pointer" />
+          <BsSun className="swap-on w-6 h-6 text-gray-300 cursor-pointer" />
+          <BsFillMoonFill className="swap-off w-6 h-6 text-gray-600 cursor-pointer" />
         </label>
       </div>
     </header>
