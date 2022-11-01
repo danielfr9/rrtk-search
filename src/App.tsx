@@ -1,30 +1,30 @@
-// Hooks
-import useDarkMode from "./hooks/useDarkMode";
+import React, { useCallback } from "react";
 // Dark  Mode
-import { Global, MantineProvider, ColorSchemeProvider } from "@mantine/core";
+import { ColorScheme, ColorSchemeProvider } from "@mantine/core";
+import { useColorScheme, useLocalStorage } from "@mantine/hooks";
 // Components
 import RRTK from "./RRTK";
 
 const App = () => {
-  const { colorScheme, toggleColorScheme } = useDarkMode();
+  const preferredColorScheme = useColorScheme();
+  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
+    key: "mantine-color-scheme",
+    defaultValue: preferredColorScheme,
+  });
+  const toggleColorScheme = useCallback(
+    (value?: ColorScheme) =>
+      setColorScheme(
+        (prevScheme) => value || (prevScheme === "dark" ? "light" : "dark")
+      ),
+    [setColorScheme]
+  );
 
   return (
     <ColorSchemeProvider
       colorScheme={colorScheme}
       toggleColorScheme={toggleColorScheme}
     >
-      <MantineProvider theme={{ colorScheme }}>
-        <Global
-          styles={(theme) => ({
-            body: {
-              backgroundColor:
-                theme.colorScheme === "dark" ? "#101113" : "white",
-              color: theme.colorScheme === "dark" ? "white" : "black",
-            },
-          })}
-        />
-        <RRTK />
-      </MantineProvider>
+      <RRTK />
     </ColorSchemeProvider>
   );
 };
