@@ -1,4 +1,8 @@
-const noKanji: noKanji = {
+type NoKanji = {
+  [key: string]: string;
+};
+
+const noKanji: NoKanji = {
   mist: "paste-0f343585b392bed36eedafe78c8b6574e3c21cd9.jpg",
   "animal legs": "paste-06528089a471f72ead991044dcce5f9963602930.jpg",
   horns: "paste-3ad14dd642e4600eb02948cf2efba0304aab5202.jpg",

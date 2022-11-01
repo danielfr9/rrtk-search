@@ -1,4 +1,15 @@
-export const filters: filterOption[] = [
+export enum PredefinedOptions {
+  ALL = "All",
+  PRIMITIVES = "Primitives",
+}
+
+export type FilterOption = {
+  title: PredefinedOptions.ALL | PredefinedOptions.PRIMITIVES | string;
+  min: number | null;
+  max: number | null;
+};
+
+export const filters: FilterOption[] = [
   {
     title: "All",
     min: 1,
