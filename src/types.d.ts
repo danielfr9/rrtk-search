@@ -1,10 +1,4 @@
-type filterOption = {
-  title: string;
-  min: number | null;
-  max: number | null;
-};
-
-type kanjiData = {
+type Kanji = {
   heisig_number: string | null;
   kanji: string | null;
   keywords: {
@@ -20,8 +14,4 @@ type kanjiData = {
   stroke_count?: number | null;
   jlpt?: number | null;
   grade?: number | null;
-};
-
-type noKanji = {
-  [key: string]: string;
 };
