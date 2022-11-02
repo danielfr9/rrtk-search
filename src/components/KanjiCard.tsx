@@ -35,6 +35,7 @@ const KanjiCard = ({ data, handleOpenModal }: IProps) => {
             color={clipboard.copied ? "indigo" : "cyan"}
             position="left"
             withArrow
+            events={{ hover: true, focus: true, touch: true }}
           >
             <button>
               <BiCopy
