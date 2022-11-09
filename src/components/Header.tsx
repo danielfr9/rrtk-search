@@ -48,8 +48,8 @@ const Header = ({
             classNames={{
               item: `${
                 dark
-                  ? "hover:bg-gray-700 text-white"
-                  : "hover:bg-gray-300 text-gray-600 font-semibold"
+                  ? "data-[hovered]:bg-gray-700 text-white"
+                  : "data-[hovered]:bg-gray-300 text-gray-600 font-semibold"
               }`,
               dropdown: `${dark ? "bg-gray-800 border-gray-800" : "bg-white"}`,
             }}
