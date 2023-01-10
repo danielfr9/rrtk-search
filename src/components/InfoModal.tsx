@@ -47,6 +47,7 @@ const InfoModal = ({
         )
       }
       exitTransitionDuration={200}
+      centered
     >
       {isFetching ? (
         <div className="flex flex-col grow justify-center items-center py-12">
@@ -157,7 +158,8 @@ const KanjiScript = ({
         <div className="py-3">
           <img
             className="h-24"
-            src={`${process.env.PUBLIC_URL}/primitives/${noKanji[primaryKeyword]}`}
+            // src={`${process.env.PUBLIC_URL}/primitives/${noKanji[primaryKeyword]}`}
+            src={require(`../assets/images/primitives/${noKanji[primaryKeyword]}`)}
             alt={primaryKeyword}
           />
         </div>
@@ -227,7 +229,7 @@ const Description = ({
               <img
                 alt={match}
                 key={i}
-                src={`${process.env.PUBLIC_URL}/description_images/${match}`}
+                src={require(`../assets/images/description_images/${match}`)}
                 className="inline-block h-5"
               />
             )

@@ -1,4 +1,4 @@
-import { Menu, useMantineColorScheme } from "@mantine/core";
+import { ActionIcon, Menu, useMantineColorScheme } from "@mantine/core";
 import { useMemo } from "react";
 import { HiOutlineAdjustments } from "react-icons/hi";
 import { BsFillMoonFill, BsSun } from "react-icons/bs";
@@ -49,7 +49,7 @@ const Header = ({
           changeFilter={changeFilter}
         />
       </div>
-      <DarkModeToggle />
+      <DarkModeToggle size={20} />
     </header>
   );
 };
@@ -113,19 +113,17 @@ const FilterMenu = ({
   );
 };
 
-const DarkModeToggle = () => {
+const DarkModeToggle = ({ size }: { size: number }) => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
 
   return (
-    <label className="swap swap-rotate">
-      <input
-        type="checkbox"
-        checked={dark}
-        onChange={() => toggleColorScheme()}
-      />
-      <BsSun className="swap-on text-gray-300 cursor-pointer" />
-      <BsFillMoonFill className="swap-off text-gray-600 cursor-pointer" />
-    </label>
+    <ActionIcon variant="transparent" onClick={() => toggleColorScheme()}>
+      {dark ? (
+        <BsSun size={size} className="text-gray-300" />
+      ) : (
+        <BsFillMoonFill size={size} className="text-gray-600" />
+      )}
+    </ActionIcon>
   );
 };
