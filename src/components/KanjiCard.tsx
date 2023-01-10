@@ -1,8 +1,11 @@
-import { Tooltip, useMantineColorScheme } from "@mantine/core";
-import { useClipboard } from "@mantine/hooks";
+// Components
+import ClipboardButton from "./ClipboardButton";
+// Hooks
+import { useMantineColorScheme } from "@mantine/core";
 import { useMemo } from "react";
-import { BiCopy } from "react-icons/bi";
+// Icons
 import { VscPreview } from "react-icons/vsc";
+// Assets
 import noKanji from "../assets/noKanji";
 
 type IProps = {
@@ -11,7 +14,6 @@ type IProps = {
 };
 
 const KanjiCard = ({ data, handleOpenModal }: IProps) => {
-  const clipboard = useClipboard({ timeout: 1500 });
   const { colorScheme } = useMantineColorScheme();
   const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
 
@@ -28,27 +30,12 @@ const KanjiCard = ({ data, handleOpenModal }: IProps) => {
         <span className="text-xs font-semibold flex items-center text-white bg-blue-600 w-fit px-3 py-1 rounded-xl uppercase">
           {data.heisig_number || "Primitive"}
         </span>
-        {data.kanji && (
-          <Tooltip
-            offset={10}
-            label={clipboard.copied ? "Copied" : "Copy Kanji"}
-            color={clipboard.copied ? "indigo" : "cyan"}
-            position="left"
-            withArrow
-            events={{ hover: true, focus: true, touch: true }}
-          >
-            <button>
-              <BiCopy
-                onClick={() => clipboard.copy(data.kanji)}
-                className="w-6 h-6 text-gray-400 cursor-pointer"
-              />
-            </button>
-          </Tooltip>
-        )}
+        {data.kanji && <ClipboardButton label="Copy Kanji" text={data.kanji} />}
       </div>
+
       {/* Image or Kanji Text */}
       {data.kanji ? (
-        <span className={`text-5xl text-center ${!!!dark && "text-black"}`}>
+        <span className={`text-5xl text-center ${!dark && "text-black"}`}>
           {data.kanji}
         </span>
       ) : (
@@ -60,6 +47,7 @@ const KanjiCard = ({ data, handleOpenModal }: IProps) => {
           alt={data.keywords.primary}
         />
       )}
+
       {/* Footer */}
       <div className="flex-shrink-0">
         <span className="font-semibold">{data.keywords.primary}</span>

@@ -1,41 +1,46 @@
 import { useState } from "react";
 
-const initialState: Kanji = {
-  heisig_number: null,
-  kanji: null,
-  keywords: {
-    primary: "",
-    secondary: [],
-  },
-  description: null,
-  onyomi: [],
-  kunyomi: [],
-  stroke_count: null,
-  jlpt: null,
-  grade: null,
-};
+// const defaultState: Kanji = {
+//   heisig_number: null,
+//   kanji: null,
+//   keywords: {
+//     primary: "",
+//     secondary: [],
+//   },
+//   description: null,
+//   onyomi: [],
+//   kunyomi: [],
+//   stroke_count: null,
+//   jlpt: null,
+//   grade: null,
+// };
 
-const kanjiApi = "https://kanjiapi.dev/v1/kanji/";
+const KANJI_API_URL = "https://kanjiapi.dev/v1/kanji/";
 
-const useModal = (initValue: Kanji = initialState) => {
-  const [content, setContent] = useState(initValue);
-  const [opened, setOpened] = useState(false);
+const useModal = (initialState?: Kanji) => {
+  const [content, setContent] = useState(initialState || null);
+  const [isOpened, setOpened] = useState(false);
   const [isFetching, setIsFetching] = useState(false);
 
-  const handleOpenModal = async (data: Kanji) => {
+  const open = async (data: Kanji) => {
     if (!data.kanji) {
-      await setContent(data);
-      await setOpened(true);
+      // The element doesn't have a Unicode value
+      // Set the default data for this element
+      setContent(data);
+      // Open the modal for the element
+      setOpened(true);
     } else {
-      await setIsFetching(true);
-      await setOpened(true);
+      // Attempt to fetch the information for the kanji
+      setIsFetching(true);
+      // Open the modal while the data is fetching
+      setOpened(true);
 
+      // TODO: Cache fetches
       try {
-        const result = await fetch(`${kanjiApi}${data.kanji}`).then((res) =>
-          res.json()
-        );
+        const response = await fetch(`${KANJI_API_URL}${data.kanji}`);
+        const result: Kanjiapi_Kanji = await response.json();
 
-        await setContent({
+        setContent({
           ...data,
           onyomi: result.on_readings,
           kunyomi: result.kun_readings,
@@ -43,20 +48,20 @@ const useModal = (initValue: Kanji = initialState) => {
           jlpt: result.jlpt,
           grade: result.grade,
         });
-        await setIsFetching(false);
+        setIsFetching(false);
       } catch {
-        console.log("Error Fetching Data");
-        await setContent(data);
-        await setIsFetching(false);
+        console.log("Error fetching data");
+
+        // Set content with default data
+        setContent(data);
+        setIsFetching(false);
       }
     }
   };
 
-  const handleCloseModal = () => {
-    setOpened(false);
-  };
+  const close = () => setOpened(false);
 
-  return { content, opened, isFetching, handleCloseModal, handleOpenModal };
+  return { content, isOpened, isFetching, close, open };
 };
 
 export default useModal;

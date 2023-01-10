@@ -17,13 +17,14 @@ import NotFound from "./components/NotFound";
 const RRTK = () => {
   // Dark mode
   const { colorScheme } = useMantineColorScheme();
+
   // Check if is dark or light
   const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
 
-  // Kanji Card container
+  // Kanji cards container
   const virtuoso = useRef<VirtuosoGridHandle>(null);
 
-  // Filter Menu selected filter, default is ALL
+  // Currently selected filter from the Filter Menu (default: "ALL")
   const [selectedFilter, setSelectedFilter] = useState(filters[0]);
 
   // Search input
@@ -59,7 +60,7 @@ const RRTK = () => {
   }, [selectedFilter]);
 
   // List of kanjis based on the query, using the filtered list
-  const queryKanjis = useMemo(() => {
+  const resultKanjis = useMemo(() => {
     let searchQuery = debouncedQuery.toLowerCase().trim();
 
     if (searchQuery === "") return filteredKanjis;
@@ -81,8 +82,18 @@ const RRTK = () => {
     return searchList;
   }, [filteredKanjis, debouncedQuery]);
 
-  const { content, opened, isFetching, handleCloseModal, handleOpenModal } =
-    useModal();
+  const handleChangeFilter = (filter: FilterOption) =>
+    setSelectedFilter(filter);
+
+  const handleChangeQuery = (searchValue: string) => setQuery(searchValue);
+
+  const {
+    content,
+    isOpened,
+    isFetching,
+    close: closeModal,
+    open: openModal,
+  } = useModal();
 
   return (
     <>
@@ -94,23 +105,21 @@ const RRTK = () => {
         <Header
           filters={filters}
           selectedFilter={selectedFilter}
-          changeFilter={async (filter: FilterOption) => {
-            setSelectedFilter(filter);
-          }}
+          changeFilter={handleChangeFilter}
           query={query}
-          changeQuery={(searchValue: string) => setQuery(searchValue)}
+          changeQuery={handleChangeQuery}
         />
-        {queryKanjis.length === 0 ? (
+        {resultKanjis.length === 0 ? (
           <NotFound />
         ) : (
           <VirtuosoGrid
             ref={virtuoso}
             style={{ flexGrow: 1 }}
-            totalCount={queryKanjis.length}
+            totalCount={resultKanjis.length}
             itemContent={(index) => (
               <KanjiCard
-                data={queryKanjis[index]}
-                handleOpenModal={handleOpenModal}
+                data={resultKanjis[index]}
+                handleOpenModal={openModal}
               />
             )}
             overscan={{ main: 200, reverse: 200 }}
@@ -121,8 +130,8 @@ const RRTK = () => {
       <InfoModal
         content={content}
         isFetching={isFetching}
-        opened={opened}
-        handleCloseModal={handleCloseModal}
+        opened={isOpened}
+        handleCloseModal={closeModal}
       />
     </>
   );
