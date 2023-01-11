@@ -16,10 +16,13 @@ const ClipboardButton = ({ text, label, position = "left" }: IProps) => {
     <Tooltip
       offset={10}
       label={clipboard.copied ? "Copied" : label}
-      color={clipboard.copied ? "indigo" : "cyan"}
+      // color={clipboard.copied ? "blue" : "cyan"}
       position={position}
       withArrow
       events={{ hover: true, focus: true, touch: true }}
+      classNames={{
+        tooltip: `${clipboard.copied ? "bg-sky-600" : "bg-blue-600"}`,
+      }}
     >
       <button>
         <BiCopy

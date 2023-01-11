@@ -28,7 +28,7 @@ const Header = ({
         dark ? "bg-[#0E182F] text-gray-300" : "bg-white shadow-md"
       }`}
     >
-      <h1 className="inline-block font-bold text-xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-cyan-600">
+      <h1 className="inline-block font-bold text-xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-sky-600">
         RRTK
       </h1>
       <div className="flex w-full">
@@ -100,8 +100,8 @@ const FilterMenu = ({
           <Menu.Item
             className={`cursor-pointer ${
               filter === selectedFilter &&
-              "bg-gradient-to-r from-blue-700 to-cyan-600 !text-white"
-            } active:text-white active:bg-gradient-to-r active:from-blue-700/60 active:to-cyan-600/60 font-semibold mb-1 last:mb-0`}
+              "bg-gradient-to-r from-blue-700 to-sky-600 !text-white"
+            } active:text-white active:bg-gradient-to-r active:from-blue-700/60 active:to-sky-600/60 font-semibold mb-1 last:mb-0`}
             onClick={() => changeFilter(filter)}
             key={filter.title}
           >
