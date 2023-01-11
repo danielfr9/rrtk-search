@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/rrtk-search/static/css/main.4c9f854f.css",
-    "main.js": "/rrtk-search/static/js/main.fe3d3ae0.js",
+    "main.css": "/rrtk-search/static/css/main.341db0e3.css",
+    "main.js": "/rrtk-search/static/js/main.dd2e45ab.js",
+    "static/media/desktop.ini": "/rrtk-search/static/media/desktop.1ae2c4403da771f1748d.ini",
     "index.html": "/rrtk-search/index.html",
-    "main.4c9f854f.css.map": "/rrtk-search/static/css/main.4c9f854f.css.map",
-    "main.fe3d3ae0.js.map": "/rrtk-search/static/js/main.fe3d3ae0.js.map"
+    "main.341db0e3.css.map": "/rrtk-search/static/css/main.341db0e3.css.map",
+    "main.dd2e45ab.js.map": "/rrtk-search/static/js/main.dd2e45ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c9f854f.css",
-    "static/js/main.fe3d3ae0.js"
+    "static/css/main.341db0e3.css",
+    "static/js/main.dd2e45ab.js"
   ]
 }
