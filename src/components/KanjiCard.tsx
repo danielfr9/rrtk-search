@@ -6,7 +6,7 @@ import { useMemo } from "react";
 // Icons
 import { VscPreview } from "react-icons/vsc";
 // Assets
-import noKanji from "../assets/noKanji";
+import noUnicodePrimitves from "../assets/noUnicodePrimitives";
 
 type IProps = {
   data: Kanji;
@@ -42,7 +42,7 @@ const KanjiCard = ({ data, handleOpenModal }: IProps) => {
         <img
           className="w-20 h-20 self-center"
           src={require(`../assets/images/primitives/${
-            noKanji[data.keywords.primary]
+            noUnicodePrimitves[data.keywords.primary]
           }`)}
           alt={data.keywords.primary}
         />

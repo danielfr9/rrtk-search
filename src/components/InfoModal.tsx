@@ -1,5 +1,5 @@
 // Data
-import noKanji from "../assets/noKanji";
+import noUnicodePrimitves from "../assets/noUnicodePrimitives";
 // Components
 import ClipboardButton from "./ClipboardButton";
 import { Modal, Loader, useMantineColorScheme } from "@mantine/core";
@@ -158,8 +158,8 @@ const KanjiScript = ({
         <div className="py-3">
           <img
             className="h-24"
-            // src={`${process.env.PUBLIC_URL}/primitives/${noKanji[primaryKeyword]}`}
-            src={require(`../assets/images/primitives/${noKanji[primaryKeyword]}`)}
+            // src={`${process.env.PUBLIC_URL}/primitives/${noUnicodePrimitves[primaryKeyword]}`}
+            src={require(`../assets/images/primitives/${noUnicodePrimitves[primaryKeyword]}`)}
             alt={primaryKeyword}
           />
         </div>
