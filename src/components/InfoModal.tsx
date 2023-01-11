@@ -1,17 +1,14 @@
 // Data
-import noKanji from "../assets/noKanji";
+import noUnicodePrimitves from "../assets/noUnicodePrimitives";
 // Components
-import { Modal, Tooltip, Loader, useMantineColorScheme } from "@mantine/core";
-// Hooks
-import { useClipboard } from "@mantine/hooks";
-// Icons
-import { BiCopy } from "react-icons/bi";
+import ClipboardButton from "./ClipboardButton";
+import { Modal, Loader, useMantineColorScheme } from "@mantine/core";
 // Utilities
 import reactStringReplace from "react-string-replace";
 import { useMemo } from "react";
 
 type IProps = {
-  content: Kanji;
+  content: Kanji | null;
   isFetching: boolean;
   opened: boolean;
   handleCloseModal: () => void;
@@ -23,10 +20,9 @@ const InfoModal = ({
   opened,
   handleCloseModal,
 }: IProps) => {
-  const clipboard = useClipboard({ timeout: 1500 });
-
   const { colorScheme } = useMantineColorScheme();
   const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
+
   return (
     <Modal
       size="lg"
@@ -41,140 +37,207 @@ const InfoModal = ({
       }}
       overflow="inside"
       opened={opened}
-      onClose={() => handleCloseModal()}
+      onClose={handleCloseModal}
       title={
-        !isFetching && (
+        !isFetching &&
+        content && (
           <span className="text-xs font-semibold flex justify-center items-center text-white bg-blue-600 w-fit px-3 py-1 rounded-xl uppercase">
             {content.heisig_number || "Primitive"}
           </span>
         )
       }
+      exitTransitionDuration={200}
+      centered
     >
       {isFetching ? (
         <div className="flex flex-col grow justify-center items-center py-12">
           <Loader size="lg" />
         </div>
       ) : (
-        <>
-          <div className="space-y-4 pb-4">
-            {/* Number/Primitive and Kanji/Image */}
-            <div className="flex items-center justify-center pb-4 pt-2">
-              {content.kanji ? (
-                <h2 className="text-5xl font-semibold py-5">{content.kanji}</h2>
-              ) : (
-                <div className="py-3">
-                  <img
-                    className="h-24"
-                    src={`${process.env.PUBLIC_URL}/primitives/${
-                      noKanji[content.keywords.primary]
-                    }`}
-                    alt={content.keywords.primary}
-                  />
-                </div>
-              )}
-            </div>
-            {/* Clipboard */}
-            <div className="flex items-center justify-end pr-6">
-              {content.kanji && (
-                <Tooltip
-                  offset={10}
-                  label={clipboard.copied ? "Copied" : "Copy Kanji"}
-                  color={clipboard.copied ? "indigo" : "cyan"}
-                  position="left"
-                  withArrow
-                  events={{ hover: true, focus: true, touch: true }}
-                >
-                  <button>
-                    <BiCopy
-                      onClick={() => clipboard.copy(content.kanji)}
-                      className="w-6 h-6 text-gray-400 cursor-pointer"
-                    />
-                  </button>
-                </Tooltip>
-              )}
-            </div>
-            {/* JLPT & Grade */}
-            <div className="flex space-x-2">
-              <span className="text-xs font-semibold flex justify-center items-center text-white bg-indigo-600 w-fit px-3 py-1 rounded-xl uppercase">
-                JLPT: {content.jlpt || "N/A"}
-              </span>
-              <span className="text-xs font-semibold flex justify-center items-center text-white bg-teal-600 w-fit px-3 py-1 rounded-xl uppercase">
-                Grade: {content.grade || "N/A"}
-              </span>
-            </div>
-
-            {/* Kunyomi & Onyomi */}
-            {content.kanji && (
-              <>
-                <div className="flex space-x-2">
-                  <div>
-                    <span className="text-xs font-semibold flex justify-center items-center text-white bg-cyan-600 w-fit px-3 py-1 rounded-xl uppercase">
-                      Kunyomi
-                    </span>
-                  </div>
-                  <div>
-                    {content.kunyomi && (
-                      <span>{content.kunyomi.join(", ")}</span>
-                    )}
-                  </div>
-                </div>
-                <div className="flex space-x-2">
-                  <div>
-                    <span className="text-xs font-semibold flex justify-center items-center text-white bg-red-600 w-fit px-3 py-1 rounded-xl uppercase">
-                      Onyomi
-                    </span>
-                  </div>
-                  <div>
-                    {content.onyomi && <span>{content.onyomi.join(", ")}</span>}
-                  </div>
-                </div>
-              </>
-            )}
-
-            {/* Keywords */}
-            <div>
-              <span className="text-xs mb-1 font-semibold flex justify-center items-center text-white bg-violet-600 w-fit px-3 py-1 rounded-xl uppercase">
-                Keywords
-              </span>
-              <p className="px-2">
-                <span className="font-bold">{content.keywords.primary}</span>
-                {content.keywords.secondary.length > 0 && (
-                  <span>{`; ${content.keywords.secondary.join(", ")}`}</span>
-                )}
-              </p>
-            </div>
-
-            {/* Description */}
-            {!!content.description && (
-              <div>
-                <span className="text-xs mb-1 font-semibold flex justify-center items-center text-white bg-fuchsia-600 w-fit px-3 py-1 rounded-xl uppercase">
-                  Description
-                </span>
-                {content.description.has_image ? (
-                  <p className="text-md px-2">
-                    {reactStringReplace(
-                      content.description.info,
-                      /(paste-\S+?(?:jpe?g|png|gif))/g,
-                      (match, i) => (
-                        <img
-                          alt={match}
-                          key={i}
-                          src={`${process.env.PUBLIC_URL}/description_images/${match}`}
-                          className="inline-block h-5"
-                        />
-                      )
-                    )}
-                  </p>
-                ) : (
-                  <p className="text-md px-2">{content.description.info}</p>
-                )}
-              </div>
-            )}
-          </div>
-        </>
+        <ModalContent content={content} />
       )}
     </Modal>
   );
 };
 
 export default InfoModal;
+
+const ModalContent = ({ content }: { content: Kanji | null }) => {
+  // If for some reason the modal is opened without content
+  if (content === null)
+    return (
+      <div className="flex flex-col grow justify-center items-center py-12">
+        <span>Sorry, something went wrong...</span>
+      </div>
+    );
+
+  return (
+    <div className="space-y-4 pb-4">
+      {/* Kanji/Image */}
+      <KanjiScript
+        kanji={content.kanji}
+        primaryKeyword={content.keywords.primary}
+      />
+
+      {/* Clipboard */}
+      {content.kanji && (
+        <div className="flex items-center justify-end pr-6">
+          <ClipboardButton label="Copy Kanji" text={content.kanji} />
+        </div>
+      )}
+
+      {/* JLPT & Grade */}
+      <div className="flex space-x-2">
+        <TitlePill
+          title={`JLPT: ${content.jlpt || "N/A"}`}
+          classNames="text-white bg-indigo-600"
+        />
+        <TitlePill
+          title={`Grade: ${content.grade || "N/A"}`}
+          classNames="text-white bg-teal-600"
+        />
+      </div>
+
+      {/* Kunyomi & Onyomi */}
+      {content.kanji && (
+        <>
+          <Readings
+            reading={content?.kunyomi}
+            classNames="text-white bg-cyan-600"
+            title="kunyomi"
+          />
+          <Readings
+            reading={content.onyomi}
+            classNames="text-white bg-red-600"
+            title="onyomi"
+          />
+        </>
+      )}
+
+      {/* Keywords */}
+      <Keywords keywords={content.keywords} />
+
+      {/* Description */}
+      {!!content.description && (
+        <Description description={content.description} />
+      )}
+    </div>
+  );
+};
+
+const TitlePill = ({
+  title,
+  classNames,
+}: {
+  title: string;
+  classNames?: string;
+}) => {
+  return (
+    <span
+      className={`text-xs font-semibold flex justify-center items-center ${
+        classNames || "text-black bg-white"
+      } w-fit px-3 py-1 rounded-xl uppercase`}
+    >
+      {title}
+    </span>
+  );
+};
+
+const KanjiScript = ({
+  kanji,
+  primaryKeyword,
+}: {
+  kanji: string | null;
+  primaryKeyword: string;
+}) => {
+  return (
+    <div className="flex items-center justify-center pb-4 pt-2">
+      {kanji ? (
+        <h2 className="text-5xl font-semibold py-5">{kanji}</h2>
+      ) : (
+        <div className="py-3">
+          <img
+            className="h-24"
+            // src={`${process.env.PUBLIC_URL}/primitives/${noUnicodePrimitves[primaryKeyword]}`}
+            src={require(`../assets/images/primitives/${noUnicodePrimitves[primaryKeyword]}`)}
+            alt={primaryKeyword}
+          />
+        </div>
+      )}
+    </div>
+  );
+};
+
+const Readings = ({
+  reading,
+  classNames = "",
+  title,
+}: {
+  reading?: string[];
+  classNames?: string;
+  title: string;
+}) => {
+  return (
+    <div className="flex space-x-2">
+      <div>
+        <TitlePill classNames={classNames} title={title} />
+      </div>
+      <div>{reading && <span>{reading.join(", ")}</span>}</div>
+    </div>
+  );
+};
+
+const Keywords = ({
+  keywords,
+}: {
+  keywords: {
+    primary: string;
+    secondary: string[];
+  };
+}) => {
+  return (
+    <div className="space-y-2">
+      <TitlePill title="keywords" classNames="text-white bg-violet-600" />
+      <p className="px-2">
+        <span className="font-bold">{keywords.primary}</span>
+        {keywords.secondary.length > 0 && (
+          <span>{`; ${keywords.secondary.join(", ")}`}</span>
+        )}
+      </p>
+    </div>
+  );
+};
+
+const Description = ({
+  description,
+}: {
+  description: {
+    has_image: boolean;
+    info: string;
+  };
+}) => {
+  return (
+    <div className="space-y-2">
+      <TitlePill title="Description" classNames="text-white bg-fuchsia-600" />
+
+      {description.has_image ? (
+        <p className="text-md px-2">
+          {reactStringReplace(
+            description.info,
+            /(paste-\S+?(?:jpe?g|png|gif))/g,
+            (match, i) => (
+              <img
+                alt={match}
+                key={i}
+                src={require(`../assets/images/description_images/${match}`)}
+                className="inline-block h-5"
+              />
+            )
+          )}
+        </p>
+      ) : (
+        <p className="text-md px-2">{description.info}</p>
+      )}
+    </div>
+  );
+};

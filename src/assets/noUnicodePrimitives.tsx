@@ -1,8 +1,4 @@
-type NoKanji = {
-  [key: string]: string;
-};
-
-const noKanji: NoKanji = {
+const noUnicodePrimitives: { [key: string]: string } = {
   mist: "paste-0f343585b392bed36eedafe78c8b6574e3c21cd9.jpg",
   "animal legs": "paste-06528089a471f72ead991044dcce5f9963602930.jpg",
   horns: "paste-3ad14dd642e4600eb02948cf2efba0304aab5202.jpg",
@@ -75,4 +71,4 @@ const noKanji: NoKanji = {
   "mountain goat": "paste-225f8e5dc6e30aee5cb014baf6bd63b67f214dc6.jpg",
 };
 
-export default noKanji;
+export default noUnicodePrimitives;
