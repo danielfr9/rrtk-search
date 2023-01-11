@@ -24,7 +24,7 @@ const Header = ({
 
   return (
     <header
-      className={`flex items-center space-x-4 w-full p-4 h-20 ${
+      className={`flex items-center space-x-4 w-full px-4 h-16 ${
         dark ? "bg-[#0E182F] text-gray-300" : "bg-white shadow-md"
       }`}
     >
@@ -84,6 +84,7 @@ const FilterMenu = ({
     >
       <Menu.Target>
         <button
+          aria-label="Select list filter"
           className={`p-1 px-3 rounded-r-md h-auto ${
             dark ? "bg-gray-700" : "bg-gray-500"
           }  `}
@@ -118,7 +119,11 @@ const DarkModeToggle = ({ size }: { size: number }) => {
   const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
 
   return (
-    <ActionIcon variant="transparent" onClick={() => toggleColorScheme()}>
+    <ActionIcon
+      aria-label="Toggle Dark Mode"
+      variant="transparent"
+      onClick={() => toggleColorScheme()}
+    >
       {dark ? (
         <BsSun size={size} className="text-gray-300" />
       ) : (

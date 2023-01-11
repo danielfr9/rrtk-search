@@ -158,8 +158,12 @@ const KanjiScript = ({
         <div className="py-3">
           <img
             className="h-24"
-            // src={`${process.env.PUBLIC_URL}/primitives/${noUnicodePrimitves[primaryKeyword]}`}
-            src={require(`../assets/images/primitives/${noUnicodePrimitves[primaryKeyword]}`)}
+            src={
+              new URL(
+                `/src/assets/images/primitives/${noUnicodePrimitves[primaryKeyword]}`,
+                import.meta.url
+              ).href
+            }
             alt={primaryKeyword}
           />
         </div>
@@ -229,7 +233,12 @@ const Description = ({
               <img
                 alt={match}
                 key={i}
-                src={require(`../assets/images/description_images/${match}`)}
+                src={
+                  new URL(
+                    `/src/assets/images/description_images/${match}`,
+                    import.meta.url
+                  ).href
+                }
                 className="inline-block h-5"
               />
             )

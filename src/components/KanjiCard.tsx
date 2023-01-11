@@ -41,9 +41,15 @@ const KanjiCard = ({ data, handleOpenModal }: IProps) => {
       ) : (
         <img
           className="w-20 h-20 self-center"
-          src={require(`../assets/images/primitives/${
-            noUnicodePrimitves[data.keywords.primary]
-          }`)}
+          src={
+            new URL(
+              `/src/assets/images/primitives/${
+                noUnicodePrimitves[data.keywords.primary]
+              }`,
+              import.meta.url
+            ).href
+          }
+          loading="lazy"
           alt={data.keywords.primary}
         />
       )}
