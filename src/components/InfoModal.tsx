@@ -1,11 +1,18 @@
-// Data
-import noUnicodePrimitves from "../assets/noUnicodePrimitives";
-// Components
-import ClipboardButton from "./ClipboardButton";
-import { Modal, Loader, useMantineColorScheme } from "@mantine/core";
-// Utilities
-import reactStringReplace from "react-string-replace";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { ImageIcon, LoaderIcon } from "lucide-react";
 import { useMemo } from "react";
+import { useTheme } from "./theme-provider";
+import noUnicodePrimitves from "../assets/noUnicodePrimitives";
+import ClipboardButton from "./ClipboardButton";
+import reactStringReplace from "react-string-replace";
+import { useLazyImage } from "@/hooks/use-lazy-image";
+import type { ImageFolder } from "@/lib/imageMaps";
+import { cn } from "@/lib/utils";
 
 type IProps = {
   content: Kanji | null;
@@ -20,43 +27,37 @@ const InfoModal = ({
   opened,
   handleCloseModal,
 }: IProps) => {
-  const { colorScheme } = useMantineColorScheme();
-  const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
+  const { theme } = useTheme();
+  const dark = useMemo(() => theme === "dark", [theme]);
 
   return (
-    <Modal
-      size="lg"
-      classNames={{
-        title: "grow",
-        modal: `${
-          dark ? "bg-gray-900 text-gray-300" : "bg-white text-gray-800"
-        }`,
-        overlay: `${dark === false && "bg-gray-700"}`,
-        body: "pb-4",
-        close: "hover:bg-transparent active:bg-transparent",
-      }}
-      overflow="inside"
-      opened={opened}
-      onClose={handleCloseModal}
-      title={
-        !isFetching &&
-        content && (
-          <span className="text-xs font-semibold flex justify-center items-center text-white bg-blue-600 w-fit px-3 py-1 rounded-xl uppercase">
-            {content.heisig_number || "Primitive"}
-          </span>
-        )
-      }
-      exitTransitionDuration={200}
-      centered
-    >
-      {isFetching ? (
-        <div className="flex flex-col grow justify-center items-center py-12">
-          <Loader size="lg" />
-        </div>
-      ) : (
-        <ModalContent content={content} />
-      )}
-    </Modal>
+    <Dialog open={opened} onOpenChange={handleCloseModal}>
+      <DialogContent
+        className={cn(
+          `${dark ? "bg-gray-900 text-gray-300" : "bg-white text-gray-800"}`,
+          "flex max-h-[min(640px,80vh)] max-w-[95vw] flex-col gap-0 rounded-lg p-0 sm:max-w-2xl [&>button:last-child]:top-3.5"
+        )}
+      >
+        <DialogHeader className="contents space-y-0 text-left">
+          {!isFetching && content && (
+            <DialogTitle className="border-b px-6 py-4 text-base">
+              <span className="text-xs font-semibold flex justify-center items-center text-white bg-blue-600 w-fit px-3 py-1 rounded-xl uppercase">
+                {content.heisig_number || "Primitive"}
+              </span>
+            </DialogTitle>
+          )}
+          <div className="overflow-y-auto p-4">
+            {isFetching ? (
+              <div className="flex flex-col grow justify-center items-center py-12">
+                <LoaderIcon size="lg" />
+              </div>
+            ) : (
+              <ModalContent content={content} />
+            )}
+          </div>
+        </DialogHeader>
+      </DialogContent>
+    </Dialog>
   );
 };
 
@@ -150,18 +151,21 @@ const KanjiScript = ({
   kanji: string | null;
   primaryKeyword: string;
 }) => {
+  const image = useLazyImage("primitives", noUnicodePrimitves[primaryKeyword]);
+
   return (
     <div className="flex items-center justify-center pb-4 pt-2">
       {kanji ? (
         <h2 className="text-5xl font-semibold py-5">{kanji}</h2>
       ) : (
         <div className="py-3">
-          <img
-            className="h-24"
-            // src={`${process.env.PUBLIC_URL}/primitives/${noUnicodePrimitves[primaryKeyword]}`}
-            src={require(`../assets/images/primitives/${noUnicodePrimitves[primaryKeyword]}`)}
-            alt={primaryKeyword}
-          />
+          {image.status === "success" ? (
+            <img className="h-24" src={image.src} alt={primaryKeyword} />
+          ) : image.status === "error" ? (
+            <ImageIcon className="h-24" />
+          ) : (
+            <LoaderIcon className="h-24 animate-spin" />
+          )}
         </div>
       )}
     </div>
@@ -226,10 +230,11 @@ const Description = ({
             description.info,
             /(paste-\S+?(?:jpe?g|png|gif))/g,
             (match, i) => (
-              <img
-                alt={match}
+              <EmbeddedImage
                 key={i}
-                src={require(`../assets/images/description_images/${match}`)}
+                folder="description"
+                fileName={match}
+                alt={match}
                 className="inline-block h-5"
               />
             )
@@ -239,5 +244,27 @@ const Description = ({
         <p className="text-md px-2">{description.info}</p>
       )}
     </div>
+  );
+};
+
+const EmbeddedImage = ({
+  fileName,
+  folder,
+  alt,
+  className,
+}: {
+  folder: ImageFolder;
+  fileName: string;
+  alt: string;
+  className?: string;
+}) => {
+  const image = useLazyImage(folder, fileName);
+
+  return (
+    <img
+      className={`inline-block h-5 ${className}`}
+      src={image.status === "success" ? image.src : ""}
+      alt={alt}
+    />
   );
 };

@@ -1,10 +1,10 @@
-import { useMantineColorScheme } from "@mantine/core";
-import React, { useMemo } from "react";
-import { RiTranslate } from "react-icons/ri";
+import { useMemo } from "react";
+import { useTheme } from "./theme-provider";
+import { LanguagesIcon } from "lucide-react";
 
 const NotFound = () => {
-  const { colorScheme } = useMantineColorScheme();
-  const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
+  const { theme } = useTheme();
+  const dark = useMemo(() => theme === "dark", [theme]);
 
   return (
     <div
@@ -13,7 +13,7 @@ const NotFound = () => {
       }`}
     >
       <div className="flex items-center space-x-6">
-        <RiTranslate className="w-8 h-8 md:w-12 md:h-12" />
+        <LanguagesIcon className="w-8 h-8 md:w-12 md:h-12" />
         <span className="font-semibold italic text-lg sm:text-xl md:text-2xl">
           No Kanji Found!
         </span>

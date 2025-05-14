@@ -3,23 +3,24 @@ import { filters } from "./assets/filters";
 // Hooks
 import { useRef, useMemo } from "react";
 import useModal from "./hooks/useModal";
-import { useMantineColorScheme } from "@mantine/core";
 // Components
 import Header from "./components/Header";
 import KanjiCard from "./components/KanjiCard";
 import InfoModal from "./components/InfoModal";
-import { VirtuosoGrid, VirtuosoGridHandle } from "react-virtuoso";
+import { VirtuosoGrid, type VirtuosoGridHandle } from "react-virtuoso";
 // Icons
 import NotFound from "./components/NotFound";
 import useFilter from "./hooks/useFilter";
 import useQuery from "./hooks/useQuery";
+import { useTheme } from "./components/theme-provider";
 
 const RRTK = () => {
   // Dark mode
-  const { colorScheme } = useMantineColorScheme();
+  // const { colorScheme } = useMantineColorScheme();
+  const { theme } = useTheme();
 
   // Check if is dark or light
-  const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
+  const dark = useMemo(() => theme === "dark", [theme]);
 
   // Kanji cards container
   const virtuoso = useRef<VirtuosoGridHandle>(null);

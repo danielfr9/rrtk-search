@@ -1,32 +1,12 @@
-import React, { useCallback } from "react";
-// Dark  Mode
-import { ColorScheme, ColorSchemeProvider } from "@mantine/core";
-import { useColorScheme, useLocalStorage } from "@mantine/hooks";
-// Components
+import { ThemeProvider } from "./components/theme-provider";
 import RRTK from "./RRTK";
 
-const App = () => {
-  const preferredColorScheme = useColorScheme();
-  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
-    key: "mantine-color-scheme",
-    defaultValue: preferredColorScheme,
-  });
-  const toggleColorScheme = useCallback(
-    (value?: ColorScheme) =>
-      setColorScheme(
-        (prevScheme) => value || (prevScheme === "dark" ? "light" : "dark")
-      ),
-    [setColorScheme]
-  );
-
+function App() {
   return (
-    <ColorSchemeProvider
-      colorScheme={colorScheme}
-      toggleColorScheme={toggleColorScheme}
-    >
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <RRTK />
-    </ColorSchemeProvider>
+    </ThemeProvider>
   );
-};
+}
 
 export default App;

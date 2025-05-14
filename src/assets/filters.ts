@@ -1,10 +1,11 @@
-export enum PredefinedOptions {
-  ALL = "All",
-  PRIMITIVES = "Primitives",
-}
+// FIXME: This looks unnecessary, but it is used in the app. We should refactor this to use a more generic approach.
+export const PredefinedOptions = {
+  ALL: "All",
+  PRIMITIVES: "Primitives",
+} as const;
 
 export type FilterOption = {
-  title: PredefinedOptions.ALL | PredefinedOptions.PRIMITIVES | string;
+  title: (typeof PredefinedOptions)[keyof typeof PredefinedOptions] | string;
   min: number | null;
   max: number | null;
 };

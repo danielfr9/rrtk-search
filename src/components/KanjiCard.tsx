@@ -1,12 +1,13 @@
 // Components
 import ClipboardButton from "./ClipboardButton";
 // Hooks
-import { useMantineColorScheme } from "@mantine/core";
 import { useMemo } from "react";
 // Icons
-import { VscPreview } from "react-icons/vsc";
 // Assets
 import noUnicodePrimitves from "../assets/noUnicodePrimitives";
+import { BookOpenTextIcon, ImageIcon, LoaderIcon } from "lucide-react";
+import { useTheme } from "./theme-provider";
+import { useLazyImage } from "@/hooks/use-lazy-image";
 
 type IProps = {
   data: Kanji;
@@ -14,8 +15,13 @@ type IProps = {
 };
 
 const KanjiCard = ({ data, handleOpenModal }: IProps) => {
-  const { colorScheme } = useMantineColorScheme();
-  const dark = useMemo(() => colorScheme === "dark", [colorScheme]);
+  const { theme } = useTheme();
+  const dark = useMemo(() => theme === "dark", [theme]);
+
+  const image = useLazyImage(
+    "primitives",
+    noUnicodePrimitves[data.keywords.primary]
+  );
 
   return (
     <div
@@ -38,21 +44,23 @@ const KanjiCard = ({ data, handleOpenModal }: IProps) => {
         <span className={`text-5xl text-center ${!dark && "text-black"}`}>
           {data.kanji}
         </span>
-      ) : (
+      ) : image.status === "success" ? (
         <img
           className="w-20 h-20 self-center"
-          src={require(`../assets/images/primitives/${
-            noUnicodePrimitves[data.keywords.primary]
-          }`)}
+          src={image.src}
           alt={data.keywords.primary}
         />
+      ) : image.status === "error" ? (
+        <ImageIcon className="w-20 h-20 self-center" />
+      ) : (
+        <LoaderIcon className="w-20 h-20 self-center animate-spin" />
       )}
 
       {/* Footer */}
       <div className="flex-shrink-0">
         <span className="font-semibold">{data.keywords.primary}</span>
         <div className="flex justify-end pb-4">
-          <VscPreview
+          <BookOpenTextIcon
             onClick={() => handleOpenModal(data)}
             className="w-7 h-7 cursor-pointer text-sky-500"
           />
