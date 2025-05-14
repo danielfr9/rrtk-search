@@ -39,17 +39,17 @@ const InfoModal = ({
         )}
       >
         <DialogHeader className="contents space-y-0 text-left">
-          {!isFetching && content && (
-            <DialogTitle className="border-b px-6 py-4 text-base">
+          <DialogTitle className="border-b px-6 py-4 text-base">
+            {!isFetching && content && (
               <span className="text-xs font-semibold flex justify-center items-center text-white bg-blue-600 w-fit px-3 py-1 rounded-xl uppercase">
                 {content.heisig_number || "Primitive"}
               </span>
-            </DialogTitle>
-          )}
+            )}
+          </DialogTitle>
           <div className="overflow-y-auto p-4">
             {isFetching ? (
               <div className="flex flex-col grow justify-center items-center py-12">
-                <LoaderIcon size="lg" />
+                <LoaderIcon className="h-24" />
               </div>
             ) : (
               <ModalContent content={content} />

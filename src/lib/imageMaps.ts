@@ -5,8 +5,6 @@ export const imageMaps = {
 
 export type ImageFolder = keyof typeof imageMaps;
 
-console.log(imageMaps.primitives);
-
 export type ImageLoadStatus =
   | { status: "pending"; src: undefined }
   | { status: "success"; src: string }

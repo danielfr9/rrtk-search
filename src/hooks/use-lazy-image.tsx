@@ -5,8 +5,6 @@ import {
 } from "@/lib/imageMaps";
 import { useState, useEffect } from "react";
 
-// ../assets/images/primitives/paste-5264aa28813e181adbf09b872066e507b2609478.jpg
-
 export function useLazyImage(
   folder: ImageFolder,
   fileName: string | undefined

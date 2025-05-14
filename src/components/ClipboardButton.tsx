@@ -4,8 +4,9 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
 import { CopyIcon } from "lucide-react";
+import { useClipboard } from "@/hooks/use-clipboard";
+import { toast } from "sonner";
 
 interface IProps {
   text: string;
@@ -14,12 +15,11 @@ interface IProps {
 }
 
 const ClipboardButton = ({ text, label, position = "top" }: IProps) => {
-  const [copied, setCopied] = useState(false);
+  const clipboard = useClipboard({ timeout: 500 });
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
+    clipboard.copy(text);
+    toast.success("Copied to clipboard");
   };
 
   return (
@@ -27,15 +27,16 @@ const ClipboardButton = ({ text, label, position = "top" }: IProps) => {
       <TooltipTrigger asChild>
         <Button
           variant="ghost"
+          size="icon"
           onClick={handleCopy}
-          className="p-2"
+          className="p-2 cursor-pointer"
           aria-label={label}
         >
           <CopyIcon className="w-6 h-6 text-gray-400" />
         </Button>
       </TooltipTrigger>
       <TooltipContent side={position}>
-        {copied ? "Copied" : label}
+        {clipboard.copied ? "Copied" : label}
       </TooltipContent>
     </Tooltip>
   );

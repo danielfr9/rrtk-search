@@ -12868,3 +12868,11 @@ export const rrtk: Kanji[] = [
     description: null,
   },
 ];
+
+export const getTotalKanjis = () => {
+  return rrtk.length;
+};
+
+export const getTotalPrimitives = () => {
+  return rrtk.filter((item) => !item.heisig_number).length;
+};
